@@ -1,0 +1,2769 @@
+# Adobe Illustrator Scripts Organization
+# Quality levels: 1 (remove), 2 (Varia), 3 (useful), 4 (very useful), 5 (Favorites)
+# Quality 5 → Favorites folder
+# Quality 2 → Varia folder
+# Quality 1 → Destined for removal
+# Quality 3-4 → Organized by functional category
+
+# ============================================================================
+# FAVORITES (Quality 5)
+# ============================================================================
+
+[Favorites."Fit Artboards to Artwork"]
+old_path = "old/FitArtboardsToArtwork.jsx"
+desc = "Comprehensive script to resize artboards to fit artwork with customizable margins, supports multiple artboards, percentage or absolute margins, and specific side fitting. Professional-grade with extensive options and recent updates (2025)."
+refactor = "Already modern and well-maintained. No refactoring needed."
+quality = 5
+
+[Favorites."Batch Renamer"]
+old_path = "old/BatchRenamer.jsx"
+desc = "Powerful batch renaming tool for artboards, layers, and objects with find/replace (regex support), placeholders, prefix/suffix, case conversion, import/export names. Feature-rich professional tool updated in 2025."
+refactor = "Already modern and comprehensive. No refactoring needed."
+quality = 5
+
+[Favorites."Export as PDF"]
+old_path = "old/exportAsPDF.js"
+desc = "Export multiple PDFs simultaneously with multiple presets, artboard ranges, outline creation, and batch processing of documents. Comprehensive PDF export solution."
+refactor = "Well-structured but could benefit from modern error handling patterns and async operations if needed."
+quality = 5
+
+[Favorites."Step and Repeat"]
+old_path = "old/stepAndRepeat.js"
+desc = "InDesign-equivalent feature for repeatedly duplicating objects with offset or grid layout. Includes live preview, keyboard shortcuts for value adjustment, and comprehensive options."
+refactor = "Modern and well-implemented. Consider adding more grid patterns."
+quality = 5
+
+[Favorites."Go to Line in Text"]
+old_path = "old/goToLine.js"
+desc = "Visual Studio Code-like navigation for text editing - jump to specific line numbers in text frames with list selection and pan to center. Essential for long-form text work."
+refactor = "Well-implemented. Could add column navigation and bookmarks."
+quality = 5
+
+# ============================================================================
+# ARTBOARDS
+# ============================================================================
+
+[Artboards."Create Artboards from Selection"]
+old_path = "old/createArtboardsFromTheSelection.jsx"
+desc = "Creates artboards from selected objects with customizable bleed values for each side. Supports creating individual artboards for each item or a single artboard for the entire selection bounds."
+refactor = "Functional but uses older 'with' statements which are discouraged. Modernize syntax and improve code structure."
+quality = 4
+
+[Artboards."Navigate to Next Artboard"]
+old_path = "old/navigateToNextArtboard.js"
+desc = "Navigates to the next artboard while maintaining view position and zoom level. Wraps to first artboard after the last one."
+refactor = "Simple and functional. Could add keyboard shortcut configuration."
+quality = 3
+
+[Artboards."Navigate to Previous Artboard"]
+old_path = "old/navigateToPreviousArtboard.js"
+desc = "Navigates to the previous artboard while maintaining view position and zoom level. Wraps to last artboard from the first one."
+refactor = "Simple and functional. Could add keyboard shortcut configuration."
+quality = 3
+
+[Artboards."Navigate to First Artboard"]
+old_path = "old/navigateToFirstArtboard.js"
+desc = "Quickly jumps to the first artboard in the document while maintaining view settings."
+refactor = "Very simple utility. Could be combined with other navigation scripts."
+quality = 2
+
+[Artboards."Navigate to Last Artboard"]
+old_path = "old/navigateToLastArtboard.js"
+desc = "Quickly jumps to the last artboard in the document while maintaining view settings."
+refactor = "Very simple utility. Could be combined with other navigation scripts."
+quality = 2
+
+[Artboards."Artboards Remapper"]
+old_path = "old/ArtboardsRemapper.jsx"
+desc = "Rearranges artboards in a grid layout with customizable spacing, useful for organizing multiple artboards systematically."
+refactor = "Check for modern Illustrator API updates and simplify grid calculation logic."
+quality = 4
+
+[Artboards."Artboards Finder"]
+old_path = "old/ArtboardsFinder.jsx"
+desc = "Search and navigate to artboards by name or pattern, helpful for documents with many artboards."
+refactor = "Add regex search support and recent artboards history."
+quality = 3
+
+[Artboards."Rename Artboard"]
+old_path = "old/renameArtboard.js"
+desc = "Simple utility to rename the currently active artboard."
+refactor = "Very basic. Could add bulk rename or pattern-based naming."
+quality = 2
+
+[Artboards."Resize Artboards with Objects"]
+old_path = "old/artboardsResizeWithObjects.jsx"
+desc = "Resizes artboards and scales objects within them proportionally."
+refactor = "Useful feature. Ensure proper handling of locked/hidden objects."
+quality = 4
+
+[Artboards."Rotate Artboards with Objects"]
+old_path = "old/artboardsRotateWithObjects.jsx"
+desc = "Rotates artboards and their contents together, maintaining relative positions."
+refactor = "Useful for orientation changes. Add angle presets (90°, 180°, 270°)."
+quality = 3
+
+[Artboards."Rename Artboard as Layer"]
+old_path = "old/RenameArtboardAsLayer.jsx"
+desc = "Renames artboards based on the topmost layer name on each artboard."
+refactor = "Niche but useful. Add option to use other layers."
+quality = 3
+
+[Artboards."Rename Artboard as Size"]
+old_path = "old/RenameArtboardAsSize.jsx"
+desc = "Automatically names artboards based on their dimensions (e.g., '1920x1080')."
+refactor = "Very useful for web/app design. Add unit customization."
+quality = 4
+
+[Artboards."Rename Artboard as Top Object"]
+old_path = "old/RenameArtboardAsTopObj.jsx"
+desc = "Names artboards based on the topmost object's name or properties."
+refactor = "Useful workflow automation. Add more object property options."
+quality = 3
+
+[Artboards."Draw Rectangles by Artboards"]
+old_path = "old/DrawRectanglesByArtboards.jsx"
+desc = "Creates rectangles that match artboard dimensions, useful for creating backgrounds or frames."
+refactor = "Simple utility. Add option for other shapes and stroke/fill presets."
+quality = 3
+
+[Artboards."Center Clips to Artboards"]
+old_path = "old/CenterClipsToArtboards.jsx"
+desc = "Centers clipping masks to their respective artboards."
+refactor = "Useful for cleanup. Ensure proper handling of grouped clips."
+quality = 3
+
+[Artboards."Fit Artboards to Artwork - Lite"]
+old_path = "old/FitArtboardsToArtwork-Lite.jsx"
+desc = "Simplified version of the comprehensive artboard fitting script with fewer options."
+refactor = "Consider merging with main version or removing if redundant."
+quality = 2
+
+[Artboards."Mask Artboards"]
+old_path = "old/MaskArtboards.jsx"
+desc = "Creates clipping masks that match artboard boundaries to hide artwork outside artboards."
+refactor = "Useful for cleanup before export. Add option to remove existing masks."
+quality = 3
+
+[Artboards."Sort Artboards"]
+old_path = "old/sortArtboards.js"
+desc = "Rearranges artboards based on various sorting criteria (name, size, position)."
+refactor = "Useful for large documents. Add more sorting options."
+quality = 3
+
+[Artboards."Show Artboard Name"]
+old_path = "old/showArtboardName.js"
+desc = "Displays artboard names as temporary overlay text on each artboard."
+refactor = "Quick reference tool. Add option to make labels permanent."
+quality = 2
+
+[Artboards."Duplicate Artboards Light"]
+old_path = "old/DuplicateArtboardsLight.jsx"
+desc = "Simplified artboard duplication with basic options."
+refactor = "Evaluate against built-in duplication features."
+quality = 2
+
+# ============================================================================
+# TEXT
+# ============================================================================
+
+[Text."Go to Next Text Frame"]
+old_path = "old/goToNextText.js"
+desc = "Navigates to the next text frame in the document, useful for reviewing text content."
+refactor = "Simple utility. Add option to skip locked/hidden text."
+quality = 3
+
+[Text."Go to Previous Text Frame"]
+old_path = "old/goToPreviousText.js"
+desc = "Navigates to the previous text frame in the document."
+refactor = "Simple utility. Add option to skip locked/hidden text."
+quality = 3
+
+[Text."Swap Text Contents"]
+old_path = "old/swapTextContents.js"
+desc = "Exchanges the content between two selected text frames while preserving formatting."
+refactor = "Simple but useful. Consider extending to support multiple swaps."
+quality = 3
+
+[Text."Batch Text Edit"]
+old_path = "old/batchTextEdit.jsx"
+desc = "Find and replace text across multiple text frames with advanced options."
+refactor = "Check overlap with BatchRenamer. May need modernization."
+quality = 3
+
+[Text."Multi-Edit Text"]
+old_path = "old/MultiEditText.jsx"
+desc = "Edit multiple text frames simultaneously with synchronized changes."
+refactor = "Useful for consistent updates. Add style preservation options."
+quality = 3
+
+[Text."Insert Text"]
+old_path = "old/InsertText.jsx"
+desc = "Inserts predefined or custom text at cursor position or in selected frames."
+refactor = "Basic utility. Add text snippet library feature."
+quality = 2
+
+[Text."Split Text"]
+old_path = "old/splitText.js"
+desc = "Splits text frame content into separate text frames based on criteria (lines, paragraphs, characters)."
+refactor = "Useful for breaking up long text. Add more split options."
+quality = 3
+
+[Text."Split Text at Cursor Position"]
+old_path = "old/splitTextAtCursorPosition.js"
+desc = "Splits a text frame at the current cursor position into two separate frames."
+refactor = "Simple utility. Ensure proper handling of text threading."
+quality = 3
+
+[Text."Create Threaded Text"]
+old_path = "old/createThreadedText.js"
+desc = "Creates linked text frames for text flow across multiple frames."
+refactor = "Useful for multi-column layouts. Add automatic column creation."
+quality = 3
+
+[Text."Create Text Parallel to Path Segment"]
+old_path = "old/createTextParallelToPathSegment.js"
+desc = "Creates text that follows the angle of a selected path segment."
+refactor = "Useful for technical drawings. Add perpendicular option."
+quality = 3
+
+[Text."Convert Type on Path to Point Type"]
+old_path = "old/convertTypeOnAPathToPointType.js"
+desc = "Converts path text to regular point text while maintaining position."
+refactor = "Useful for editing flexibility. Ensure proper rotation preservation."
+quality = 3
+
+[Text."Align Text Baseline"]
+old_path = "old/AlignTextBaseline.jsx"
+desc = "Aligns multiple text frames by their baseline, useful for horizontal text alignment."
+refactor = "Useful layout tool. Add option for first line vs. last line alignment."
+quality = 4
+
+[Text."Text Block"]
+old_path = "old/TextBlock.jsx"
+desc = "Creates justified text blocks with advanced options."
+refactor = "Evaluate against built-in text features. May be outdated."
+quality = 2
+
+[Text."Random Text Color"]
+old_path = "old/randomTextColor.js"
+desc = "Applies random colors to selected text or individual characters."
+refactor = "Fun utility. Add color palette constraints."
+quality = 2
+
+[Text."Enclose Word in Parentheses"]
+old_path = "old/encloseWordInParentheses.js"
+desc = "Wraps selected word in parentheses, brackets, or custom delimiters."
+refactor = "Simple utility. Extend to support multiple delimiter types."
+quality = 2
+
+[Text."Highlight Word"]
+old_path = "old/highlightWord.js"
+desc = "Highlights selected word with background color or other emphasis."
+refactor = "Simple utility. Add more highlight styles."
+quality = 2
+
+[Text."Delete Word"]
+old_path = "old/deleteWord.js"
+desc = "Deletes the current word at cursor position."
+refactor = "Basic text editing. May be redundant with standard shortcuts."
+quality = 1
+
+[Text."Delete Trailing Spaces"]
+old_path = "old/deleteTrailingSpaces.js"
+desc = "Removes trailing whitespace from text frames."
+refactor = "Useful cleanup tool. Add leading space option."
+quality = 3
+
+[Text."Delete All Left"]
+old_path = "old/deleteAllLeft.js"
+desc = "Deletes all text to the left of the cursor position."
+refactor = "Basic editing function. May be redundant."
+quality = 1
+
+[Text."Delete All Right"]
+old_path = "old/deleteAllRight.js"
+desc = "Deletes all text to the right of the cursor position."
+refactor = "Basic editing function. May be redundant."
+quality = 1
+
+[Text."Text Align Center"]
+old_path = "old/textAlign_Center.js"
+desc = "Centers selected text."
+refactor = "Redundant with built-in alignment tools."
+quality = 1
+
+[Text."Text Align Left"]
+old_path = "old/textAlign_Left.js"
+desc = "Left-aligns selected text."
+refactor = "Redundant with built-in alignment tools."
+quality = 1
+
+[Text."Text Align Right"]
+old_path = "old/textAlign_Right.js"
+desc = "Right-aligns selected text."
+refactor = "Redundant with built-in alignment tools."
+quality = 1
+
+[Text."Insert Line Above"]
+old_path = "old/insertLineAbove.js"
+desc = "Inserts a new line above the current cursor position."
+refactor = "Basic editing. Redundant with Enter key."
+quality = 1
+
+[Text."Insert Line Below"]
+old_path = "old/insertLineBelow.js"
+desc = "Inserts a new line below the current cursor position."
+refactor = "Basic editing. Redundant with Enter key."
+quality = 1
+
+[Text."Copy Line Down"]
+old_path = "old/copyLineDown.js"
+desc = "Duplicates the current line below, like in code editors."
+refactor = "Useful editor-like feature. Ensure proper text selection."
+quality = 3
+
+[Text."Copy Line Up"]
+old_path = "old/copyLineUp.js"
+desc = "Duplicates the current line above, like in code editors."
+refactor = "Useful editor-like feature. Ensure proper text selection."
+quality = 3
+
+[Text."Copy Line (Empty Selection)"]
+old_path = "old/copyLine(emptySelection).js"
+desc = "Copies current line when nothing is selected, like in code editors."
+refactor = "Useful editor-like feature. Good UX improvement."
+quality = 3
+
+[Text."Cut Line (Empty Selection)"]
+old_path = "old/cutLine(emptySelection).js"
+desc = "Cuts current line when nothing is selected, like in code editors."
+refactor = "Useful editor-like feature. Good UX improvement."
+quality = 3
+
+[Text."Move Line Down"]
+old_path = "old/moveLineDown.js"
+desc = "Moves the current line down one position."
+refactor = "Useful editor-like feature. Add multi-line support."
+quality = 3
+
+[Text."Move Line Up"]
+old_path = "old/moveLineUp.js"
+desc = "Moves the current line up one position."
+refactor = "Useful editor-like feature. Add multi-line support."
+quality = 3
+
+[Text."Sort Lines"]
+old_path = "old/sortLines.js"
+desc = "Sorts lines in a text frame alphabetically or by custom criteria."
+refactor = "Useful for lists. Add descending and numeric sort options."
+quality = 3
+
+[Text."Sum Numbers"]
+old_path = "old/sumNumbers.js"
+desc = "Calculates the sum of all numbers in selected text."
+refactor = "Useful utility. Add other math operations (avg, max, min)."
+quality = 3
+
+[Text."Create Page Numbers"]
+old_path = "old/createPageNumbers.js"
+desc = "Automatically creates page numbers on artboards."
+refactor = "Useful for multi-page documents. Add formatting options."
+quality = 4
+
+[Text."Make Numbers Sequence"]
+old_path = "old/MakeNumbersSequence.jsx"
+desc = "Creates sequential numbering across selected objects or text frames."
+refactor = "Useful for technical docs. Add custom increment and formatting."
+quality = 4
+
+# ============================================================================
+# COLORS & GRADIENTS
+# ============================================================================
+
+[Colors."Reverse Gradient Color"]
+old_path = "old/ReverseGradientColor.jsx"
+desc = "Reverses the color order in gradients while maintaining stop positions and opacity."
+refactor = "Simple and useful. No changes needed."
+quality = 4
+
+[Colors."Delete All Swatches"]
+old_path = "old/deleteAllSwatches.js"
+desc = "Removes all swatches except None and Registration from the swatches panel."
+refactor = "Useful cleanup tool but potentially destructive. Add confirmation dialog."
+quality = 3
+
+[Colors."Average Colors"]
+old_path = "old/AverageColors.jsx"
+desc = "Calculates and applies the average color of selected objects."
+refactor = "Useful for color harmony. Add weighted average option."
+quality = 3
+
+[Colors."Match Colors"]
+old_path = "old/MatchColors.jsx"
+desc = "Matches fill/stroke colors across selected objects with advanced options."
+refactor = "Useful for consistency. May overlap with Illustrator's built-in features."
+quality = 3
+
+[Colors."Random Color from Range"]
+old_path = "old/RandomColorFromRange.js"
+desc = "Applies random colors within a specified range to selected objects."
+refactor = "Fun creative tool. Add palette-based randomization."
+quality = 2
+
+[Colors."Random Color from Swatches"]
+old_path = "old/RandomColorFromSwatches.js"
+desc = "Applies random colors from existing swatches to selected objects."
+refactor = "Useful for variations. Add smart color distribution."
+quality = 3
+
+[Colors."Round Color Value"]
+old_path = "old/roundColorValue.js"
+desc = "Rounds color values to nearest integer or increment, useful for clean color specs."
+refactor = "Useful for specification work. Add rounding precision option."
+quality = 3
+
+[Colors."Show Color Values"]
+old_path = "old/showColorValues.js"
+desc = "Displays color values of selected objects as text labels."
+refactor = "Useful for documentation. Add format options (hex, RGB, CMYK)."
+quality = 3
+
+[Colors."Convert to Spot Color"]
+old_path = "old/convertToSpotColor.js"
+desc = "Converts process colors to spot colors."
+refactor = "Useful for print work. Add batch conversion with mapping."
+quality = 4
+
+[Colors."Convert to Global Color"]
+old_path = "old/convertToGlobalColor.js"
+desc = "Converts local colors to global swatches for easier color management."
+refactor = "Useful for theme management. Add smart grouping."
+quality = 4
+
+[Colors."Remove Deleted Global Color"]
+old_path = "old/removeDeletedGlobalColor.js"
+desc = "Cleans up references to deleted global colors in the document."
+refactor = "Useful maintenance tool. Add preview of affected objects."
+quality = 3
+
+[Colors."Export Color Values to CSV"]
+old_path = "old/exportColorValuesToCSV.js"
+desc = "Exports all document colors to a CSV file for documentation or analysis."
+refactor = "Useful for design systems. Add Excel format option."
+quality = 4
+
+[Colors."Import CSV to Swatch"]
+old_path = "old/importCSVtoSwatch.js"
+desc = "Imports colors from CSV file to create swatches."
+refactor = "Useful for design systems. Add validation and error handling."
+quality = 4
+
+[Colors."Create Color Chart"]
+old_path = "old/createColorChart.js"
+desc = "Generates a visual color chart from document swatches."
+refactor = "Useful for client presentations. Add layout customization."
+quality = 4
+
+[Colors."Color Corrector"]
+old_path = "old/ColorCorrector.jsx"
+desc = "Batch color correction and adjustment tool with multiple modes."
+refactor = "Check for overlap with Illustrator's recolor artwork. May need updates."
+quality = 3
+
+[Colors."Color Blind Simulator"]
+old_path = "old/ColorBlindSimulator.jsx"
+desc = "Simulates how designs appear to people with color blindness."
+refactor = "Important accessibility tool. Update with latest research on color vision deficiency."
+quality = 5
+
+[Colors."Contrast Checker"]
+old_path = "old/ContrastChecker.jsx"
+desc = "Checks color contrast ratios for WCAG accessibility compliance."
+refactor = "Important accessibility tool. Update to WCAG 2.2 standards."
+quality = 5
+
+[Colors."Cycle Colors"]
+old_path = "old/CycleColors.jsx"
+desc = "Cycles fill/stroke colors among selected objects in sequence."
+refactor = "Creative tool. Add reverse cycle option."
+quality = 2
+
+[Colors."Cycle Gradient"]
+old_path = "old/CycleGradient.jsx"
+desc = "Cycles through gradient variations on selected objects."
+refactor = "Creative exploration tool. Add more cycle patterns."
+quality = 2
+
+[Colors."Cycle Gradient Forward"]
+old_path = "old/CycleGradientForward.jsx"
+desc = "Rotates gradient stops forward through selected objects."
+refactor = "May be redundant with main Cycle Gradient script."
+quality = 2
+
+[Colors."Cycle Gradient Backward"]
+old_path = "old/CycleGradientBackward.jsx"
+desc = "Rotates gradient stops backward through selected objects."
+refactor = "May be redundant with main Cycle Gradient script."
+quality = 2
+
+[Colors."Cycle Gradient Random"]
+old_path = "old/CycleGradientRandom.jsx"
+desc = "Randomly distributes gradient variations across selected objects."
+refactor = "Creative tool. Consider merging cycle variants."
+quality = 2
+
+[Colors."Generate Gradient Color"]
+old_path = "old/generateGradientColor.js"
+desc = "Creates gradients programmatically with various algorithms."
+refactor = "Useful for procedural design. Add more gradient generation methods."
+quality = 3
+
+[Colors."Extract Colors from Gradient"]
+old_path = "old/extractColorsFromGradient.js"
+desc = "Extracts individual color stops from gradients as separate swatches."
+refactor = "Useful for color palette extraction. Add smart naming."
+quality = 3
+
+[Colors."Shuffle Gradient Color"]
+old_path = "old/shuffleGradientColor.js"
+desc = "Randomly reorders gradient color stops."
+refactor = "Creative exploration. Add constraints to maintain some order."
+quality = 2
+
+[Colors."Match Location of Gradient Stop"]
+old_path = "old/matchLocationOfGradientStop.js"
+desc = "Aligns gradient stop positions across multiple gradients."
+refactor = "Useful for consistency. Add visual preview."
+quality = 3
+
+[Colors."Round Location of Gradient Stop"]
+old_path = "old/roundLocationOfGradientStop.js"
+desc = "Rounds gradient stop locations to clean percentage values."
+refactor = "Useful for specs. Add custom rounding intervals."
+quality = 3
+
+[Colors."Remove Gradient Stops"]
+old_path = "old/RemoveGradientStops.jsx"
+desc = "Removes specified gradient stops from selected gradients."
+refactor = "Useful for simplification. Add intelligent stop selection."
+quality = 3
+
+[Colors."Distribute Gradient Stops"]
+old_path = "old/DistributeGradientStops.jsx"
+desc = "Evenly distributes gradient stops across the gradient range."
+refactor = "Useful for uniform gradients. Add easing options."
+quality = 4
+
+[Colors."Convert to Gradient"]
+old_path = "old/ConvertToGradient.jsx"
+desc = "Converts solid fills to gradients with multiple conversion options."
+refactor = "Creative tool. Add more gradient templates."
+quality = 3
+
+[Colors."Grayscale to Opacity"]
+old_path = "old/GrayscaleToOpacity.jsx"
+desc = "Converts grayscale values to transparency levels, useful for masks."
+refactor = "Useful for technical work. Ensure accurate conversion."
+quality = 4
+
+[Colors."Stroke Color from Fill"]
+old_path = "old/StrokeColorFromFill.jsx"
+desc = "Copies fill color to stroke color on selected objects."
+refactor = "Simple utility. Add reverse option and color transformation."
+quality = 2
+
+[Colors."Add Selected Gradients to Swatch"]
+old_path = "old/addSelectedGradientsToSwatch.js"
+desc = "Adds gradients from selected objects to the swatches panel."
+refactor = "Useful for building gradient libraries. Add smart naming."
+quality = 3
+
+[Colors."Transfer Swatches"]
+old_path = "old/transferSwatches.jsx"
+desc = "Copies swatches between documents."
+refactor = "Useful for multi-document projects. Add selective transfer."
+quality = 3
+
+[Colors."Sync Global Colors Names"]
+old_path = "old/SyncGlobalColorsNames.jsx"
+desc = "Synchronizes global color names across linked documents."
+refactor = "Useful for large projects. Add bidirectional sync."
+quality = 4
+
+[Colors."Unify Color"]
+old_path = "old/unifyColor.js"
+desc = "Makes all selected objects use the same color."
+refactor = "Simple utility. Add smart color selection."
+quality = 2
+
+[Colors."Unify Layer Colors"]
+old_path = "old/unifyLayerColors.js"
+desc = "Unifies layer indicator colors for better organization."
+refactor = "Organizational tool. Add color scheme presets."
+quality = 2
+
+[Colors."Random Opacity"]
+old_path = "old/RandomOpacity.js"
+desc = "Applies random opacity values to selected objects."
+refactor = "Creative tool. Add opacity range constraints."
+quality = 2
+
+[Colors."Change Opacity"]
+old_path = "old/ChangeOpacity.jsx"
+desc = "Changes opacity with more control than the standard transparency panel."
+refactor = "May be redundant. Evaluate against built-in features."
+quality = 2
+
+[Colors."Beautify Swatch Names"]
+old_path = "old/BeautifySwatchNames.jsx"
+desc = "Cleans up and standardizes swatch names for better organization."
+refactor = "Useful maintenance tool. Add naming convention templates."
+quality = 3
+
+[Colors."Beautify Swatch Names Lite"]
+old_path = "old/BeautifySwatchNames-Lite.jsx"
+desc = "Simplified version of the swatch name cleanup tool."
+refactor = "Consider merging with main version."
+quality = 2
+
+[Colors."Color Group Replacer"]
+old_path = "old/ColorGroupReplacer.jsx"
+desc = "Replaces entire color groups with new schemes."
+refactor = "Useful for theme changes. Add undo stack and preview."
+quality = 4
+
+# ============================================================================
+# SELECTION
+# ============================================================================
+
+[Selection."Random Selection"]
+old_path = "old/RandomSelection.js"
+desc = "Randomly selects a percentage or count of currently selected objects. Useful for creating variations and testing."
+refactor = "Remove promotional content (Randomill plugin ads). Clean up code structure."
+quality = 3
+
+[Selection."Corners Selector"]
+old_path = "old/CornersSelector.jsx"
+desc = "Selects corner anchor points of paths, useful for batch corner rounding."
+refactor = "Useful for precise selections. Add edge point selection option."
+quality = 3
+
+[Selection."Select Only Points"]
+old_path = "old/SelectOnlyPoints.jsx"
+desc = "Selects only anchor points, excluding handles and other elements."
+refactor = "Useful for precise editing. Add point type filtering."
+quality = 3
+
+[Selection."Select Points by Type"]
+old_path = "old/SelectPointsByType.jsx"
+desc = "Selects anchor points by type (smooth, corner, etc.)."
+refactor = "Useful for batch modifications. Add more point characteristics."
+quality = 4
+
+[Selection."Select Artboard Objects"]
+old_path = "old/SelectArtboardObjects.jsx"
+desc = "Selects all objects on the currently active artboard."
+refactor = "Useful utility. Add layer and type filtering options."
+quality = 4
+
+[Selection."Select by Swatches"]
+old_path = "old/SelectBySwatches.jsx"
+desc = "Selects objects by their fill or stroke swatch."
+refactor = "Useful for color-based selection. Add OR/AND logic for multiple swatches."
+quality = 4
+
+[Selection."Select Link"]
+old_path = "old/selectLink.js"
+desc = "Selects placed linked files in the document."
+refactor = "Useful for link management. Add filter by link status."
+quality = 3
+
+[Selection."Select Embedded Link"]
+old_path = "old/selectEmbeddedLink.js"
+desc = "Selects only embedded (not linked) images."
+refactor = "Useful for file size management. Add conversion option."
+quality = 3
+
+[Selection."Select Missing Link"]
+old_path = "old/selectMissingLink.js"
+desc = "Selects placed items with missing link files."
+refactor = "Useful troubleshooting tool. Add relink option."
+quality = 4
+
+[Selection."Select Guides"]
+old_path = "old/selectGuides.js"
+desc = "Selects all guides in the document or artboard."
+refactor = "Useful for guide management. Add scope options."
+quality = 3
+
+[Selection."Select Rotated Items"]
+old_path = "old/SelectRotatedItems.jsx"
+desc = "Selects objects that have been rotated from 0°."
+refactor = "Useful for layout cleanup. Add angle threshold option."
+quality = 3
+
+[Selection."Select All Layers Above"]
+old_path = "old/SelectAllLayersAbove.jsx"
+desc = "Selects all layers above the currently selected layer."
+refactor = "Useful for batch operations. Add range specification."
+quality = 2
+
+[Selection."Select All Layers Below"]
+old_path = "old/SelectAllLayersBelow.jsx"
+desc = "Selects all layers below the currently selected layer."
+refactor = "Useful for batch operations. Add range specification."
+quality = 2
+
+[Selection."Remember Selection Layers"]
+old_path = "old/RememberSelectionLayers.jsx"
+desc = "Saves and restores selection states across work sessions."
+refactor = "Useful for complex selections. Add named selection sets."
+quality = 3
+
+# ============================================================================
+# TRANSFORM & POSITIONING
+# ============================================================================
+
+[Transform."Align Objects"]
+old_path = "old/alignObjects.js"
+desc = "Advanced alignment tool with more options than the standard align panel."
+refactor = "File was too large to read (172k+ tokens). Likely needs significant refactoring and optimization."
+quality = 3
+
+[Transform."Align in Center of Space (Horizontal)"]
+old_path = "old/alignInCenterOfSpace(Horizontal).js"
+desc = "Aligns objects in the center of the space between two outermost objects horizontally."
+refactor = "Useful layout tool. Could be merged with vertical version."
+quality = 3
+
+[Transform."Align in Center of Space (Vertical)"]
+old_path = "old/alignInCenterOfSpace(Vertical).js"
+desc = "Aligns objects in the center of the space between two outermost objects vertically."
+refactor = "Useful layout tool. Could be merged with horizontal version."
+quality = 3
+
+[Transform."Distribute in Space (Horizontal)"]
+old_path = "old/distributeInSpace(Horizontal).js"
+desc = "Distributes objects with equal spacing horizontally."
+refactor = "Useful layout tool. May overlap with built-in distribute."
+quality = 3
+
+[Transform."Distribute in Space (Vertical)"]
+old_path = "old/distributeInSpace(Vertical).js"
+desc = "Distributes objects with equal spacing vertically."
+refactor = "Useful layout tool. May overlap with built-in distribute."
+quality = 3
+
+[Transform."Justify Content Space Between"]
+old_path = "old/justifyContentSpaceBetween.js"
+desc = "CSS flexbox-like spacing between objects with outer objects at edges."
+refactor = "Useful for web-like layouts. Add more flexbox-inspired options."
+quality = 4
+
+[Transform."Center in Artboard"]
+old_path = "old/center-in-artboard.js"
+desc = "Centers selected objects in the current artboard."
+refactor = "Simple utility. May overlap with align panel."
+quality = 2
+
+[Transform."Fit Selected Objects in Window"]
+old_path = "old/fitSelectedObjectsInWindow.js"
+desc = "Zooms and pans to fit selected objects in the window."
+refactor = "Useful navigation. May overlap with built-in zoom functions."
+quality = 2
+
+[Transform."Mirror Move"]
+old_path = "old/MirrorMove.jsx"
+desc = "Creates mirrored copies of objects with various reflection options."
+refactor = "Useful for symmetrical designs. Add multiple mirror axes."
+quality = 4
+
+[Transform."Move Artboards"]
+old_path = "old/MoveArtboards.jsx"
+desc = "Batch moves artboards with precise control."
+refactor = "Useful for document organization. Add grid arrangement."
+quality = 3
+
+[Transform."Move Guides"]
+old_path = "old/moveGuides.js"
+desc = "Moves all guides by specified distance."
+refactor = "Useful for layout adjustments. Add guide locking option."
+quality = 2
+
+[Transform."Shift Objects"]
+old_path = "old/shiftObjects.js"
+desc = "Shifts objects by specified increments with keyboard-like controls."
+refactor = "Useful for precise adjustments. Add smart snapping."
+quality = 3
+
+[Transform."Rearrange Objects"]
+old_path = "old/rearrangeObjects.js"
+desc = "Rearranges stacking order of objects based on various criteria."
+refactor = "Useful for layer management. Add more sorting options."
+quality = 3
+
+[Transform."Shuffle Objects"]
+old_path = "old/shuffleObjects.js"
+desc = "Randomly rearranges the stacking order of selected objects."
+refactor = "Creative tool. Add constraint options."
+quality = 2
+
+[Transform."Random Position"]
+old_path = "old/RandomPosition.js"
+desc = "Randomly repositions objects within specified bounds."
+refactor = "Creative tool. Add collision detection."
+quality = 2
+
+[Transform."Random Rotation"]
+old_path = "old/RandomRotation.js"
+desc = "Applies random rotation to selected objects."
+refactor = "Creative tool. Add angle range constraints."
+quality = 2
+
+[Transform."Random Scale"]
+old_path = "old/RandomScale.js"
+desc = "Randomly scales selected objects within specified range."
+refactor = "Creative tool. Add aspect ratio lock option."
+quality = 2
+
+[Transform."Random Layer Order"]
+old_path = "old/RandomLayerOrder.js"
+desc = "Randomly reorders layers in the layers panel."
+refactor = "Creative/testing tool. Add undo-friendly implementation."
+quality = 2
+
+[Transform."Compare Scale"]
+old_path = "old/compareScale.js"
+desc = "Compares and displays scale differences between objects."
+refactor = "Useful for precision work. Add scale matching option."
+quality = 3
+
+[Transform."Reset to Full Scale"]
+old_path = "old/resetToFullScale.js"
+desc = "Resets objects to 100% scale by baking transformations."
+refactor = "Useful for cleanup. Add option to preserve appearance."
+quality = 3
+
+[Transform."Rescale"]
+old_path = "old/Rescale.jsx"
+desc = "Advanced rescaling with proportional adjustment options."
+refactor = "Check overlap with built-in scale tools."
+quality = 3
+
+[Transform."Resize on Larger Side"]
+old_path = "old/ResizeOnLargerSide.jsx"
+desc = "Resizes objects proportionally based on their larger dimension."
+refactor = "Useful for standardizing sizes. Add smaller side option."
+quality = 3
+
+[Transform."Resize to Size"]
+old_path = "old/ResizeToSize.jsx"
+desc = "Resizes objects to exact dimensions with various options."
+refactor = "Useful for precision work. Add batch sizing."
+quality = 4
+
+[Transform."Swap Objects"]
+old_path = "old/SwapObjects.jsx"
+desc = "Swaps positions of two selected objects."
+refactor = "Simple utility. Add property swapping options."
+quality = 3
+
+[Transform."Offset Objects"]
+old_path = "old/OffsetObjects.jsx"
+desc = "Creates offset copies of objects similar to Offset Path but for multiple objects."
+refactor = "Useful for creating borders/outlines. Add more offset options."
+quality = 4
+
+[Transform."Duplicate to Artboards"]
+old_path = "old/DuplicateToArtboards.jsx"
+desc = "Duplicates selected objects to specified artboards."
+refactor = "Useful for consistent elements. Add position mapping options."
+quality = 4
+
+[Transform."Extract from Group"]
+old_path = "old/ExtractFromGroup.jsx"
+desc = "Removes objects from their parent groups."
+refactor = "Useful for reorganization. Add selective extraction."
+quality = 3
+
+[Transform."Move to Group"]
+old_path = "old/MoveToGroup.jsx"
+desc = "Moves selected objects into a specified group."
+refactor = "Useful for organization. Add create group option."
+quality = 3
+
+[Transform."Ungroup"]
+old_path = "old/ungroup.js"
+desc = "Ungroups objects with more options than standard ungroup."
+refactor = "May be redundant. Check for unique features."
+quality = 2
+
+[Transform."Extended Ungroup"]
+old_path = "old/ExtUngroup.jsx"
+desc = "Recursively ungroups all nested groups."
+refactor = "Useful for flattening complex hierarchies. Add depth limit."
+quality = 3
+
+[Transform."Place Symbols"]
+old_path = "old/PlaceSymbols.jsx"
+desc = "Places symbol instances in patterns or grids."
+refactor = "Useful for repetitive elements. Add more placement patterns."
+quality = 3
+
+[Transform."Dup At Selected Anchors"]
+old_path = "old/Dup At Selected Anchors.jsx"
+desc = "Duplicates objects at each selected anchor point position."
+refactor = "Useful for decorative elements. Add rotation options."
+quality = 3
+
+[Transform."Rotate Text to Match Path Segment Angle"]
+old_path = "old/rotateTextToMatchPathSegmentAngle.js"
+desc = "Rotates text to align with the angle of a path segment."
+refactor = "Useful for technical diagrams. Add offset options."
+quality = 3
+
+# Continuing with remaining scripts...
+
+# ============================================================================
+# PATHS & SHAPES
+# ============================================================================
+
+[Paths."Connect All Nodes"]
+old_path = "old/ConnectAllNodes.jsx"
+desc = "Connects all selected anchor points with straight lines."
+refactor = "Useful for creating wireframes. Add curve options."
+quality = 3
+
+[Paths."Close Path"]
+old_path = "old/closePath.js"
+desc = "Closes open paths by connecting endpoints."
+refactor = "Simple utility. May be redundant with pathfinder."
+quality = 2
+
+[Paths."Split Path"]
+old_path = "old/SplitPath.jsx"
+desc = "Splits paths at selected anchor points."
+refactor = "Useful for path editing. Ensure clean split points."
+quality = 3
+
+[Paths."Cut at Selected Anchors"]
+old_path = "old/Cut At Selected Anchors.jsx"
+desc = "Cuts paths at selected anchor points creating separate path segments."
+refactor = "Useful for path manipulation. Add keep original option."
+quality = 3
+
+[Paths."Disjoin Path"]
+old_path = "old/disjoinPath.js"
+desc = "Breaks compound paths into separate paths."
+refactor = "Useful for editing. May overlap with Release Compound Path."
+quality = 2
+
+[Paths."Join Overlapping Paths"]
+old_path = "old/joinOverlap.jsx"
+desc = "Joins paths that overlap or touch."
+refactor = "Useful for cleanup. Add tolerance control."
+quality = 3
+
+[Paths."Join Reasonably"]
+old_path = "old/Join Reasonably.jsx"
+desc = "Intelligently joins nearby path endpoints."
+refactor = "Useful for cleanup. Add distance threshold."
+quality = 3
+
+[Paths."Draw Path by Selected Points"]
+old_path = "old/DrawPathBySelectedPoints.jsx"
+desc = "Creates a path connecting selected anchor points from different paths."
+refactor = "Useful for tracing. Add curve vs. straight option."
+quality = 3
+
+[Paths."Add Anchor Points"]
+old_path = "old/addAnchorPoints.js"
+desc = "Adds anchor points to paths based on various criteria."
+refactor = "Useful for increasing path detail. Add distribution options."
+quality = 3
+
+[Paths."Remove Anchors"]
+old_path = "old/Remove Anchors.jsx"
+desc = "Removes anchor points while maintaining path shape."
+refactor = "Useful for simplification. Add simplify tolerance."
+quality = 3
+
+[Paths."Convert All Anchor Points to Corner"]
+old_path = "old/convertAllAnchorPointsToCorner.js"
+desc = "Converts all smooth anchor points to corner points."
+refactor = "Simple utility. Add selective conversion."
+quality = 2
+
+[Paths."Increase Selected Anchor Points (CCW)"]
+old_path = "old/increaseSelectedAnchorPointsCCW.js"
+desc = "Expands anchor point selection counter-clockwise."
+refactor = "Useful for progressive selection. Add step size."
+quality = 2
+
+[Paths."Increase Selected Anchor Points (CW)"]
+old_path = "old/increaseSelectedAnchorPointsCW.js"
+desc = "Expands anchor point selection clockwise."
+refactor = "Useful for progressive selection. Add step size."
+quality = 2
+
+[Paths."Decrease Selected Anchor Points (CCW)"]
+old_path = "old/decreaseSelectedAnchorPointsCCW.js"
+desc = "Reduces anchor point selection counter-clockwise."
+refactor = "Useful for progressive selection. Add step size."
+quality = 2
+
+[Paths."Decrease Selected Anchor Points (CW)"]
+old_path = "old/decreaseSelectedAnchorPointsCW.js"
+desc = "Reduces anchor point selection clockwise."
+refactor = "Useful for progressive selection. Add step size."
+quality = 2
+
+[Paths."Shift Selected Anchor Points (CCW)"]
+old_path = "old/shiftSelectedAnchorPointsCCW.js"
+desc = "Rotates selection to next anchor point counter-clockwise."
+refactor = "Useful for selection management. Good for keyboard workflow."
+quality = 2
+
+[Paths."Shift Selected Anchor Points (CW)"]
+old_path = "old/shiftSelectedAnchorPointsCW.js"
+desc = "Rotates selection to next anchor point clockwise."
+refactor = "Useful for selection management. Good for keyboard workflow."
+quality = 2
+
+[Paths."Set Points Coordinates"]
+old_path = "old/SetPointsCoordinates.jsx"
+desc = "Sets anchor point coordinates to exact values."
+refactor = "Useful for precision work. Add relative positioning."
+quality = 4
+
+[Paths."Merge Overlapped Anchors"]
+old_path = "old/Merge Overlapped Anchors.jsx"
+desc = "Merges anchor points that are very close or overlapping."
+refactor = "Useful for cleanup. Add tolerance setting."
+quality = 3
+
+[Paths."Points Move Random"]
+old_path = "old/PointsMoveRandom.jsx"
+desc = "Randomly moves anchor points to create organic variations."
+refactor = "Creative tool. Add constraint boundary."
+quality = 2
+
+[Paths."Numerates Points"]
+old_path = "old/NumeratesPoints.jsx"
+desc = "Labels anchor points with sequential numbers for reference."
+refactor = "Useful for technical documentation. Add custom labeling."
+quality = 3
+
+[Paths."Extend Handle"]
+old_path = "old/extendHandle.js"
+desc = "Extends bezier handles by specified amount."
+refactor = "Useful for curve adjustment. Add proportional extension."
+quality = 3
+
+[Paths."Extend Handles"]
+old_path = "old/Extend Handles.jsx"
+desc = "Batch extends bezier handles on selected points."
+refactor = "Check if redundant with single extend handle script."
+quality = 2
+
+[Paths."Extend Line"]
+old_path = "old/extendLine.js"
+desc = "Extends lines by specified distance."
+refactor = "Useful for technical drawing. Add bidirectional extend."
+quality = 3
+
+[Paths."Draw S-Curve"]
+old_path = "old/drawS-curve.js"
+desc = "Creates S-shaped curves with parametric control."
+refactor = "Useful for flowing designs. Add more curve presets."
+quality = 3
+
+[Paths."Draw Normal Line"]
+old_path = "old/drawNormalLine.js"
+desc = "Draws perpendicular lines from paths."
+refactor = "Useful for technical drawings. Add length control."
+quality = 3
+
+[Paths."Draw Circumscribed Circle"]
+old_path = "old/drawCircumscribedCircle.js"
+desc = "Draws a circle that passes through all vertices of a polygon."
+refactor = "Useful for geometric constructions. Add other geometric constructs."
+quality = 3
+
+[Paths."Draw Rectangle"]
+old_path = "old/drawRectangle.js"
+desc = "Creates rectangles with precise control."
+refactor = "May be redundant with built-in rectangle tool."
+quality = 1
+
+[Paths."Draw Shape on Anchor Point"]
+old_path = "old/drawShapeOnAnchorPoint.js"
+desc = "Places shapes at selected anchor points."
+refactor = "Useful for decorative elements. Add more shape options."
+quality = 3
+
+[Paths."Draw Shape Parallel to Path Segment"]
+old_path = "old/drawShapeParallelToPathSegment.js"
+desc = "Creates shapes aligned with path segments."
+refactor = "Useful for technical drawings. Add perpendicular option."
+quality = 3
+
+[Paths."Round Any Corner"]
+old_path = "old/Round Any Corner.jsx"
+desc = "Rounds corners with more control than the standard corner widget."
+refactor = "Useful for precise rounding. Add chamfer option."
+quality = 4
+
+[Paths."Circle"]
+old_path = "old/Circle.jsx"
+desc = "Advanced circle creation tool."
+refactor = "Evaluate against built-in ellipse tool."
+quality = 2
+
+[Paths."Circumcircle"]
+old_path = "old/Circumcircle.jsx"
+desc = "Creates circumscribed circles for triangles."
+refactor = "Geometric construction tool. Add other circle types."
+quality = 2
+
+[Paths."Circular"]
+old_path = "old/circular.jsx"
+desc = "Creates circular patterns or arrangements."
+refactor = "Useful for radial layouts. Add more pattern options."
+quality = 3
+
+[Paths."Arc Correction"]
+old_path = "old/Arc Correction.jsx"
+desc = "Corrects and perfects arc shapes."
+refactor = "Useful for technical drawings. Add tolerance settings."
+quality = 3
+
+[Paths."Archimedean Spiral"]
+old_path = "old/Archimedean Spiral.jsx"
+desc = "Creates mathematically precise Archimedean spirals."
+refactor = "Useful for geometric designs. Add other spiral types."
+quality = 3
+
+[Paths."Sine Curve"]
+old_path = "old/Sine Curve.jsx"
+desc = "Generates sine wave curves with parametric control."
+refactor = "Useful for wave patterns. Add other wave functions."
+quality = 3
+
+[Paths."Gauss 2D Samples"]
+old_path = "old/Gauss2DSamples.jsx"
+desc = "Generates points following a 2D Gaussian distribution."
+refactor = "Useful for organic patterns. Add other distributions."
+quality = 2
+
+[Paths."Tangents from a Point"]
+old_path = "old/Tangents From A Point.jsx"
+desc = "Draws tangent lines from a point to a curve."
+refactor = "Geometric construction tool. Add multiple tangent support."
+quality = 3
+
+[Paths."Common Tangents"]
+old_path = "old/Common Tangents.jsx"
+desc = "Draws common tangent lines between two circles."
+refactor = "Geometric construction tool. Useful for technical drawing."
+quality = 3
+
+[Paths."Metaball"]
+old_path = "old/Metaball.jsx"
+desc = "Creates metaball (organic blob) shapes between objects."
+refactor = "Creative organic design tool. Add more blob options."
+quality = 3
+
+[Paths."Metaball (Arc)"]
+old_path = "old/Metaball (Arc).jsx"
+desc = "Arc-based metaball implementation."
+refactor = "Check if redundant with main Metaball script."
+quality = 2
+
+[Paths."Triangle Maker"]
+old_path = "old/TriangleMaker.jsx"
+desc = "Creates various types of triangles with precise control."
+refactor = "Useful for geometric design. Add more triangle types."
+quality = 2
+
+[Paths."Tree-like"]
+old_path = "old/Tree-like.jsx"
+desc = "Generates tree-like branching structures."
+refactor = "Creative organic tool. Add more branching algorithms."
+quality = 2
+
+[Paths."Compound Fix"]
+old_path = "old/compoundFix.jsx"
+desc = "Fixes issues with compound paths."
+refactor = "Maintenance tool. Document what issues it addresses."
+quality = 2
+
+# ============================================================================
+# STROKES
+# ============================================================================
+
+[Strokes."Average Strokes Width"]
+old_path = "old/AverageStrokesWidth.jsx"
+desc = "Calculates and applies average stroke width across selected objects."
+refactor = "Useful for consistency. Add weighted average option."
+quality = 3
+
+[Strokes."Strokes Weight Up"]
+old_path = "old/StrokesWeightUp.jsx"
+desc = "Increases stroke weight by specified increment."
+refactor = "Simple utility. May overlap with keyboard shortcuts."
+quality = 2
+
+[Strokes."Strokes Weight Down"]
+old_path = "old/StrokesWeightDown.jsx"
+desc = "Decreases stroke weight by specified increment."
+refactor = "Simple utility. May overlap with keyboard shortcuts."
+quality = 2
+
+[Strokes."Random Stroke Width"]
+old_path = "old/RandomStrokeWidth.jsx"
+desc = "Applies random stroke widths within specified range."
+refactor = "Creative tool. Add distribution curves."
+quality = 2
+
+[Strokes."Make Trapping Stroke"]
+old_path = "old/MakeTrappingStroke.jsx"
+desc = "Creates trapping strokes for print production."
+refactor = "Specialized print tool. Ensure modern trapping standards."
+quality = 4
+
+[Strokes."Adjust Dashes"]
+old_path = "old/Adjust Dashes.jsx"
+desc = "Adjusts dash patterns on selected strokes."
+refactor = "Useful for refinement. Add pattern presets."
+quality = 3
+
+[Strokes."Adjust Dashes (Offset)"]
+old_path = "old/Adjust Dashes (offset).jsx"
+desc = "Adjusts dash pattern offset values."
+refactor = "May be redundant with main Adjust Dashes."
+quality = 2
+
+[Strokes."Random Dash"]
+old_path = "old/random-dash.jsx"
+desc = "Creates random dash patterns."
+refactor = "Creative tool. Add constraint options."
+quality = 2
+
+[Strokes."Random Scribble"]
+old_path = "old/RandomScribble.jsx"
+desc = "Applies random scribble effects to strokes."
+refactor = "Creative tool. Add scribble style presets."
+quality = 2
+
+# ============================================================================
+# LAYERS
+# ============================================================================
+
+[Layers."Name Basic Layers"]
+old_path = "old/name-basic-layers.js"
+desc = "Names layers with basic sequential naming."
+refactor = "Simple utility. Could be merged with other naming scripts."
+quality = 2
+
+[Layers."Name Color Layers"]
+old_path = "old/name-color-layers.js"
+desc = "Names layers based on their color indicator."
+refactor = "Organizational tool. Add reverse option."
+quality = 2
+
+[Layers."Rename Layer"]
+old_path = "old/renameLayer.js"
+desc = "Simple layer renaming utility."
+refactor = "Very basic. Redundant with BatchRenamer."
+quality = 1
+
+[Layers."Rename Layer as Text"]
+old_path = "old/RenameLayerAsText.jsx"
+desc = "Names layers based on text content within them."
+refactor = "Useful automation. Add fallback naming."
+quality = 3
+
+[Layers."Sort Layer Items"]
+old_path = "old/SortLayerItems.jsx"
+desc = "Sorts items within layers by various criteria."
+refactor = "Organizational tool. Add more sort options."
+quality = 3
+
+[Layers."Move Sublayer to Main Layer"]
+old_path = "old/moveSublayerToMainLayer.js"
+desc = "Moves sublayers to top-level layers."
+refactor = "Organizational tool. Add batch processing."
+quality = 2
+
+[Layers."Delete Unused Layers"]
+old_path = "old/deleteUnusedLayers.js"
+desc = "Removes empty layers from the document."
+refactor = "Cleanup tool. Add locked/hidden layer options."
+quality = 3
+
+[Layers."Delete Hidden Layers"]
+old_path = "old/deleteHiddenLayers.js"
+desc = "Removes all hidden layers."
+refactor = "Cleanup tool. Add confirmation dialog."
+quality = 3
+
+[Layers."Delete Locked Layers"]
+old_path = "old/deleteLockedLayers.js"
+desc = "Removes all locked layers."
+refactor = "Cleanup tool. Add confirmation dialog."
+quality = 2
+
+[Layers."Invert Locked Layer"]
+old_path = "old/invertLockedLayer.js"
+desc = "Inverts lock status of all layers."
+refactor = "Useful for bulk operations. Add selective invert."
+quality = 2
+
+[Layers."Invert Visible Layer"]
+old_path = "old/invertVisibleLayer.js"
+desc = "Inverts visibility status of all layers."
+refactor = "Useful for isolation. Add selective invert."
+quality = 2
+
+[Layers."Artboard Items Move to New Layer"]
+old_path = "old/artboardItemsMoveToNewLayer.jsx"
+desc = "Moves all items from each artboard to separate layers."
+refactor = "Organizational tool. Useful for animation prep."
+quality = 3
+
+[Layers."Group Artboard Objects"]
+old_path = "old/GroupArtboardObjects.jsx"
+desc = "Groups all objects on each artboard separately."
+refactor = "Organizational tool. Add naming option."
+quality = 3
+
+# ============================================================================
+# EXPORT & IMPORT
+# ============================================================================
+
+[Export."Batch Trace"]
+old_path = "old/BatchTrace.jsx"
+desc = "Batch image tracing with preset management."
+refactor = "Useful for batch vectorization. Update for latest Image Trace API."
+quality = 4
+
+[Export."Export Selection as AI"]
+old_path = "old/Export-selection-as-AI.jsx"
+desc = "Exports selection as separate AI files."
+refactor = "Useful for asset management. Add more format options."
+quality = 3
+
+[Export."Export PNG"]
+old_path = "old/export-png.js"
+desc = "Exports artboards or selection as PNG with options."
+refactor = "Useful for web assets. Add batch export and naming patterns."
+quality = 4
+
+[Export."Export to DXF"]
+old_path = "old/ExportToDXF.jsx"
+desc = "Exports to DXF format for CAD applications."
+refactor = "Specialized CAD tool. Ensure modern DXF standards."
+quality = 4
+
+[Export."Export Layout"]
+old_path = "old/Export Layout.jsx"
+desc = "Exports layouts with comprehensive control."
+refactor = "Check functionality and uniqueness."
+quality = 3
+
+[Export."Bulk Relink"]
+old_path = "old/bulkRelink.js"
+desc = "Batch relinks placed images to new file locations."
+refactor = "Useful for asset management. Add path remapping."
+quality = 4
+
+[Export."Relink to Folder"]
+old_path = "old/relinkToFolder.js"
+desc = "Relinks all placed images to a specified folder."
+refactor = "Useful for project migration. Add search in subfolders."
+quality = 3
+
+[Export."Relink File Extension"]
+old_path = "old/relinkFileExtension.js"
+desc = "Changes file extensions for all linked images (e.g., .jpg to .png)."
+refactor = "Useful for format changes. Add batch conversion option."
+quality = 3
+
+[Export."Relink File Extension Extra"]
+old_path = "old/relinkFileExtensionExtra.js"
+desc = "Extended version of file extension relinking."
+refactor = "Check if redundant with basic version."
+quality = 2
+
+[Export."Rename Linked File"]
+old_path = "old/renameLinkedFile.js"
+desc = "Renames linked files directly from Illustrator."
+refactor = "Useful for asset management. Add batch rename."
+quality = 3
+
+[Export."Mark Missing Link"]
+old_path = "old/markMissingLink.js"
+desc = "Visually marks objects with missing linked files."
+refactor = "Useful troubleshooting. Add fix workflow."
+quality = 3
+
+# ============================================================================
+# EFFECTS & SPECIAL
+# ============================================================================
+
+[Effects."Long Shadow"]
+old_path = "old/long_shadow.jsx"
+desc = "Creates trendy long shadow effects on objects."
+refactor = "Design trend tool. Add angle and length customization."
+quality = 3
+
+[Effects."Rich Glitch"]
+old_path = "old/rich_glitch.jsx"
+desc = "Creates glitch art effects."
+refactor = "Creative effect. Add more glitch styles."
+quality = 2
+
+[Effects."Big Bang"]
+old_path = "old/bigBang.jsx"
+desc = "Creates explosion or burst effects."
+refactor = "Creative effect. Add customization options."
+quality = 2
+
+[Effects."Dance"]
+old_path = "old/Dance.jsx"
+desc = "Animates or creates motion-like effects."
+refactor = "Creative effect. Clarify functionality."
+quality = 2
+
+[Effects."Random Scribble"]
+old_path = "old/RandomScribble.jsx"
+desc = "Applies random scribble/sketch effects."
+refactor = "Creative effect. Already listed in Strokes, may be duplicate."
+quality = 2
+
+[Effects."Hachures"]
+old_path = "old/Hachures (folder)"
+desc = "Folder containing hatching pattern scripts."
+refactor = "Review contents and integrate appropriately."
+quality = 3
+
+[Effects."Opacity Mask Clip"]
+old_path = "old/OpacityMaskClip.jsx"
+desc = "Creates clipping through opacity masks."
+refactor = "Advanced masking technique. Add presets."
+quality = 3
+
+# ============================================================================
+# MEASUREMENT & DIMENSIONS
+# ============================================================================
+
+[Measurement."Measure Distance"]
+old_path = "old/measureDistance.js"
+desc = "Measures distance between two points or objects."
+refactor = "Useful utility. Add angle and area measurement."
+quality = 4
+
+[Measurement."Show Dimensions"]
+old_path = "old/showDimensions.js"
+desc = "Displays dimensions of selected objects as text labels."
+refactor = "Useful for technical docs. Add dimension line creation."
+quality = 4
+
+[Measurement."Object Area"]
+old_path = "old/ObjectArea.jsx"
+desc = "Calculates and displays area of selected objects."
+refactor = "Useful for technical specs. Add unit conversion."
+quality = 4
+
+[Measurement."Path Length"]
+old_path = "old/Path Length.jsx"
+desc = "Calculates and displays total path length."
+refactor = "Useful for manufacturing/plotting. Add perimeter calculation."
+quality = 4
+
+[Measurement."Unit Calculator"]
+old_path = "old/unitCalculator.js"
+desc = "Unit conversion calculator within Illustrator."
+refactor = "Useful utility. Add more units and conversions."
+quality = 3
+
+[Measurement."Check Pixel Perfect"]
+old_path = "old/CheckPixelPerfect.jsx"
+desc = "Checks if objects are aligned to pixel grid."
+refactor = "Useful for web/UI design. Add auto-align option."
+quality = 4
+
+[Measurement."Measure"]
+old_path = "old/Measure.jsx"
+desc = "Comprehensive measurement tool."
+refactor = "May overlap with other measurement scripts."
+quality = 3
+
+# ============================================================================
+# UTILITIES
+# ============================================================================
+
+[Utilities."Objects Counter"]
+old_path = "old/ObjectsCounter.jsx"
+desc = "Counts objects by type and displays statistics."
+refactor = "Useful for document analysis. Add export to CSV."
+quality = 3
+
+[Utilities."Named Items Finder"]
+old_path = "old/NamedItemsFinder.jsx"
+desc = "Searches for items by name with regex support."
+refactor = "Useful for large documents. Add replace functionality."
+quality = 4
+
+[Utilities."Show Object Names"]
+old_path = "old/ShowObjectNames.jsx"
+desc = "Displays object names as temporary labels."
+refactor = "Useful for identification. Add permanent label option."
+quality = 3
+
+[Utilities."Show Object Names - Font Picker"]
+old_path = "old/ShowObjectNames-FontPicker.jsx"
+desc = "Shows object names with font selection."
+refactor = "May be redundant with main ShowObjectNames."
+quality = 2
+
+[Utilities."File Version Informer"]
+old_path = "old/FileVersionInformer.jsx"
+desc = "Displays file version and compatibility information."
+refactor = "Useful for version control. Add batch checking."
+quality = 3
+
+[Utilities."Document Switcher"]
+old_path = "old/DocumentSwitcher.jsx"
+desc = "Quickly switches between open documents."
+refactor = "Useful for multi-document work. May overlap with built-in window menu."
+quality = 2
+
+[Utilities."Save All Docs"]
+old_path = "old/SaveAllDocs.jsx"
+desc = "Saves all open documents at once."
+refactor = "Useful batch operation. Add export all option."
+quality = 3
+
+[Utilities."Close All Documents"]
+old_path = "old/closeAllDocuments.js"
+desc = "Closes all open documents."
+refactor = "Utility function. Add save prompt."
+quality = 2
+
+[Utilities."Force Close Other Documents"]
+old_path = "old/forceCloseOtherDocuments.jsx"
+desc = "Closes all documents except the current one without prompts."
+refactor = "Potentially dangerous. Add confirmation."
+quality = 2
+
+[Utilities."Arrange Windows"]
+old_path = "old/arrangeWindows.js"
+desc = "Arranges multiple document windows in tile or cascade."
+refactor = "Useful for multi-document work. Add more layout options."
+quality = 2
+
+[Utilities."Sync View"]
+old_path = "old/syncView.js"
+desc = "Synchronizes zoom and pan across multiple documents."
+refactor = "Useful for comparison. Add independent axis sync."
+quality = 3
+
+[Utilities."Zoom and Center"]
+old_path = "old/Zoom-and-center.jsx"
+desc = "Zoom and center on selected objects."
+refactor = "May overlap with built-in functions."
+quality = 1
+
+[Utilities."About"]
+old_path = "old/About.jsx"
+desc = "Displays script collection information."
+refactor = "Info script. Update with current information."
+quality = 1
+
+# ============================================================================
+# PREFERENCES & TOGGLES
+# ============================================================================
+
+[Preferences."Toggle Transform Pattern Tiles"]
+old_path = "old/toggleTransformPatternTiles.js"
+desc = "Toggles the preference to transform pattern tiles with objects."
+refactor = "Simple toggle. Add other common preference toggles."
+quality = 3
+
+[Preferences."Toggle Show Handles"]
+old_path = "old/toggleShowHandles.js"
+desc = "Toggles visibility of bezier handles."
+refactor = "Simple toggle. Useful for decluttering."
+quality = 2
+
+[Preferences."Toggle Use Preview Bounds"]
+old_path = "old/toggleUsePreviewBounds.js"
+desc = "Toggles use of preview bounds for measurements."
+refactor = "Simple toggle. Important for precision work."
+quality = 3
+
+[Preferences."Toggle Zoom with Mouse Wheel"]
+old_path = "old/toggleZoomWithMouseWheel.js"
+desc = "Toggles mouse wheel zoom functionality."
+refactor = "Simple toggle. Useful for different workflows."
+quality = 2
+
+[Preferences."Toggle Zoom to Selection"]
+old_path = "old/toggleZoomToSelection.js"
+desc = "Toggles automatic zoom to selection."
+refactor = "Simple toggle. Useful for different workflows."
+quality = 2
+
+[Preferences."Toggle Paste Remembers Layers"]
+old_path = "old/togglePasteRemembersLayers.js"
+desc = "Toggles whether paste operations respect source layers."
+refactor = "Simple toggle. Important workflow preference."
+quality = 3
+
+[Preferences."Toggle Select Same Tint Percentage"]
+old_path = "old/toggleSelectSameTintPercentage.js"
+desc = "Toggles whether 'Select Same' considers tint percentages."
+refactor = "Simple toggle. Useful for spot color work."
+quality = 2
+
+[Preferences."Toggle Align to Glyph Bounds"]
+old_path = "old/toggleAlignToGlyphBounds.js"
+desc = "Toggles alignment to glyph bounds vs. em box."
+refactor = "Simple toggle. Important for typography."
+quality = 3
+
+[Preferences."Toggle Show Character Alternates"]
+old_path = "old/toggleShowCharacterAlternates.js"
+desc = "Toggles display of character alternate options."
+refactor = "Simple toggle. Useful for typography."
+quality = 2
+
+[Preferences."Toggle Fill New Type Objects with Placeholder Text"]
+old_path = "old/toggleFillNewTypeObjectsWithPlaceholderText.js"
+desc = "Toggles automatic lorem ipsum in new text frames."
+refactor = "Simple toggle. Useful workflow preference."
+quality = 2
+
+# ============================================================================
+# GUIDES & GRIDS
+# ============================================================================
+
+[Guides."Create Grid Lines"]
+old_path = "old/createGridLines.js"
+desc = "Creates custom grid patterns using guides or paths."
+refactor = "Useful for layout. Add more grid types."
+quality = 3
+
+[Guides."Create Circular Guides"]
+old_path = "old/makeCircularGuides.js"
+desc = "Creates circular guide patterns."
+refactor = "Useful for radial designs. Add spoke guides."
+quality = 3
+
+[Guides."Create Crosshair Guides"]
+old_path = "old/makeCrosshairGuides.js"
+desc = "Creates crosshair guide marks at specified points."
+refactor = "Useful for alignment. Add registration mark option."
+quality = 3
+
+[Guides."Fit Guide in Artboard"]
+old_path = "old/fitGuideInArtboard.js"
+desc = "Extends or crops guides to artboard boundaries."
+refactor = "Useful for cleanup. Add margin option."
+quality = 2
+
+[Guides."Remove Color in Guide Object"]
+old_path = "old/removeColorInGuideObject.js"
+desc = "Removes color from objects converted to guides."
+refactor = "Cleanup utility. May be niche."
+quality = 1
+
+# ============================================================================
+# DIVIDING & SLICING
+# ============================================================================
+
+[Divide."Divide (Length)"]
+old_path = "old/Divide (length).jsx"
+desc = "Divides paths into segments of specific length."
+refactor = "Useful for measurement. Add endpoint handling."
+quality = 3
+
+[Divide."Divide Bottom Path"]
+old_path = "old/DivideBottomPath.jsx"
+desc = "Divides the bottom path at intersections with other paths."
+refactor = "Specialized path operation. Add top path option."
+quality = 2
+
+[Divide."Subtract Top Path"]
+old_path = "old/SubtractTopPath.jsx"
+desc = "Subtracts top path from bottom path."
+refactor = "May overlap with pathfinder. Check unique features."
+quality = 2
+
+[Divide."Trim Masks"]
+old_path = "old/TrimMasks.jsx"
+desc = "Trims excess path data from clipping masks."
+refactor = "Optimization tool. Useful for file size."
+quality = 3
+
+[Divide."Trim Open Ends"]
+old_path = "old/TrimOpenEnds.jsx"
+desc = "Trims open path endpoints at intersections."
+refactor = "Cleanup tool. Add tolerance control."
+quality = 2
+
+[Divide."Nice Slice"]
+old_path = "old/niceSlice.jsx"
+desc = "Advanced slicing tool with more control than standard slice tool."
+refactor = "Useful for web export. Update for modern export needs."
+quality = 3
+
+[Divide."Puzzle Clipper"]
+old_path = "old/puzzleClipper.jsx"
+desc = "Creates interlocking puzzle piece shapes."
+refactor = "Creative tool. Add more puzzle patterns."
+quality = 2
+
+# ============================================================================
+# PRINTING & PRODUCTION
+# ============================================================================
+
+[Print."Conversion"]
+old_path = "old/Conversion.jsx"
+desc = "Color space and format conversion utility."
+refactor = "Production tool. Ensure modern color management."
+quality = 3
+
+[Print."To Print"]
+old_path = "old/to-print.js"
+desc = "Prepares document for print production."
+refactor = "Production workflow. Document specific actions."
+quality = 2
+
+[Print."Impose (folder)"]
+old_path = "old/Impose (folder)"
+desc = "Folder containing imposition scripts for print layouts."
+refactor = "Review contents and integrate appropriately."
+quality = 3
+
+# ============================================================================
+# MARGINS & PADDING
+# ============================================================================
+
+[Layout."Add Margin"]
+old_path = "old/AddMargin.jsx"
+desc = "Adds margins around selected objects or artboards."
+refactor = "Useful for spacing. Add negative margins."
+quality = 3
+
+[Layout."Add Padding"]
+old_path = "old/AddPadding.jsx"
+desc = "Adds padding inside selected objects."
+refactor = "Useful for UI design. Add responsive padding."
+quality = 3
+
+[Layout."Minus Offset"]
+old_path = "old/minusOffset.jsx"
+desc = "Creates inset paths from selected objects."
+refactor = "May overlap with offset path. Check unique features."
+quality = 2
+
+[Layout."Add Flap"]
+old_path = "old/Add Flap....jsx"
+desc = "Adds flaps to shapes for packaging design."
+refactor = "Specialized packaging tool. Add more flap styles."
+quality = 3
+
+[Layout."Add Paperbag"]
+old_path = "old/Add Paperbag....jsx"
+desc = "Creates paper bag dielines."
+refactor = "Specialized packaging tool. Update for modern standards."
+quality = 2
+
+# ============================================================================
+# MISCELLANEOUS / VARIA (Quality 2)
+# ============================================================================
+
+[Varia."Duplicator"]
+old_path = "old/duplicator.jsx"
+desc = "Alternative duplication tool."
+refactor = "May be redundant with built-in duplication."
+quality = 2
+
+[Varia."Randomus"]
+old_path = "old/randomus.jsx"
+desc = "General randomization utility."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+[Varia."Optimizero"]
+old_path = "old/optimizero.jsx"
+desc = "Optimization utility."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+[Varia."Small Worker"]
+old_path = "old/smallWorker.jsx"
+desc = "General utility script."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+[Varia."Set Maker"]
+old_path = "old/setMaker.jsx"
+desc = "Creates sets or groups."
+refactor = "Vague functionality. Check for unique features."
+quality = 2
+
+[Varia."Fillinger"]
+old_path = "old/fillinger.jsx"
+desc = "Fill-related utility."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+[Varia."Griddder"]
+old_path = "old/griddder.jsx"
+desc = "Grid creation utility."
+refactor = "May overlap with other grid scripts."
+quality = 2
+
+[Varia."Harmonizer"]
+old_path = "old/harmonizer.jsx"
+desc = "Color harmony utility."
+refactor = "May overlap with color tools."
+quality = 2
+
+[Varia."Cropulka"]
+old_path = "old/cropulka.jsx"
+desc = "Cropping utility."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+[Varia."Calendarikko"]
+old_path = "old/calendarikko.jsx"
+desc = "Calendar creation utility."
+refactor = "Specialized tool. Check relevance."
+quality = 2
+
+[Varia."Check Day of Week"]
+old_path = "old/checkDayOfWeek.js"
+desc = "Determines day of week for a date."
+refactor = "Very niche. Consider removal."
+quality = 1
+
+[Varia."Add Numeric Separators"]
+old_path = "old/addNumericSeparators.js"
+desc = "Adds thousands separators to numbers in text."
+refactor = "Text formatting utility. Add locale support."
+quality = 2
+
+[Varia."Inline SVG to AI"]
+old_path = "old/inlineSVGToAI.jsx"
+desc = "Imports inline SVG code directly into Illustrator."
+refactor = "Import utility. Useful for web workflows."
+quality = 3
+
+[Varia."Is Unified"]
+old_path = "old/is-unified.js"
+desc = "Checks for unified/global colors."
+refactor = "Diagnostic utility. May be niche."
+quality = 1
+
+[Varia."Reverse"]
+old_path = "old/Reverse.jsx"
+desc = "Reverses object order or properties."
+refactor = "Vague functionality. Needs clarification."
+quality = 2
+
+# ============================================================================
+# ARROWS
+# ============================================================================
+
+[Arrows."Arrow-A"]
+old_path = "old/Arrow-A.jsx"
+desc = "Creates arrow style A with customizable options."
+refactor = "Arrow creation tool. May overlap with built-in arrowheads."
+quality = 2
+
+[Arrows."Arrow-V"]
+old_path = "old/Arrow-V.jsx"
+desc = "Creates arrow style V with customizable options."
+refactor = "Arrow creation tool. May overlap with built-in arrowheads."
+quality = 2
+
+# ============================================================================
+# REPLACE & SWAP
+# ============================================================================
+
+[Replace."Replace Items"]
+old_path = "old/replaceItems.jsx"
+desc = "Replaces selected items with another item while preserving position."
+refactor = "Useful for substitution. Add properties preservation options."
+quality = 4
+
+[Replace."Replace Formatted Text"]
+old_path = "old/ReplaceFormattedText.jsx"
+desc = "Find and replace with format preservation."
+refactor = "Useful for text editing. May overlap with BatchTextEdit."
+quality = 3
+
+# ============================================================================
+# RENAME UTILITIES
+# ============================================================================
+
+[Rename."Rename Items"]
+old_path = "old/RenameItems.jsx"
+desc = "Batch rename objects with various options."
+refactor = "May be redundant with BatchRenamer (Quality 5 script)."
+quality = 2
+
+[Rename."Rename Artboards"]
+old_path = "old/rename-artboards.js"
+desc = "Simple artboard renaming utility."
+refactor = "Redundant with BatchRenamer."
+quality = 1
+
+# ============================================================================
+# ADVANCED TOOLS
+# ============================================================================
+
+[Advanced."Make Envelopes with Tops"]
+old_path = "old/MakeEnvelopesWithTops.jsx"
+desc = "Creates envelope distortions using top objects as mesh."
+refactor = "Advanced distortion tool. Add more envelope options."
+quality = 3
+
+# ============================================================================
+# FOLDERS: ARTBOARDS
+# ============================================================================
+
+[Artboards."Fit to Arts (Folder)"]
+old_path = "old/Artboards/Fit to Arts....jsx"
+desc = "Quick fit artboards to artwork without extensive options."
+refactor = "May be redundant with main FitArtboardsToArtwork script."
+quality = 2
+
+[Artboards."Rename as Imposition (Folder)"]
+old_path = "old/Artboards/Rename as Imposition....jsx"
+desc = "Renames artboards based on imposition layout positions."
+refactor = "Specialized print workflow tool. Ensure modern imposition standards."
+quality = 3
+
+[Artboards."Reorder Artboards (Folder)"]
+old_path = "old/Artboards/Reorder....jsx"
+desc = "Reorders artboards in the artboards panel."
+refactor = "May overlap with sortArtboards.js."
+quality = 2
+
+# ============================================================================
+# FOLDERS: DOCUMENTS
+# ============================================================================
+
+[Documents."Close Documents (Folder)"]
+old_path = "old/Documents/Close....jsx"
+desc = "Advanced document closing with options."
+refactor = "May overlap with closeAllDocuments.js."
+quality = 2
+
+[Documents."Pre-Flight"]
+old_path = "old/Documents/Pre-Flight.jsx"
+desc = "Pre-flight check for documents before printing or export."
+refactor = "Important production tool. Update checks for modern workflows."
+quality = 4
+
+# ============================================================================
+# FOLDERS: OBJECTS
+# ============================================================================
+
+[Objects."Add Trim Marks"]
+old_path = "old/Objects/Add Trim Marks....jsx"
+desc = "Adds trim marks to selected objects or artboards for printing."
+refactor = "Print production tool. Ensure modern trim mark standards."
+quality = 4
+
+[Objects."Copy to Artboards"]
+old_path = "old/Objects/Copy to Artboards....jsx"
+desc = "Copies selected objects to multiple artboards."
+refactor = "May overlap with DuplicateToArtboards.jsx."
+quality = 3
+
+[Objects."Count Objects"]
+old_path = "old/Objects/Count.jsx"
+desc = "Counts objects by type."
+refactor = "May be redundant with ObjectsCounter.jsx."
+quality = 2
+
+[Objects."Expand Reflected"]
+old_path = "old/Objects/Expand Reflected....jsx"
+desc = "Expands reflected/mirrored objects into actual paths."
+refactor = "Useful for finalizing mirrored designs. Add batch processing."
+quality = 3
+
+[Objects."Step and Repeat (Folder)"]
+old_path = "old/Objects/Step and Repeat....jsx"
+desc = "Alternative step and repeat implementation."
+refactor = "Check if redundant with main stepAndRepeat.js (Quality 5)."
+quality = 2
+
+[Objects."Arrange Distribute Horizontally"]
+old_path = "old/Objects/Arrange (folder contains distribution scripts)"
+desc = "Folder containing object arrangement and distribution utilities."
+refactor = "Review individual scripts in this subfolder."
+quality = 3
+
+[Objects."Transform Selected"]
+old_path = "old/Objects/Transform (folder contains transform scripts)"
+desc = "Folder containing object transformation utilities."
+refactor = "Review individual scripts in this subfolder."
+quality = 3
+
+# ============================================================================
+# FOLDERS: SELECT
+# ============================================================================
+
+[Selection."Select All (Folder)"]
+old_path = "old/Select/All....jsx"
+desc = "Advanced select all with filtering options."
+refactor = "Add more selection filters and criteria."
+quality = 3
+
+[Selection."Select Images (Folder)"]
+old_path = "old/Select/Images....jsx"
+desc = "Selects all raster images in document."
+refactor = "Useful for image management. Add linked vs embedded filter."
+quality = 3
+
+[Selection."Select Links (Folder)"]
+old_path = "old/Select/Links....jsx"
+desc = "Selects all linked files."
+refactor = "May overlap with selectLink.js."
+quality = 2
+
+[Selection."Select Paths (Folder)"]
+old_path = "old/Select/Paths....jsx"
+desc = "Selects paths with various criteria."
+refactor = "Add more path selection options (open/closed, compound, etc)."
+quality = 3
+
+[Selection."Select Types (Folder)"]
+old_path = "old/Select/Types....jsx"
+desc = "Selects text objects with various criteria."
+refactor = "Add more text selection options (point/area, threaded, etc)."
+quality = 3
+
+# ============================================================================
+# FOLDERS: TYPES (TEXT)
+# ============================================================================
+
+[Text."Create Compound Path (Types Folder)"]
+old_path = "old/Types/Create Compound Path.jsx"
+desc = "Creates compound paths from text outlines."
+refactor = "Useful for text effects. Ensure proper handling of complex text."
+quality = 2
+
+[Text."Numerize Text (Types Folder)"]
+old_path = "old/Types/Numerize....jsx"
+desc = "Adds sequential numbering to text frames."
+refactor = "May overlap with MakeNumbersSequence.jsx."
+quality = 2
+
+[Text."Resize Glyph (Types Folder)"]
+old_path = "old/Types/Resize Glyph....jsx"
+desc = "Resizes individual glyphs or characters."
+refactor = "Specialized typography tool. Add proportional resize option."
+quality = 3
+
+[Text."Retype (Types Folder)"]
+old_path = "old/Types/Retype....jsx"
+desc = "Converts text between point and area type."
+refactor = "Simple utility. Ensure proper conversion of formatting."
+quality = 2
+
+# ============================================================================
+# FOLDERS: LINKS
+# ============================================================================
+
+[Links."Change Page"]
+old_path = "old/Links/Change Page....jsx"
+desc = "Changes the page number for multipage PDF links."
+refactor = "Useful for PDF workflows. Add batch page changing."
+quality = 3
+
+[Links."Relink Multipage"]
+old_path = "old/Links/Relink Multipage....jsx"
+desc = "Relinks multipage PDF files."
+refactor = "Specialized PDF tool. Ensure modern PDF standards."
+quality = 3
+
+[Links."Relink Same"]
+old_path = "old/Links/Relink Same....jsx"
+desc = "Relinks all instances to the same source file."
+refactor = "Useful for link management. Add selective relinking."
+quality = 3
+
+# ============================================================================
+# FOLDERS: IMPOSE (PRINT PRODUCTION)
+# ============================================================================
+
+[Print."Impose 1-Up"]
+old_path = "old/Impose/1-Up....jsx"
+desc = "Creates 1-up imposition layout for printing."
+refactor = "Print production tool. Ensure modern imposition standards."
+quality = 3
+
+[Print."Impose 2-Up"]
+old_path = "old/Impose/2-Up....jsx"
+desc = "Creates 2-up imposition layout for printing."
+refactor = "Print production tool. Ensure modern imposition standards."
+quality = 3
+
+[Print."Impose 4-Up"]
+old_path = "old/Impose/4-Up....jsx"
+desc = "Creates 4-up imposition layout for printing."
+refactor = "Print production tool. Ensure modern imposition standards."
+quality = 3
+
+[Print."Impose 8-Up"]
+old_path = "old/Impose/8-Up....jsx"
+desc = "Creates 8-up imposition layout for printing."
+refactor = "Print production tool. Ensure modern imposition standards."
+quality = 3
+
+[Print."Impose Saddle-Stitch"]
+old_path = "old/Impose/Saddle-Stitch....jsx"
+desc = "Creates saddle-stitch imposition for booklet printing."
+refactor = "Specialized booklet tool. Very useful for print shops."
+quality = 4
+
+[Print."Impose Section-Sewn"]
+old_path = "old/Impose/Section-Sewn....jsx"
+desc = "Creates section-sewn imposition for book binding."
+refactor = "Advanced binding tool. Very useful for book production."
+quality = 4
+
+# ============================================================================
+# FRENCH-LANGUAGE SCRIPTS
+# ============================================================================
+
+[Utilities."Change Units (FR)"]
+old_path = "old/ChangerUnites.jsx"
+desc = "Changer les unités du document (Change document units). Quick unit conversion utility."
+refactor = "French interface. Consider creating English version or merging with unitCalculator.js."
+quality = 3
+
+[Measurement."Dimension Tool (FR)"]
+old_path = "old/Cotation.jsx"
+desc = "Cotation - Creates dimension lines and measurements for technical drawings. Comprehensive dimensioning tool."
+refactor = "French interface. Very useful technical drawing tool. Consider English version."
+quality = 4
+
+[Measurement."Photo Dimension Tool (FR)"]
+old_path = "old/CotationPhoto.jsx"
+desc = "Cotation Photo - Creates dimension annotations for photographs and images."
+refactor = "French interface. Specialized photo documentation tool."
+quality = 3
+
+[Layers."Layer Colors (FR)"]
+old_path = "old/Couleur_Calques.jsx"
+desc = "Couleur des Calques - Manages and sets layer indicator colors."
+refactor = "French interface. Simple utility, may overlap with name-color-layers.js."
+quality = 2
+
+[Layout."Margins Tool (FR)"]
+old_path = "old/Marges.jsx"
+desc = "Marges - Advanced margin and padding tool for layouts."
+refactor = "French interface. May overlap with AddMargin.jsx and AddPadding.jsx."
+quality = 3
+
+[Layers."Renumber Layers (FR)"]
+old_path = "old/Renum_Calques_PlansW.jsx"
+desc = "Renuméroter Calques et Plans - Renumbers and reorganizes layers systematically."
+refactor = "French interface. Specialized layer organization tool."
+quality = 3
+
+[Text."Vectors to Text (FR)"]
+old_path = "old/Vecteurs_Vers_Texte.jsx"
+desc = "Vecteurs vers Texte - Converts vector outlines back to editable text (if possible)."
+refactor = "French interface. Advanced text recovery tool if it works reliably."
+quality = 3
+
+[Utilities."Special Characters (FR)"]
+old_path = "old/Caracteres_Speciaux/Caracteres_Speciaux.jsx"
+desc = "Caractères Spéciaux - Special characters insertion palette. Includes comprehensive PDF documentation."
+refactor = "French interface. Useful typography tool with extensive documentation."
+quality = 4
+
+[Utilities."Character Code Tool (FR)"]
+old_path = "old/CodeCharacter/CodeCharacter.jsx"
+desc = "Code Character - Shows and inserts characters by Unicode code point. Includes bilingual documentation."
+refactor = "French interface. Useful for technical typography work."
+quality = 4
+
+[Measurement."Scale Tool (FR)"]
+old_path = "old/Echelle/Echelle.jsx"
+desc = "Échelle - Advanced scaling and measurement tool with proportional calculations. Includes extensive bilingual documentation."
+refactor = "French interface. Comprehensive scaling tool with good documentation."
+quality = 4
+
+[Text."Text Height Tool (FR)"]
+old_path = "old/Hauteur_Texte/Hauteur_Texte.jsx"
+desc = "Hauteur de Texte - Adjusts and normalizes text frame heights. Includes bilingual documentation."
+refactor = "French interface. Useful layout tool."
+quality = 3
+
+[Utilities."Cleanup Tool (FR)"]
+old_path = "old/Nettoyage/Nettoyage.jsx"
+desc = "Nettoyage - Comprehensive document cleanup utility (removes empty items, fixes issues). Includes extensive bilingual documentation."
+refactor = "French interface. Very useful maintenance tool with comprehensive features."
+quality = 4
+
+[Utilities."Remove Small Objects (FR)"]
+old_path = "old/Suppr_Petits_Objets/supprPetitsObjets.jsx"
+desc = "Supprimer Petits Objets - Removes objects smaller than specified size threshold. Useful for cleanup. Includes documentation."
+refactor = "French interface. Useful cleanup tool for removing dust and artifacts."
+quality = 4
+
+[Export."Export with DPI Choice (FR)"]
+old_path = "old/Export_Choix_dpi/ExportChoixdpi.jsx"
+desc = "Export avec Choix DPI - Export utility with DPI/resolution selection. Includes comprehensive documentation."
+refactor = "French interface. Useful export tool with granular DPI control."
+quality = 4
+
+[Effects."Hatching Patterns (FR)"]
+old_path = "old/Hachures/Hachures.jsx"
+desc = "Hachures - Creates hatching and crosshatching patterns for technical/artistic drawings. Includes comprehensive PDF documentation."
+refactor = "French interface. Specialized technical drawing tool with extensive options."
+quality = 4
+
+# ============================================================================
+# DOCUMENTATION FILES (DO NOT MOVE)
+# ============================================================================
+
+# Note: The following files should remain in the old folder as documentation:
+# - README.md
+# - LICENSE
+# - All PDF files (Usage_*.pdf, Utilisation_*.pdf)
+# - images/ folder
+# - libraries/ folder
+# - libs/ folder
+
+# ============================================================================
+# OLD2 FOLDER - LAScripts Framework Scripts (75 scripts)
+# ============================================================================
+
+# NOTE: All scripts in old2/ depend on the LAScripts framework/extension
+# They are short wrapper scripts that call framework functions
+# Quality is generally 1-2 due to framework dependency
+# Useful ones should be reimplemented as standalone scripts
+
+# ============================================================================
+# OLD2: ALIGNMENT
+# ============================================================================
+
+[Varia."Align Center (LAScripts)"]
+old_path = "old2/Align Center.js"
+desc = "LAScripts wrapper to align selection center. Depends on LAScripts framework."
+refactor = "Reimplement as standalone using lib/geometry.jsx. Basic alignment functionality."
+quality = 2
+
+[Varia."Align Middle (LAScripts)"]
+old_path = "old2/Align Middle.js"
+desc = "LAScripts wrapper to align selection middle vertically. Depends on LAScripts framework."
+refactor = "Reimplement as standalone using lib/geometry.jsx. Basic alignment functionality."
+quality = 2
+
+[Varia."Align Top Outline (LAScripts)"]
+old_path = "old2/Align Top Outline.js"
+desc = "LAScripts wrapper to align to top with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+[Varia."Align Bottom Outline (LAScripts)"]
+old_path = "old2/Align Bottom Outline.js"
+desc = "LAScripts wrapper to align to bottom with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+[Varia."Align Left Outline (LAScripts)"]
+old_path = "old2/Align Left Outline.js"
+desc = "LAScripts wrapper to align to left with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+[Varia."Align Right Outline (LAScripts)"]
+old_path = "old2/Align Right Outline.js"
+desc = "LAScripts wrapper to align to right with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+[Varia."Align Top Bottom Outline (LAScripts)"]
+old_path = "old2/Align Top Bottom Outline.js"
+desc = "LAScripts wrapper to align vertically with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+[Varia."Align Right Left Outline (LAScripts)"]
+old_path = "old2/Align Right Left Outline.js"
+desc = "LAScripts wrapper to align horizontally with outline bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Framework-specific."
+quality = 2
+
+# ============================================================================
+# OLD2: ARTBOARDS
+# ============================================================================
+
+[Artboards."Artboard Set Width and Height (LAScripts)"]
+old_path = "old2/Artboard set Width and Height.js"
+desc = "LAScripts wrapper to set artboard dimensions. Depends on LAScripts framework."
+refactor = "Reimplement as standalone using lib/artboard.jsx."
+quality = 2
+
+[Artboards."Artboard Size to Selection (LAScripts)"]
+old_path = "old2/Artboard Size to Selection.js"
+desc = "LAScripts wrapper to resize artboard to fit selection. Depends on LAScripts framework. Similar to existing FitArtboardsToArtwork."
+refactor = "May be redundant with FitArtboardsToArtwork.jsx. Framework-dependent."
+quality = 2
+
+[Artboards."Create Artboards from Selection (LAScripts)"]
+old_path = "old2/Create Artboards from the Selection.js"
+desc = "LAScripts wrapper to create artboards from selected objects. Depends on LAScripts framework."
+refactor = "Redundant with createArtboardsFromTheSelection.jsx. Framework-dependent."
+quality = 1
+
+[Artboards."Crop Artboard (LAScripts)"]
+old_path = "old2/Crop Artboard.js"
+desc = "LAScripts wrapper to crop artboard. Depends on LAScripts framework."
+refactor = "Reimplement as standalone if useful."
+quality = 2
+
+# ============================================================================
+# OLD2: COLORS
+# ============================================================================
+
+[Colors."Fill Color Random (LAScripts)"]
+old_path = "old2/Fill Color Random.js"
+desc = "LAScripts wrapper to apply random fill color. Depends on LAScripts framework."
+refactor = "Redundant with RandomColorFromSwatches.js. Framework-dependent."
+quality = 1
+
+[Colors."Stroke Color Random (LAScripts)"]
+old_path = "old2/Stroke Color Random.js"
+desc = "LAScripts wrapper to apply random stroke color. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Similar to fill color random."
+quality = 2
+
+[Colors."Get Color (LAScripts)"]
+old_path = "old2/Get Color.js"
+desc = "LAScripts demo showing color creation and manipulation. Framework demo code."
+refactor = "Demo/example code. Not a user-facing script."
+quality = 1
+
+[Colors."Set Color (LAScripts)"]
+old_path = "old2/Set Color.js"
+desc = "LAScripts demo showing color setting functionality. Framework demo code."
+refactor = "Demo/example code. Not a user-facing script."
+quality = 1
+
+[Colors."Replace Color (LAScripts)"]
+old_path = "old2/Replace Color.js"
+desc = "LAScripts wrapper to replace colors. Depends on LAScripts framework."
+refactor = "Reimplement as standalone using lib/color.jsx."
+quality = 2
+
+[Colors."Replace Color Fast (LAScripts)"]
+old_path = "old2/Replace Color Fast.js"
+desc = "LAScripts wrapper for fast color replacement. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Optimized version of replace color."
+quality = 2
+
+[Colors."Fill (LAScripts)"]
+old_path = "old2/Fill.js"
+desc = "LAScripts wrapper for fill operations. Depends on LAScripts framework."
+refactor = "Demo/example code showing fill API."
+quality = 1
+
+[Colors."Stroke (LAScripts)"]
+old_path = "old2/Stroke.js"
+desc = "LAScripts wrapper for stroke operations. Depends on LAScripts framework."
+refactor = "Demo/example code showing stroke API."
+quality = 1
+
+# ============================================================================
+# OLD2: CLIPPING & MASKING
+# ============================================================================
+
+[Paths."Clipping Mask to Artboard (LAScripts)"]
+old_path = "old2/Clipping Mask To Artboard.js"
+desc = "LAScripts wrapper to create clipping mask at artboard bounds. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful for export preparation."
+quality = 3
+
+[Paths."Close All Open Paths (LAScripts)"]
+old_path = "old2/Close All Open Paths.js"
+desc = "LAScripts wrapper to close all open paths in document. Depends on LAScripts framework. Has event modifiers for different scopes."
+refactor = "Reimplement as standalone. Useful cleanup utility."
+quality = 3
+
+[Paths."Crop by Front Selection (LAScripts)"]
+old_path = "old2/Crop by Front selection.js"
+desc = "LAScripts wrapper to crop using front object. Depends on LAScripts framework."
+refactor = "Reimplement as standalone using pathfinder operations."
+quality = 2
+
+# ============================================================================
+# OLD2: DOCUMENTS
+# ============================================================================
+
+[Documents."Add Document (LAScripts)"]
+old_path = "old2/Add document.js"
+desc = "LAScripts wrapper to create new document. Depends on LAScripts framework."
+refactor = "Trivial - just creates document. May be redundant with built-in."
+quality = 1
+
+[Documents."New Document (LAScripts)"]
+old_path = "old2/New document.js"
+desc = "LAScripts wrapper to create new document. Depends on LAScripts framework."
+refactor = "Duplicate of Add Document. Redundant."
+quality = 1
+
+[Documents."Close Documents (LAScripts)"]
+old_path = "old2/Close documents.js"
+desc = "LAScripts wrapper to close documents. Depends on LAScripts framework."
+refactor = "Redundant with closeAllDocuments.js. Framework-dependent."
+quality = 1
+
+[Documents."Document Color Mode Set (LAScripts)"]
+old_path = "old2/Document Color Mode Set.js"
+desc = "LAScripts wrapper to set document color mode. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful for workflow automation."
+quality = 2
+
+[Documents."Document Color Mode Toggle (LAScripts)"]
+old_path = "old2/Document Color Mode Toggle.js"
+desc = "LAScripts wrapper to toggle document color mode RGB/CMYK. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Quick toggle utility."
+quality = 3
+
+[Documents."App Quit (LAScripts)"]
+old_path = "old2/App quit.js"
+desc = "LAScripts wrapper to quit Illustrator application. Depends on LAScripts framework."
+refactor = "Trivial functionality. Not needed as script."
+quality = 1
+
+# ============================================================================
+# OLD2: EFFECTS
+# ============================================================================
+
+[Effects."Long Shadow Square Only (LAScripts)"]
+old_path = "old2/LongShadow (only square).js"
+desc = "LAScripts wrapper to create long shadow effect for squares. Depends on LAScripts framework."
+refactor = "Redundant with long_shadow.jsx. Framework-dependent."
+quality = 1
+
+[Effects."Live Path (LAScripts)"]
+old_path = "old2/Live Path.js"
+desc = "LAScripts wrapper for live path effects. Depends on LAScripts framework."
+refactor = "Framework-specific feature. Unclear functionality."
+quality = 1
+
+# ============================================================================
+# OLD2: GRIDS & GUIDES
+# ============================================================================
+
+[Guides."Clear Guides (LAScripts)"]
+old_path = "old2/Clear guides.js"
+desc = "LAScripts wrapper to clear all guides. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement as standalone."
+quality = 2
+
+[Guides."Guides Clear (LAScripts 2)"]
+old_path = "old2/guides clear.js"
+desc = "LAScripts wrapper to clear guides. Duplicate of Clear guides.js. Depends on LAScripts framework."
+refactor = "Duplicate script. Remove."
+quality = 1
+
+[Guides."Guide Horizontal Center (LAScripts)"]
+old_path = "old2/guide horizontal center.js"
+desc = "LAScripts wrapper to create horizontal center guide. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful layout utility."
+quality = 2
+
+[Guides."Guide Vertical Center (LAScripts)"]
+old_path = "old2/guide vertical center.js"
+desc = "LAScripts wrapper to create vertical center guide. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful layout utility."
+quality = 2
+
+[Guides."Guide Margins (LAScripts)"]
+old_path = "old2/guide margins.js"
+desc = "LAScripts wrapper to create margin guides. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful layout utility."
+quality = 3
+
+[Guides."Fast Guides (LAScripts)"]
+old_path = "old2/Fast guides.js"
+desc = "LAScripts wrapper for quick guide creation. Depends on LAScripts framework."
+refactor = "Reimplement as standalone if useful."
+quality = 2
+
+[Guides."Bootstrap Grid (LAScripts)"]
+old_path = "old2/Bootstrap.js"
+desc = "LAScripts wrapper to create Bootstrap framework grids (xl, lg, md, sm). Depends on LAScripts framework. Event-based for different breakpoints."
+refactor = "Reimplement as standalone. Very useful for web/UI design."
+quality = 4
+
+[Guides."Susy 2 Grid (LAScripts)"]
+old_path = "old2/Susy 2 Grid.js"
+desc = "LAScripts wrapper to create Susy 2 framework grids. Depends on LAScripts framework."
+refactor = "Reimplement as standalone if still relevant. Susy is older framework."
+quality = 2
+
+[Guides."Gridder (LAScripts)"]
+old_path = "old2/Gridder.js"
+desc = "LAScripts wrapper for grid creation. Depends on LAScripts framework."
+refactor = "Redundant with other grid scripts. Framework-dependent."
+quality = 1
+
+[Guides."Columns (LAScripts)"]
+old_path = "old2/Columns.js"
+desc = "LAScripts wrapper to create column guides. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful for layout."
+quality = 3
+
+# ============================================================================
+# OLD2: LAYERS
+# ============================================================================
+
+[Layers."Layers Remove Empty (LAScripts)"]
+old_path = "old2/Layers remove empty.js"
+desc = "LAScripts wrapper to remove empty layers. Depends on LAScripts framework."
+refactor = "Redundant with deleteUnusedLayers.js. Framework-dependent."
+quality = 1
+
+[Layers."Sub Layers Remove Empty (LAScripts)"]
+old_path = "old2/Sub layers remove empty.js"
+desc = "LAScripts wrapper to remove empty sublayers. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful cleanup utility."
+quality = 2
+
+[Layers."Toggle Visibility (LAScripts)"]
+old_path = "old2/Toggle visibility.js"
+desc = "LAScripts wrapper to toggle layer visibility. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement if useful."
+quality = 2
+
+[Layers."Unlock All (LAScripts)"]
+old_path = "old2/Unlock all.js"
+desc = "LAScripts wrapper to unlock all layers. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement as standalone."
+quality = 2
+
+# ============================================================================
+# OLD2: OPACITY & ATTRIBUTES
+# ============================================================================
+
+[Utilities."Opacity Demo (LAScripts)"]
+old_path = "old2/Opacity.js"
+desc = "LAScripts demo showing opacity manipulation. Framework demo code."
+refactor = "Demo/example code. Not a user-facing script."
+quality = 1
+
+[Utilities."Set Attributes (LAScripts)"]
+old_path = "old2/Set Attributes.js"
+desc = "LAScripts wrapper for setting object attributes. Depends on LAScripts framework."
+refactor = "Demo/example code showing attributes API."
+quality = 1
+
+[Utilities."Set Info (LAScripts)"]
+old_path = "old2/Set Info.js"
+desc = "LAScripts wrapper for setting object info/metadata. Depends on LAScripts framework."
+refactor = "Framework-specific functionality."
+quality = 1
+
+# ============================================================================
+# OLD2: PATHS & SHAPES
+# ============================================================================
+
+[Paths."Remove Hidden Path (LAScripts)"]
+old_path = "old2/Remove Hidden Path.js"
+desc = "LAScripts wrapper to remove hidden paths. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful cleanup utility."
+quality = 2
+
+[Paths."Join to Area (LAScripts)"]
+old_path = "old2/Join to area.js"
+desc = "LAScripts wrapper to join paths to area. Depends on LAScripts framework."
+refactor = "Reimplement as standalone if useful."
+quality = 2
+
+# ============================================================================
+# OLD2: SECTIONS (FRAMEWORK-SPECIFIC)
+# ============================================================================
+
+[Varia."Activate Section (LAScripts)"]
+old_path = "old2/Activate section.js"
+desc = "LAScripts framework-specific section activation. Depends on LAScripts framework."
+refactor = "Framework-specific concept. Not applicable as standalone."
+quality = 1
+
+[Varia."Create Section (LAScripts)"]
+old_path = "old2/Create section.js"
+desc = "LAScripts framework-specific section creation. Depends on LAScripts framework."
+refactor = "Framework-specific concept. Not applicable as standalone."
+quality = 1
+
+# ============================================================================
+# OLD2: SIZING & SCALING
+# ============================================================================
+
+[Transform."Height to Artboard (LAScripts)"]
+old_path = "old2/Height to Artboard.js"
+desc = "LAScripts wrapper to match object height to artboard. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful sizing utility."
+quality = 3
+
+[Transform."Height to Selection (LAScripts)"]
+old_path = "old2/Height To Selection.js"
+desc = "LAScripts wrapper to match heights in selection. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful sizing utility."
+quality = 3
+
+[Transform."Width to Artboard (LAScripts)"]
+old_path = "old2/Width to Artboard.js"
+desc = "LAScripts wrapper to match object width to artboard. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful sizing utility."
+quality = 3
+
+[Transform."Width to Selection (LAScripts)"]
+old_path = "old2/Width To Selection.js"
+desc = "LAScripts wrapper to match widths in selection. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful sizing utility."
+quality = 3
+
+[Transform."Size to Artboard (LAScripts)"]
+old_path = "old2/Size to Artboard.js"
+desc = "LAScripts wrapper to match object size to artboard. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Combines width and height."
+quality = 3
+
+[Transform."Size to Selection (LAScripts)"]
+old_path = "old2/Size to Selection.js"
+desc = "LAScripts wrapper to match sizes in selection. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Combines width and height."
+quality = 3
+
+[Transform."Height Demo (LAScripts)"]
+old_path = "old2/Height.js"
+desc = "LAScripts demo showing height manipulation with anchors and constraints. Framework demo code."
+refactor = "Demo/example code. Not a user-facing script."
+quality = 1
+
+[Transform."Width Demo (LAScripts)"]
+old_path = "old2/Width.js"
+desc = "LAScripts demo showing width manipulation with anchors and constraints. Framework demo code."
+refactor = "Demo/example code. Not a user-facing script."
+quality = 1
+
+[Transform."Random Scale (LAScripts)"]
+old_path = "old2/Random Scale.js"
+desc = "LAScripts wrapper to apply random scaling. Depends on LAScripts framework."
+refactor = "Redundant with RandomScale.js. Framework-dependent."
+quality = 1
+
+[Transform."Scale Down (LAScripts)"]
+old_path = "old2/scaleDown.js"
+desc = "LAScripts wrapper to scale down objects. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement as standalone if useful."
+quality = 2
+
+[Transform."Scale Up (LAScripts)"]
+old_path = "old2/scaleUp.js"
+desc = "LAScripts wrapper to scale up objects. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement as standalone if useful."
+quality = 2
+
+[Transform."Reflect (LAScripts)"]
+old_path = "old2/Reflect.js"
+desc = "LAScripts wrapper for reflection operations. Depends on LAScripts framework."
+refactor = "Simple utility. Reimplement as standalone."
+quality = 2
+
+# ============================================================================
+# OLD2: TEXT
+# ============================================================================
+
+[Text."Text All Convert to Outline (LAScripts)"]
+old_path = "old2/Text All Convert to Outline.js"
+desc = "LAScripts wrapper to convert all text to outlines. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful for final production."
+quality = 3
+
+[Text."Text Convert Area to Point (LAScripts)"]
+old_path = "old2/Text Convert Area to Point.js"
+desc = "LAScripts wrapper to convert area text to point text. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful text utility."
+quality = 3
+
+[Text."Text Convert Point to Area (LAScripts)"]
+old_path = "old2/Text Convert Point to Area.js"
+desc = "LAScripts wrapper to convert point text to area text. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful text utility."
+quality = 3
+
+[Text."Text to Text (LAScripts)"]
+old_path = "old2/Text To Text.js"
+desc = "LAScripts wrapper for text-to-text operations. Depends on LAScripts framework."
+refactor = "Unclear functionality. Framework-specific."
+quality = 1
+
+[Text."Join Text (LAScripts)"]
+old_path = "old2/JoinText.js"
+desc = "LAScripts wrapper to join text frames. Depends on LAScripts framework."
+refactor = "Reimplement as standalone if useful for combining text."
+quality = 2
+
+[Text."Divide Text (LAScripts)"]
+old_path = "old2/DivideText.js"
+desc = "LAScripts wrapper to divide/split text. Depends on LAScripts framework."
+refactor = "Redundant with splitText.js. Framework-dependent."
+quality = 1
+
+# ============================================================================
+# OLD2: GROUPING & Z-INDEX
+# ============================================================================
+
+[Transform."Ungroup (LAScripts)"]
+old_path = "old2/Ungroup.js"
+desc = "LAScripts wrapper to ungroup objects. Has event modifiers for selection vs document scope. Depends on LAScripts framework."
+refactor = "Redundant with ungroup.js and ExtUngroup.jsx. Framework-dependent."
+quality = 1
+
+[Transform."Z-Index (LAScripts)"]
+old_path = "old2/zIndex.js"
+desc = "LAScripts wrapper for stacking order manipulation. Depends on LAScripts framework."
+refactor = "Reimplement as standalone. Useful for layer management."
+quality = 2
+
+# ============================================================================
+# OLD2: UTILITIES & FRAMEWORK
+# ============================================================================
+
+[Varia."Action (LAScripts)"]
+old_path = "old2/Action.js"
+desc = "LAScripts framework action runner. Depends on LAScripts framework."
+refactor = "Framework-specific utility. Not applicable as standalone."
+quality = 1
+
+[Varia."Set Maker (LAScripts)"]
+old_path = "old2/Set maker.js"
+desc = "LAScripts framework set maker utility. Depends on LAScripts framework."
+refactor = "Framework-specific utility. Not applicable as standalone."
+quality = 1
+
+[Varia."Reload Extension (LAScripts)"]
+old_path = "old2/Reload extension.js"
+desc = "LAScripts framework reload utility for development. Depends on LAScripts framework."
+refactor = "Framework development tool. Not applicable as standalone."
+quality = 1

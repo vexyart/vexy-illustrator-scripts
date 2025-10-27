@@ -1,0 +1,2095 @@
+Scripts Requiring Manual Processing
+============================================================
+
+COMPLEX SCRIPTS:
+
+Fit Artboards to Artwork"]
+  File: old/FitArtboardsToArtwork.jsx
+  Quality: 5
+  Reason: Too many lines (734)
+  Category: Favorites
+
+Batch Renamer"]
+  File: old/BatchRenamer.jsx
+  Quality: 5
+  Reason: Too many lines (1433)
+  Category: Favorites
+
+Export as PDF"]
+  File: old/exportAsPDF.js
+  Quality: 5
+  Reason: Too many lines (738)
+  Category: Favorites
+
+Step and Repeat"]
+  File: old/stepAndRepeat.js
+  Quality: 5
+  Reason: Too many lines (482)
+  Category: Favorites
+
+Go to Line in Text"]
+  File: old/goToLine.js
+  Quality: 5
+  Reason: Too many lines (227)
+  Category: Favorites
+
+Create Artboards from Selection"]
+  File: old/createArtboardsFromTheSelection.jsx
+  Quality: 4
+  Reason: Too many lines (205)
+  Category: Artboards
+
+Navigate to Next Artboard"]
+  File: old/navigateToNextArtboard.js
+  Quality: 3
+  Reason: Too many lines (61)
+  Category: Artboards
+
+Navigate to Previous Artboard"]
+  File: old/navigateToPreviousArtboard.js
+  Quality: 3
+  Reason: Too many lines (61)
+  Category: Artboards
+
+Navigate to First Artboard"]
+  File: old/navigateToFirstArtboard.js
+  Quality: 2
+  Reason: Too many lines (60)
+  Category: Artboards
+
+Navigate to Last Artboard"]
+  File: old/navigateToLastArtboard.js
+  Quality: 2
+  Reason: Too many lines (60)
+  Category: Artboards
+
+Artboards Remapper"]
+  File: old/ArtboardsRemapper.jsx
+  Quality: 4
+  Reason: Too many lines (243)
+  Category: Artboards
+
+Artboards Finder"]
+  File: old/ArtboardsFinder.jsx
+  Quality: 3
+  Reason: Too many lines (422)
+  Category: Artboards
+
+Rename Artboard"]
+  File: old/renameArtboard.js
+  Quality: 2
+  Reason: Too many lines (606)
+  Category: Artboards
+
+Resize Artboards with Objects"]
+  File: old/artboardsResizeWithObjects.jsx
+  Quality: 4
+  Reason: Too many lines (245)
+  Category: Artboards
+
+Rotate Artboards with Objects"]
+  File: old/artboardsRotateWithObjects.jsx
+  Quality: 3
+  Reason: Too many lines (131)
+  Category: Artboards
+
+Rename Artboard as Layer"]
+  File: old/RenameArtboardAsLayer.jsx
+  Quality: 3
+  Reason: Too many lines (365)
+  Category: Artboards
+
+Rename Artboard as Size"]
+  File: old/RenameArtboardAsSize.jsx
+  Quality: 4
+  Reason: Too many lines (423)
+  Category: Artboards
+
+Rename Artboard as Top Object"]
+  File: old/RenameArtboardAsTopObj.jsx
+  Quality: 3
+  Reason: Too many lines (379)
+  Category: Artboards
+
+Draw Rectangles by Artboards"]
+  File: old/DrawRectanglesByArtboards.jsx
+  Quality: 3
+  Reason: Too many lines (541)
+  Category: Artboards
+
+Center Clips to Artboards"]
+  File: old/CenterClipsToArtboards.jsx
+  Quality: 3
+  Reason: Too many lines (192)
+  Category: Artboards
+
+Mask Artboards"]
+  File: old/MaskArtboards.jsx
+  Quality: 3
+  Reason: Too many lines (525)
+  Category: Artboards
+
+Sort Artboards"]
+  File: old/sortArtboards.js
+  Quality: 3
+  Reason: Too many lines (89)
+  Category: Artboards
+
+Show Artboard Name"]
+  File: old/showArtboardName.js
+  Quality: 2
+  Reason: Too many lines (161)
+  Category: Artboards
+
+Duplicate Artboards Light"]
+  File: old/DuplicateArtboardsLight.jsx
+  Quality: 2
+  Reason: Too many lines (552)
+  Category: Artboards
+
+Go to Next Text Frame"]
+  File: old/goToNextText.js
+  Quality: 3
+  Reason: Too many lines (114)
+  Category: Text
+
+Go to Previous Text Frame"]
+  File: old/goToPreviousText.js
+  Quality: 3
+  Reason: Too many lines (114)
+  Category: Text
+
+Swap Text Contents"]
+  File: old/swapTextContents.js
+  Quality: 3
+  Reason: Too many lines (45)
+  Category: Text
+
+Batch Text Edit"]
+  File: old/batchTextEdit.jsx
+  Quality: 3
+  Reason: Too many lines (133)
+  Category: Text
+
+Multi-Edit Text"]
+  File: old/MultiEditText.jsx
+  Quality: 3
+  Reason: Too many lines (563)
+  Category: Text
+
+Insert Text"]
+  File: old/InsertText.jsx
+  Quality: 2
+  Reason: Too many lines (622)
+  Category: Text
+
+Split Text"]
+  File: old/splitText.js
+  Quality: 3
+  Reason: Too many lines (433)
+  Category: Text
+
+Split Text at Cursor Position"]
+  File: old/splitTextAtCursorPosition.js
+  Quality: 3
+  Reason: Too many lines (171)
+  Category: Text
+
+Create Threaded Text"]
+  File: old/createThreadedText.js
+  Quality: 3
+  Reason: Too many lines (1121)
+  Category: Text
+
+Create Text Parallel to Path Segment"]
+  File: old/createTextParallelToPathSegment.js
+  Quality: 3
+  Reason: Too many lines (725)
+  Category: Text
+
+Convert Type on Path to Point Type"]
+  File: old/convertTypeOnAPathToPointType.js
+  Quality: 3
+  Reason: Too many lines (52)
+  Category: Text
+
+Align Text Baseline"]
+  File: old/AlignTextBaseline.jsx
+  Quality: 4
+  Reason: Too many lines (210)
+  Category: Text
+
+Text Block"]
+  File: old/TextBlock.jsx
+  Quality: 2
+  Reason: Too many lines (383)
+  Category: Text
+
+Random Text Color"]
+  File: old/randomTextColor.js
+  Quality: 2
+  Reason: Too many lines (434)
+  Category: Text
+
+Enclose Word in Parentheses"]
+  File: old/encloseWordInParentheses.js
+  Quality: 2
+  Reason: Too many lines (81)
+  Category: Text
+
+Highlight Word"]
+  File: old/highlightWord.js
+  Quality: 2
+  Reason: Too many lines (469)
+  Category: Text
+
+Delete Word"]
+  File: old/deleteWord.js
+  Quality: 1
+  Reason: Too many lines (87)
+  Category: Text
+
+Delete Trailing Spaces"]
+  File: old/deleteTrailingSpaces.js
+  Quality: 3
+  Reason: Too many lines (62)
+  Category: Text
+
+Delete All Left"]
+  File: old/deleteAllLeft.js
+  Quality: 1
+  Reason: Too many lines (72)
+  Category: Text
+
+Delete All Right"]
+  File: old/deleteAllRight.js
+  Quality: 1
+  Reason: Too many lines (61)
+  Category: Text
+
+Text Align Center"]
+  File: old/textAlign_Center.js
+  Quality: 1
+  Reason: Too many lines (48)
+  Category: Text
+
+Text Align Left"]
+  File: old/textAlign_Left.js
+  Quality: 1
+  Reason: Too many lines (52)
+  Category: Text
+
+Text Align Right"]
+  File: old/textAlign_Right.js
+  Quality: 1
+  Reason: Too many lines (48)
+  Category: Text
+
+Insert Line Above"]
+  File: old/insertLineAbove.js
+  Quality: 1
+  Reason: Too many lines (45)
+  Category: Text
+
+Insert Line Below"]
+  File: old/insertLineBelow.js
+  Quality: 1
+  Reason: Too many lines (46)
+  Category: Text
+
+Copy Line Down"]
+  File: old/copyLineDown.js
+  Quality: 3
+  Reason: Too many lines (71)
+  Category: Text
+
+Copy Line Up"]
+  File: old/copyLineUp.js
+  Quality: 3
+  Reason: Too many lines (72)
+  Category: Text
+
+Copy Line (Empty Selection)"]
+  File: old/copyLine(emptySelection).js
+  Quality: 3
+  Reason: Too many lines (47)
+  Category: Text
+
+Cut Line (Empty Selection)"]
+  File: old/cutLine(emptySelection).js
+  Quality: 3
+  Reason: Too many lines (46)
+  Category: Text
+
+Move Line Down"]
+  File: old/moveLineDown.js
+  Quality: 3
+  Reason: Too many lines (63)
+  Category: Text
+
+Move Line Up"]
+  File: old/moveLineUp.js
+  Quality: 3
+  Reason: Too many lines (79)
+  Category: Text
+
+Sort Lines"]
+  File: old/sortLines.js
+  Quality: 3
+  Reason: Too many lines (383)
+  Category: Text
+
+Sum Numbers"]
+  File: old/sumNumbers.js
+  Quality: 3
+  Reason: Too many lines (173)
+  Category: Text
+
+Create Page Numbers"]
+  File: old/createPageNumbers.js
+  Quality: 4
+  Reason: Too many lines (538)
+  Category: Text
+
+Make Numbers Sequence"]
+  File: old/MakeNumbersSequence.jsx
+  Quality: 4
+  Reason: Too many lines (525)
+  Category: Text
+
+Reverse Gradient Color"]
+  File: old/ReverseGradientColor.jsx
+  Quality: 4
+  Reason: Too many lines (87)
+  Category: Colors
+
+Delete All Swatches"]
+  File: old/deleteAllSwatches.js
+  Quality: 3
+  Reason: Too many lines (38)
+  Category: Colors
+
+Average Colors"]
+  File: old/AverageColors.jsx
+  Quality: 3
+  Reason: Too many lines (385)
+  Category: Colors
+
+Match Colors"]
+  File: old/MatchColors.jsx
+  Quality: 3
+  Reason: Too many lines (366)
+  Category: Colors
+
+Random Color from Range"]
+  File: old/RandomColorFromRange.js
+  Quality: 2
+  Reason: Too many lines (411)
+  Category: Colors
+
+Random Color from Swatches"]
+  File: old/RandomColorFromSwatches.js
+  Quality: 3
+  Reason: Too many lines (142)
+  Category: Colors
+
+Round Color Value"]
+  File: old/roundColorValue.js
+  Quality: 3
+  Reason: Too many lines (85)
+  Category: Colors
+
+Show Color Values"]
+  File: old/showColorValues.js
+  Quality: 3
+  Reason: Too many lines (146)
+  Category: Colors
+
+Convert to Spot Color"]
+  File: old/convertToSpotColor.js
+  Quality: 4
+  Reason: Too many lines (124)
+  Category: Colors
+
+Convert to Global Color"]
+  File: old/convertToGlobalColor.js
+  Quality: 4
+  Reason: Too many lines (124)
+  Category: Colors
+
+Remove Deleted Global Color"]
+  File: old/removeDeletedGlobalColor.js
+  Quality: 3
+  Reason: Too many lines (40)
+  Category: Colors
+
+Export Color Values to CSV"]
+  File: old/exportColorValuesToCSV.js
+  Quality: 4
+  Reason: Too many lines (145)
+  Category: Colors
+
+Import CSV to Swatch"]
+  File: old/importCSVtoSwatch.js
+  Quality: 4
+  Reason: Too many lines (187)
+  Category: Colors
+
+Create Color Chart"]
+  File: old/createColorChart.js
+  Quality: 4
+  Reason: Too many lines (1112)
+  Category: Colors
+
+Color Corrector"]
+  File: old/ColorCorrector.jsx
+  Quality: 3
+  Reason: Too many lines (440)
+  Category: Colors
+
+Color Blind Simulator"]
+  File: old/ColorBlindSimulator.jsx
+  Quality: 5
+  Reason: Too many lines (345)
+  Category: Colors
+
+Contrast Checker"]
+  File: old/ContrastChecker.jsx
+  Quality: 5
+  Reason: Too many lines (556)
+  Category: Colors
+
+Cycle Colors"]
+  File: old/CycleColors.jsx
+  Quality: 2
+  Reason: Too many lines (388)
+  Category: Colors
+
+Cycle Gradient"]
+  File: old/CycleGradient.jsx
+  Quality: 2
+  Reason: Too many lines (238)
+  Category: Colors
+
+Cycle Gradient Forward"]
+  File: old/CycleGradientForward.jsx
+  Quality: 2
+  Reason: Too many lines (101)
+  Category: Colors
+
+Cycle Gradient Backward"]
+  File: old/CycleGradientBackward.jsx
+  Quality: 2
+  Reason: Too many lines (101)
+  Category: Colors
+
+Cycle Gradient Random"]
+  File: old/CycleGradientRandom.jsx
+  Quality: 2
+  Reason: Too many lines (111)
+  Category: Colors
+
+Generate Gradient Color"]
+  File: old/generateGradientColor.js
+  Quality: 3
+  Reason: Too many lines (140)
+  Category: Colors
+
+Extract Colors from Gradient"]
+  File: old/extractColorsFromGradient.js
+  Quality: 3
+  Reason: Too many lines (118)
+  Category: Colors
+
+Shuffle Gradient Color"]
+  File: old/shuffleGradientColor.js
+  Quality: 2
+  Reason: Too many lines (84)
+  Category: Colors
+
+Match Location of Gradient Stop"]
+  File: old/matchLocationOfGradientStop.js
+  Quality: 3
+  Reason: Too many lines (161)
+  Category: Colors
+
+Round Location of Gradient Stop"]
+  File: old/roundLocationOfGradientStop.js
+  Quality: 3
+  Reason: Too many lines (72)
+  Category: Colors
+
+Remove Gradient Stops"]
+  File: old/RemoveGradientStops.jsx
+  Quality: 3
+  Reason: Too many lines (105)
+  Category: Colors
+
+Distribute Gradient Stops"]
+  File: old/DistributeGradientStops.jsx
+  Quality: 4
+  Reason: Too many lines (109)
+  Category: Colors
+
+Convert to Gradient"]
+  File: old/ConvertToGradient.jsx
+  Quality: 3
+  Reason: Too many lines (184)
+  Category: Colors
+
+Grayscale to Opacity"]
+  File: old/GrayscaleToOpacity.jsx
+  Quality: 4
+  Reason: Too many lines (55)
+  Category: Colors
+
+Stroke Color from Fill"]
+  File: old/StrokeColorFromFill.jsx
+  Quality: 2
+  Reason: Too many lines (722)
+  Category: Colors
+
+Add Selected Gradients to Swatch"]
+  File: old/addSelectedGradientsToSwatch.js
+  Quality: 3
+  Reason: Too many lines (112)
+  Category: Colors
+
+Transfer Swatches"]
+  File: old/transferSwatches.jsx
+  Quality: 3
+  Reason: Too many lines (209)
+  Category: Colors
+
+Sync Global Colors Names"]
+  File: old/SyncGlobalColorsNames.jsx
+  Quality: 4
+  Reason: Too many lines (135)
+  Category: Colors
+
+Unify Color"]
+  File: old/unifyColor.js
+  Quality: 2
+  Reason: Too many lines (44)
+  Category: Colors
+
+Unify Layer Colors"]
+  File: old/unifyLayerColors.js
+  Quality: 2
+  Reason: Too many lines (50)
+  Category: Colors
+
+Random Opacity"]
+  File: old/RandomOpacity.js
+  Quality: 2
+  Reason: Too many lines (201)
+  Category: Colors
+
+Change Opacity"]
+  File: old/ChangeOpacity.jsx
+  Quality: 2
+  Reason: Too many lines (663)
+  Category: Colors
+
+Beautify Swatch Names"]
+  File: old/BeautifySwatchNames.jsx
+  Quality: 3
+  Reason: Too many lines (30683)
+  Category: Colors
+
+Beautify Swatch Names Lite"]
+  File: old/BeautifySwatchNames-Lite.jsx
+  Quality: 2
+  Reason: Too many lines (5078)
+  Category: Colors
+
+Color Group Replacer"]
+  File: old/ColorGroupReplacer.jsx
+  Quality: 4
+  Reason: Too many lines (206)
+  Category: Colors
+
+Random Selection"]
+  File: old/RandomSelection.js
+  Quality: 3
+  Reason: Too many lines (150)
+  Category: Selection
+
+Corners Selector"]
+  File: old/CornersSelector.jsx
+  Quality: 3
+  Reason: Too many lines (139)
+  Category: Selection
+
+Select Only Points"]
+  File: old/SelectOnlyPoints.jsx
+  Quality: 3
+  Reason: Too many lines (89)
+  Category: Selection
+
+Select Points by Type"]
+  File: old/SelectPointsByType.jsx
+  Quality: 4
+  Reason: Too many lines (452)
+  Category: Selection
+
+Select Artboard Objects"]
+  File: old/SelectArtboardObjects.jsx
+  Quality: 4
+  Reason: Too many lines (290)
+  Category: Selection
+
+Select by Swatches"]
+  File: old/SelectBySwatches.jsx
+  Quality: 4
+  Reason: Too many lines (292)
+  Category: Selection
+
+Select Link"]
+  File: old/selectLink.js
+  Quality: 3
+  Reason: Too many lines (200)
+  Category: Selection
+
+Select Embedded Link"]
+  File: old/selectEmbeddedLink.js
+  Quality: 3
+  Reason: Too many lines (37)
+  Category: Selection
+
+Select Missing Link"]
+  File: old/selectMissingLink.js
+  Quality: 4
+  Reason: Too many lines (42)
+  Category: Selection
+
+Select Guides"]
+  File: old/selectGuides.js
+  Quality: 3
+  Reason: Too many lines (41)
+  Category: Selection
+
+Select Rotated Items"]
+  File: old/SelectRotatedItems.jsx
+  Quality: 3
+  Reason: Too many lines (79)
+  Category: Selection
+
+Select All Layers Above"]
+  File: old/SelectAllLayersAbove.jsx
+  Quality: 2
+  Reason: Too many lines (85)
+  Category: Selection
+
+Select All Layers Below"]
+  File: old/SelectAllLayersBelow.jsx
+  Quality: 2
+  Reason: Too many lines (85)
+  Category: Selection
+
+Remember Selection Layers"]
+  File: old/RememberSelectionLayers.jsx
+  Quality: 3
+  Reason: Too many lines (163)
+  Category: Selection
+
+Align Objects"]
+  File: old/alignObjects.js
+  Quality: 3
+  Reason: Too many lines (1432)
+  Category: Transform
+
+Align in Center of Space (Horizontal)"]
+  File: old/alignInCenterOfSpace(Horizontal).js
+  Quality: 3
+  Reason: Too many lines (117)
+  Category: Transform
+
+Align in Center of Space (Vertical)"]
+  File: old/alignInCenterOfSpace(Vertical).js
+  Quality: 3
+  Reason: Too many lines (117)
+  Category: Transform
+
+Distribute in Space (Horizontal)"]
+  File: old/distributeInSpace(Horizontal).js
+  Quality: 3
+  Reason: Too many lines (120)
+  Category: Transform
+
+Distribute in Space (Vertical)"]
+  File: old/distributeInSpace(Vertical).js
+  Quality: 3
+  Reason: Too many lines (120)
+  Category: Transform
+
+Justify Content Space Between"]
+  File: old/justifyContentSpaceBetween.js
+  Quality: 4
+  Reason: Too many lines (194)
+  Category: Transform
+
+Center in Artboard"]
+  File: old/center-in-artboard.js
+  Quality: 2
+  Reason: Contains complex keyword: for\s*\(
+  Category: Transform
+
+Fit Selected Objects in Window"]
+  File: old/fitSelectedObjectsInWindow.js
+  Quality: 2
+  Reason: Too many lines (122)
+  Category: Transform
+
+Mirror Move"]
+  File: old/MirrorMove.jsx
+  Quality: 4
+  Reason: Too many lines (316)
+  Category: Transform
+
+Move Artboards"]
+  File: old/MoveArtboards.jsx
+  Quality: 3
+  Reason: Too many lines (490)
+  Category: Transform
+
+Move Guides"]
+  File: old/moveGuides.js
+  Quality: 2
+  Reason: Too many lines (210)
+  Category: Transform
+
+Shift Objects"]
+  File: old/shiftObjects.js
+  Quality: 3
+  Reason: Too many lines (919)
+  Category: Transform
+
+Rearrange Objects"]
+  File: old/rearrangeObjects.js
+  Quality: 3
+  Reason: Too many lines (1529)
+  Category: Transform
+
+Shuffle Objects"]
+  File: old/shuffleObjects.js
+  Quality: 2
+  Reason: Too many lines (90)
+  Category: Transform
+
+Random Position"]
+  File: old/RandomPosition.js
+  Quality: 2
+  Reason: Too many lines (256)
+  Category: Transform
+
+Random Rotation"]
+  File: old/RandomRotation.js
+  Quality: 2
+  Reason: Too many lines (210)
+  Category: Transform
+
+Random Scale"]
+  File: old/RandomScale.js
+  Quality: 2
+  Reason: Too many lines (283)
+  Category: Transform
+
+Random Layer Order"]
+  File: old/RandomLayerOrder.js
+  Quality: 2
+  Reason: Too many lines (133)
+  Category: Transform
+
+Compare Scale"]
+  File: old/compareScale.js
+  Quality: 3
+  Reason: Too many lines (409)
+  Category: Transform
+
+Reset to Full Scale"]
+  File: old/resetToFullScale.js
+  Quality: 3
+  Reason: Too many lines (96)
+  Category: Transform
+
+Rescale"]
+  File: old/Rescale.jsx
+  Quality: 3
+  Reason: Too many lines (209)
+  Category: Transform
+
+Resize on Larger Side"]
+  File: old/ResizeOnLargerSide.jsx
+  Quality: 3
+  Reason: Too many lines (125)
+  Category: Transform
+
+Resize to Size"]
+  File: old/ResizeToSize.jsx
+  Quality: 4
+  Reason: Too many lines (568)
+  Category: Transform
+
+Swap Objects"]
+  File: old/SwapObjects.jsx
+  Quality: 3
+  Reason: Too many lines (643)
+  Category: Transform
+
+Offset Objects"]
+  File: old/OffsetObjects.jsx
+  Quality: 4
+  Reason: Too many lines (789)
+  Category: Transform
+
+Duplicate to Artboards"]
+  File: old/DuplicateToArtboards.jsx
+  Quality: 4
+  Reason: Too many lines (508)
+  Category: Transform
+
+Extract from Group"]
+  File: old/ExtractFromGroup.jsx
+  Quality: 3
+  Reason: Too many lines (74)
+  Category: Transform
+
+Move to Group"]
+  File: old/MoveToGroup.jsx
+  Quality: 3
+  Reason: Too many lines (182)
+  Category: Transform
+
+Ungroup"]
+  File: old/ungroup.js
+  Quality: 2
+  Reason: Too many lines (39)
+  Category: Transform
+
+Extended Ungroup"]
+  File: old/ExtUngroup.jsx
+  Quality: 3
+  Reason: Too many lines (170)
+  Category: Transform
+
+Place Symbols"]
+  File: old/PlaceSymbols.jsx
+  Quality: 3
+  Reason: Too many lines (448)
+  Category: Transform
+
+Dup At Selected Anchors"]
+  File: old/Dup At Selected Anchors.jsx
+  Quality: 3
+  Reason: Too many lines (56)
+  Category: Transform
+
+Rotate Text to Match Path Segment Angle"]
+  File: old/rotateTextToMatchPathSegmentAngle.js
+  Quality: 3
+  Reason: Too many lines (162)
+  Category: Transform
+
+Connect All Nodes"]
+  File: old/ConnectAllNodes.jsx
+  Quality: 3
+  Reason: Too many lines (102)
+  Category: Paths
+
+Close Path"]
+  File: old/closePath.js
+  Quality: 2
+  Reason: Too many lines (130)
+  Category: Paths
+
+Split Path"]
+  File: old/SplitPath.jsx
+  Quality: 3
+  Reason: Too many lines (329)
+  Category: Paths
+
+Cut at Selected Anchors"]
+  File: old/Cut At Selected Anchors.jsx
+  Quality: 3
+  Reason: Too many lines (68)
+  Category: Paths
+
+Disjoin Path"]
+  File: old/disjoinPath.js
+  Quality: 2
+  Reason: Too many lines (132)
+  Category: Paths
+
+Join Overlapping Paths"]
+  File: old/joinOverlap.jsx
+  Quality: 3
+  Reason: Too many lines (235)
+  Category: Paths
+
+Join Reasonably"]
+  File: old/Join Reasonably.jsx
+  Quality: 3
+  Reason: Too many lines (195)
+  Category: Paths
+
+Draw Path by Selected Points"]
+  File: old/DrawPathBySelectedPoints.jsx
+  Quality: 3
+  Reason: Too many lines (169)
+  Category: Paths
+
+Add Anchor Points"]
+  File: old/addAnchorPoints.js
+  Quality: 3
+  Reason: Too many lines (386)
+  Category: Paths
+
+Remove Anchors"]
+  File: old/Remove Anchors.jsx
+  Quality: 3
+  Reason: Too many lines (36)
+  Category: Paths
+
+Convert All Anchor Points to Corner"]
+  File: old/convertAllAnchorPointsToCorner.js
+  Quality: 2
+  Reason: Too many lines (156)
+  Category: Paths
+
+Increase Selected Anchor Points (CCW)"]
+  File: old/increaseSelectedAnchorPointsCCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Increase Selected Anchor Points (CW)"]
+  File: old/increaseSelectedAnchorPointsCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Decrease Selected Anchor Points (CCW)"]
+  File: old/decreaseSelectedAnchorPointsCCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Decrease Selected Anchor Points (CW)"]
+  File: old/decreaseSelectedAnchorPointsCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Shift Selected Anchor Points (CCW)"]
+  File: old/shiftSelectedAnchorPointsCCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Shift Selected Anchor Points (CW)"]
+  File: old/shiftSelectedAnchorPointsCW.js
+  Quality: 2
+  Reason: Too many lines (159)
+  Category: Paths
+
+Set Points Coordinates"]
+  File: old/SetPointsCoordinates.jsx
+  Quality: 4
+  Reason: Too many lines (348)
+  Category: Paths
+
+Merge Overlapped Anchors"]
+  File: old/Merge Overlapped Anchors.jsx
+  Quality: 3
+  Reason: Too many lines (81)
+  Category: Paths
+
+Points Move Random"]
+  File: old/PointsMoveRandom.jsx
+  Quality: 2
+  Reason: Too many lines (454)
+  Category: Paths
+
+Numerates Points"]
+  File: old/NumeratesPoints.jsx
+  Quality: 3
+  Reason: Too many lines (384)
+  Category: Paths
+
+Extend Handle"]
+  File: old/extendHandle.js
+  Quality: 3
+  Reason: Too many lines (632)
+  Category: Paths
+
+Extend Handles"]
+  File: old/Extend Handles.jsx
+  Quality: 2
+  Reason: Too many lines (52)
+  Category: Paths
+
+Extend Line"]
+  File: old/extendLine.js
+  Quality: 3
+  Reason: Too many lines (334)
+  Category: Paths
+
+Draw S-Curve"]
+  File: old/drawS-curve.js
+  Quality: 3
+  Reason: Too many lines (379)
+  Category: Paths
+
+Draw Normal Line"]
+  File: old/drawNormalLine.js
+  Quality: 3
+  Reason: Too many lines (752)
+  Category: Paths
+
+Draw Circumscribed Circle"]
+  File: old/drawCircumscribedCircle.js
+  Quality: 3
+  Reason: Too many lines (127)
+  Category: Paths
+
+Draw Rectangle"]
+  File: old/drawRectangle.js
+  Quality: 1
+  Reason: Too many lines (316)
+  Category: Paths
+
+Draw Shape on Anchor Point"]
+  File: old/drawShapeOnAnchorPoint.js
+  Quality: 3
+  Reason: Too many lines (536)
+  Category: Paths
+
+Draw Shape Parallel to Path Segment"]
+  File: old/drawShapeParallelToPathSegment.js
+  Quality: 3
+  Reason: Too many lines (561)
+  Category: Paths
+
+Round Any Corner"]
+  File: old/Round Any Corner.jsx
+  Quality: 4
+  Reason: Too many lines (372)
+  Category: Paths
+
+Circle"]
+  File: old/Circle.jsx
+  Quality: 2
+  Reason: Too many lines (100)
+  Category: Paths
+
+Circumcircle"]
+  File: old/Circumcircle.jsx
+  Quality: 2
+  Reason: Too many lines (111)
+  Category: Paths
+
+Circular"]
+  File: old/circular.jsx
+  Quality: 3
+  Reason: Too many lines (401)
+  Category: Paths
+
+Arc Correction"]
+  File: old/Arc Correction.jsx
+  Quality: 3
+  Reason: Too many lines (309)
+  Category: Paths
+
+Archimedean Spiral"]
+  File: old/Archimedean Spiral.jsx
+  Quality: 3
+  Reason: Too many lines (90)
+  Category: Paths
+
+Sine Curve"]
+  File: old/Sine Curve.jsx
+  Quality: 3
+  Reason: Too many lines (78)
+  Category: Paths
+
+Gauss 2D Samples"]
+  File: old/Gauss2DSamples.jsx
+  Quality: 2
+  Reason: Too many lines (164)
+  Category: Paths
+
+Tangents from a Point"]
+  File: old/Tangents From A Point.jsx
+  Quality: 3
+  Reason: Too many lines (350)
+  Category: Paths
+
+Common Tangents"]
+  File: old/Common Tangents.jsx
+  Quality: 3
+  Reason: Too many lines (252)
+  Category: Paths
+
+Metaball"]
+  File: old/Metaball.jsx
+  Quality: 3
+  Reason: Too many lines (127)
+  Category: Paths
+
+Metaball (Arc)"]
+  File: old/Metaball (Arc).jsx
+  Quality: 2
+  Reason: Too many lines (129)
+  Category: Paths
+
+Triangle Maker"]
+  File: old/TriangleMaker.jsx
+  Quality: 2
+  Reason: Too many lines (593)
+  Category: Paths
+
+Tree-like"]
+  File: old/Tree-like.jsx
+  Quality: 2
+  Reason: Too many lines (139)
+  Category: Paths
+
+Compound Fix"]
+  File: old/compoundFix.jsx
+  Quality: 2
+  Reason: Too many lines (90)
+  Category: Paths
+
+Average Strokes Width"]
+  File: old/AverageStrokesWidth.jsx
+  Quality: 3
+  Reason: Too many lines (122)
+  Category: Strokes
+
+Strokes Weight Up"]
+  File: old/StrokesWeightUp.jsx
+  Quality: 2
+  Reason: Too many lines (518)
+  Category: Strokes
+
+Strokes Weight Down"]
+  File: old/StrokesWeightDown.jsx
+  Quality: 2
+  Reason: Too many lines (506)
+  Category: Strokes
+
+Random Stroke Width"]
+  File: old/RandomStrokeWidth.jsx
+  Quality: 2
+  Reason: Too many lines (375)
+  Category: Strokes
+
+Make Trapping Stroke"]
+  File: old/MakeTrappingStroke.jsx
+  Quality: 4
+  Reason: Too many lines (299)
+  Category: Strokes
+
+Adjust Dashes"]
+  File: old/Adjust Dashes.jsx
+  Quality: 3
+  Reason: Too many lines (114)
+  Category: Strokes
+
+Adjust Dashes (Offset)"]
+  File: old/Adjust Dashes (offset).jsx
+  Quality: 2
+  Reason: Too many lines (144)
+  Category: Strokes
+
+Random Dash"]
+  File: old/random-dash.jsx
+  Quality: 2
+  Reason: Too many lines (182)
+  Category: Strokes
+
+Random Scribble"]
+  File: old/RandomScribble.jsx
+  Quality: 2
+  Reason: Too many lines (398)
+  Category: Strokes
+
+Name Basic Layers"]
+  File: old/name-basic-layers.js
+  Quality: 2
+  Reason: Too many lines (109)
+  Category: Layers
+
+Name Color Layers"]
+  File: old/name-color-layers.js
+  Quality: 2
+  Reason: Too many lines (117)
+  Category: Layers
+
+Rename Layer"]
+  File: old/renameLayer.js
+  Quality: 1
+  Reason: Too many lines (610)
+  Category: Layers
+
+Rename Layer as Text"]
+  File: old/RenameLayerAsText.jsx
+  Quality: 3
+  Reason: Too many lines (100)
+  Category: Layers
+
+Sort Layer Items"]
+  File: old/SortLayerItems.jsx
+  Quality: 3
+  Reason: Too many lines (220)
+  Category: Layers
+
+Move Sublayer to Main Layer"]
+  File: old/moveSublayerToMainLayer.js
+  Quality: 2
+  Reason: Too many lines (51)
+  Category: Layers
+
+Delete Unused Layers"]
+  File: old/deleteUnusedLayers.js
+  Quality: 3
+  Reason: Too many lines (61)
+  Category: Layers
+
+Delete Hidden Layers"]
+  File: old/deleteHiddenLayers.js
+  Quality: 3
+  Reason: Too many lines (39)
+  Category: Layers
+
+Delete Locked Layers"]
+  File: old/deleteLockedLayers.js
+  Quality: 2
+  Reason: Too many lines (38)
+  Category: Layers
+
+Invert Locked Layer"]
+  File: old/invertLockedLayer.js
+  Quality: 2
+  Reason: Too many lines (35)
+  Category: Layers
+
+Invert Visible Layer"]
+  File: old/invertVisibleLayer.js
+  Quality: 2
+  Reason: Too many lines (35)
+  Category: Layers
+
+Artboard Items Move to New Layer"]
+  File: old/artboardItemsMoveToNewLayer.jsx
+  Quality: 3
+  Reason: Too many lines (155)
+  Category: Layers
+
+Group Artboard Objects"]
+  File: old/GroupArtboardObjects.jsx
+  Quality: 3
+  Reason: Too many lines (301)
+  Category: Layers
+
+Batch Trace"]
+  File: old/BatchTrace.jsx
+  Quality: 4
+  Reason: Too many lines (278)
+  Category: Export
+
+Export Selection as AI"]
+  File: old/Export-selection-as-AI.jsx
+  Quality: 3
+  Reason: Too many lines (212)
+  Category: Export
+
+Export PNG"]
+  File: old/export-png.js
+  Quality: 4
+  Reason: Too many lines (41)
+  Category: Export
+
+Export to DXF"]
+  File: old/ExportToDXF.jsx
+  Quality: 4
+  Reason: Too many lines (314)
+  Category: Export
+
+Export Layout"]
+  File: old/Export Layout.jsx
+  Quality: 3
+  Reason: Too many lines (639)
+  Category: Export
+
+Bulk Relink"]
+  File: old/bulkRelink.js
+  Quality: 4
+  Reason: Too many lines (444)
+  Category: Export
+
+Relink to Folder"]
+  File: old/relinkToFolder.js
+  Quality: 3
+  Reason: Too many lines (137)
+  Category: Export
+
+Relink File Extension"]
+  File: old/relinkFileExtension.js
+  Quality: 3
+  Reason: Too many lines (198)
+  Category: Export
+
+Relink File Extension Extra"]
+  File: old/relinkFileExtensionExtra.js
+  Quality: 2
+  Reason: Too many lines (763)
+  Category: Export
+
+Rename Linked File"]
+  File: old/renameLinkedFile.js
+  Quality: 3
+  Reason: Too many lines (397)
+  Category: Export
+
+Mark Missing Link"]
+  File: old/markMissingLink.js
+  Quality: 3
+  Reason: Too many lines (138)
+  Category: Export
+
+Long Shadow"]
+  File: old/long_shadow.jsx
+  Quality: 3
+  Reason: Too many lines (268)
+  Category: Effects
+
+Rich Glitch"]
+  File: old/rich_glitch.jsx
+  Quality: 2
+  Reason: Too many lines (326)
+  Category: Effects
+
+Big Bang"]
+  File: old/bigBang.jsx
+  Quality: 2
+  Reason: Too many lines (221)
+  Category: Effects
+
+Dance"]
+  File: old/Dance.jsx
+  Quality: 2
+  Reason: Too many lines (246)
+  Category: Effects
+
+Random Scribble"]
+  File: old/RandomScribble.jsx
+  Quality: 2
+  Reason: Too many lines (398)
+  Category: Effects
+
+Opacity Mask Clip"]
+  File: old/OpacityMaskClip.jsx
+  Quality: 3
+  Reason: Too many lines (164)
+  Category: Effects
+
+Measure Distance"]
+  File: old/measureDistance.js
+  Quality: 4
+  Reason: Too many lines (749)
+  Category: Measurement
+
+Show Dimensions"]
+  File: old/showDimensions.js
+  Quality: 4
+  Reason: Too many lines (385)
+  Category: Measurement
+
+Object Area"]
+  File: old/ObjectArea.jsx
+  Quality: 4
+  Reason: Too many lines (42)
+  Category: Measurement
+
+Path Length"]
+  File: old/Path Length.jsx
+  Quality: 4
+  Reason: Too many lines (228)
+  Category: Measurement
+
+Unit Calculator"]
+  File: old/unitCalculator.js
+  Quality: 3
+  Reason: Too many lines (582)
+  Category: Measurement
+
+Check Pixel Perfect"]
+  File: old/CheckPixelPerfect.jsx
+  Quality: 4
+  Reason: Too many lines (157)
+  Category: Measurement
+
+Measure"]
+  File: old/Measure.jsx
+  Quality: 3
+  Reason: Too many lines (68)
+  Category: Measurement
+
+Objects Counter"]
+  File: old/ObjectsCounter.jsx
+  Quality: 3
+  Reason: Too many lines (45)
+  Category: Utilities
+
+Named Items Finder"]
+  File: old/NamedItemsFinder.jsx
+  Quality: 4
+  Reason: Too many lines (895)
+  Category: Utilities
+
+Show Object Names"]
+  File: old/ShowObjectNames.jsx
+  Quality: 3
+  Reason: Too many lines (783)
+  Category: Utilities
+
+Show Object Names - Font Picker"]
+  File: old/ShowObjectNames-FontPicker.jsx
+  Quality: 2
+  Reason: Too many lines (800)
+  Category: Utilities
+
+File Version Informer"]
+  File: old/FileVersionInformer.jsx
+  Quality: 3
+  Reason: Too many lines (96)
+  Category: Utilities
+
+Document Switcher"]
+  File: old/DocumentSwitcher.jsx
+  Quality: 2
+  Reason: Too many lines (261)
+  Category: Utilities
+
+Save All Docs"]
+  File: old/SaveAllDocs.jsx
+  Quality: 3
+  Reason: Too many lines (35)
+  Category: Utilities
+
+Close All Documents"]
+  File: old/closeAllDocuments.js
+  Quality: 2
+  Reason: Too many lines (169)
+  Category: Utilities
+
+Force Close Other Documents"]
+  File: old/forceCloseOtherDocuments.jsx
+  Quality: 2
+  Reason: Too many lines (115)
+  Category: Utilities
+
+Arrange Windows"]
+  File: old/arrangeWindows.js
+  Quality: 2
+  Reason: Too many lines (42)
+  Category: Utilities
+
+Sync View"]
+  File: old/syncView.js
+  Quality: 3
+  Reason: Too many lines (50)
+  Category: Utilities
+
+Zoom and Center"]
+  File: old/Zoom-and-center.jsx
+  Quality: 1
+  Reason: Too many lines (429)
+  Category: Utilities
+
+About"]
+  File: old/About.jsx
+  Quality: 1
+  Reason: Too many lines (207)
+  Category: Utilities
+
+Toggle Transform Pattern Tiles"]
+  File: old/toggleTransformPatternTiles.js
+  Quality: 3
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Show Handles"]
+  File: old/toggleShowHandles.js
+  Quality: 2
+  Reason: Too many lines (84)
+  Category: Preferences
+
+Toggle Use Preview Bounds"]
+  File: old/toggleUsePreviewBounds.js
+  Quality: 3
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Zoom with Mouse Wheel"]
+  File: old/toggleZoomWithMouseWheel.js
+  Quality: 2
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Zoom to Selection"]
+  File: old/toggleZoomToSelection.js
+  Quality: 2
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Paste Remembers Layers"]
+  File: old/togglePasteRemembersLayers.js
+  Quality: 3
+  Reason: Too many lines (84)
+  Category: Preferences
+
+Toggle Select Same Tint Percentage"]
+  File: old/toggleSelectSameTintPercentage.js
+  Quality: 2
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Align to Glyph Bounds"]
+  File: old/toggleAlignToGlyphBounds.js
+  Quality: 3
+  Reason: Too many lines (91)
+  Category: Preferences
+
+Toggle Show Character Alternates"]
+  File: old/toggleShowCharacterAlternates.js
+  Quality: 2
+  Reason: Too many lines (82)
+  Category: Preferences
+
+Toggle Fill New Type Objects with Placeholder Text"]
+  File: old/toggleFillNewTypeObjectsWithPlaceholderText.js
+  Quality: 2
+  Reason: Too many lines (90)
+  Category: Preferences
+
+Create Grid Lines"]
+  File: old/createGridLines.js
+  Quality: 3
+  Reason: Too many lines (114)
+  Category: Guides
+
+Create Circular Guides"]
+  File: old/makeCircularGuides.js
+  Quality: 3
+  Reason: Too many lines (301)
+  Category: Guides
+
+Create Crosshair Guides"]
+  File: old/makeCrosshairGuides.js
+  Quality: 3
+  Reason: Too many lines (275)
+  Category: Guides
+
+Fit Guide in Artboard"]
+  File: old/fitGuideInArtboard.js
+  Quality: 2
+  Reason: Too many lines (120)
+  Category: Guides
+
+Remove Color in Guide Object"]
+  File: old/removeColorInGuideObject.js
+  Quality: 1
+  Reason: Too many lines (102)
+  Category: Guides
+
+Divide (Length)"]
+  File: old/Divide (length).jsx
+  Quality: 3
+  Reason: Too many lines (261)
+  Category: Divide
+
+Divide Bottom Path"]
+  File: old/DivideBottomPath.jsx
+  Quality: 2
+  Reason: Too many lines (255)
+  Category: Divide
+
+Subtract Top Path"]
+  File: old/SubtractTopPath.jsx
+  Quality: 2
+  Reason: Too many lines (217)
+  Category: Divide
+
+Trim Masks"]
+  File: old/TrimMasks.jsx
+  Quality: 3
+  Reason: Too many lines (260)
+  Category: Divide
+
+Trim Open Ends"]
+  File: old/TrimOpenEnds.jsx
+  Quality: 2
+  Reason: Too many lines (162)
+  Category: Divide
+
+Nice Slice"]
+  File: old/niceSlice.jsx
+  Quality: 3
+  Reason: Too many lines (328)
+  Category: Divide
+
+Puzzle Clipper"]
+  File: old/puzzleClipper.jsx
+  Quality: 2
+  Reason: Contains complex keyword: while\s*\(
+  Category: Divide
+
+Conversion"]
+  File: old/Conversion.jsx
+  Quality: 3
+  Reason: Too many lines (92)
+  Category: Print
+
+To Print"]
+  File: old/to-print.js
+  Quality: 2
+  Reason: Too many lines (68)
+  Category: Print
+
+Add Margin"]
+  File: old/AddMargin.jsx
+  Quality: 3
+  Reason: Too many lines (240)
+  Category: Layout
+
+Add Padding"]
+  File: old/AddPadding.jsx
+  Quality: 3
+  Reason: Too many lines (218)
+  Category: Layout
+
+Minus Offset"]
+  File: old/minusOffset.jsx
+  Quality: 2
+  Reason: Too many lines (204)
+  Category: Layout
+
+Add Flap"]
+  File: old/Add Flap....jsx
+  Quality: 3
+  Reason: Too many lines (284)
+  Category: Layout
+
+Add Paperbag"]
+  File: old/Add Paperbag....jsx
+  Quality: 2
+  Reason: Too many lines (328)
+  Category: Layout
+
+Duplicator"]
+  File: old/duplicator.jsx
+  Quality: 2
+  Reason: Too many lines (731)
+  Category: Varia
+
+Randomus"]
+  File: old/randomus.jsx
+  Quality: 2
+  Reason: Too many lines (416)
+  Category: Varia
+
+Optimizero"]
+  File: old/optimizero.jsx
+  Quality: 2
+  Reason: Too many lines (305)
+  Category: Varia
+
+Small Worker"]
+  File: old/smallWorker.jsx
+  Quality: 2
+  Reason: Too many lines (664)
+  Category: Varia
+
+Set Maker"]
+  File: old/setMaker.jsx
+  Quality: 2
+  Reason: Too many lines (604)
+  Category: Varia
+
+Fillinger"]
+  File: old/fillinger.jsx
+  Quality: 2
+  Reason: Too many lines (383)
+  Category: Varia
+
+Griddder"]
+  File: old/griddder.jsx
+  Quality: 2
+  Reason: Too many lines (574)
+  Category: Varia
+
+Harmonizer"]
+  File: old/harmonizer.jsx
+  Quality: 2
+  Reason: Too many lines (295)
+  Category: Varia
+
+Cropulka"]
+  File: old/cropulka.jsx
+  Quality: 2
+  Reason: Too many lines (510)
+  Category: Varia
+
+Calendarikko"]
+  File: old/calendarikko.jsx
+  Quality: 2
+  Reason: Too many lines (2102)
+  Category: Varia
+
+Check Day of Week"]
+  File: old/checkDayOfWeek.js
+  Quality: 1
+  Reason: Too many lines (310)
+  Category: Varia
+
+Add Numeric Separators"]
+  File: old/addNumericSeparators.js
+  Quality: 2
+  Reason: Too many lines (85)
+  Category: Varia
+
+Inline SVG to AI"]
+  File: old/inlineSVGToAI.jsx
+  Quality: 3
+  Reason: Too many lines (81)
+  Category: Varia
+
+Is Unified"]
+  File: old/is-unified.js
+  Quality: 1
+  Reason: Too many lines (53)
+  Category: Varia
+
+Reverse"]
+  File: old/Reverse.jsx
+  Quality: 2
+  Reason: Too many lines (52)
+  Category: Varia
+
+Arrow-A"]
+  File: old/Arrow-A.jsx
+  Quality: 2
+  Reason: Too many lines (217)
+  Category: Arrows
+
+Arrow-V"]
+  File: old/Arrow-V.jsx
+  Quality: 2
+  Reason: Too many lines (217)
+  Category: Arrows
+
+Replace Items"]
+  File: old/replaceItems.jsx
+  Quality: 4
+  Reason: Too many lines (229)
+  Category: Replace
+
+Replace Formatted Text"]
+  File: old/ReplaceFormattedText.jsx
+  Quality: 3
+  Reason: Too many lines (152)
+  Category: Replace
+
+Rename Items"]
+  File: old/RenameItems.jsx
+  Quality: 2
+  Reason: Too many lines (643)
+  Category: Rename
+
+Rename Artboards"]
+  File: old/rename-artboards.js
+  Quality: 1
+  Reason: Contains complex keyword: Window
+  Category: Rename
+
+Make Envelopes with Tops"]
+  File: old/MakeEnvelopesWithTops.jsx
+  Quality: 3
+  Reason: Too many lines (70)
+  Category: Advanced
+
+Fit to Arts (Folder)"]
+  File: old/Artboards/Fit to Arts....jsx
+  Quality: 2
+  Reason: Too many lines (32)
+  Category: Artboards
+
+Rename as Imposition (Folder)"]
+  File: old/Artboards/Rename as Imposition....jsx
+  Quality: 3
+  Reason: Too many lines (73)
+  Category: Artboards
+
+Reorder Artboards (Folder)"]
+  File: old/Artboards/Reorder....jsx
+  Quality: 2
+  Reason: Too many lines (39)
+  Category: Artboards
+
+Close Documents (Folder)"]
+  File: old/Documents/Close....jsx
+  Quality: 2
+  Reason: Too many lines (54)
+  Category: Documents
+
+Pre-Flight"]
+  File: old/Documents/Pre-Flight.jsx
+  Quality: 4
+  Reason: Too many lines (55)
+  Category: Documents
+
+Add Trim Marks"]
+  File: old/Objects/Add Trim Marks....jsx
+  Quality: 4
+  Reason: Too many lines (553)
+  Category: Objects
+
+Copy to Artboards"]
+  File: old/Objects/Copy to Artboards....jsx
+  Quality: 3
+  Reason: Too many lines (114)
+  Category: Objects
+
+Count Objects"]
+  File: old/Objects/Count.jsx
+  Quality: 2
+  Reason: Too many lines (100)
+  Category: Objects
+
+Expand Reflected"]
+  File: old/Objects/Expand Reflected....jsx
+  Quality: 3
+  Reason: Too many lines (198)
+  Category: Objects
+
+Step and Repeat (Folder)"]
+  File: old/Objects/Step and Repeat....jsx
+  Quality: 2
+  Reason: Too many lines (125)
+  Category: Objects
+
+Select All (Folder)"]
+  File: old/Select/All....jsx
+  Quality: 3
+  Reason: Too many lines (247)
+  Category: Selection
+
+Select Images (Folder)"]
+  File: old/Select/Images....jsx
+  Quality: 3
+  Reason: Too many lines (154)
+  Category: Selection
+
+Select Links (Folder)"]
+  File: old/Select/Links....jsx
+  Quality: 2
+  Reason: Too many lines (121)
+  Category: Selection
+
+Select Paths (Folder)"]
+  File: old/Select/Paths....jsx
+  Quality: 3
+  Reason: Too many lines (189)
+  Category: Selection
+
+Select Types (Folder)"]
+  File: old/Select/Types....jsx
+  Quality: 3
+  Reason: Too many lines (196)
+  Category: Selection
+
+Create Compound Path (Types Folder)"]
+  File: old/Types/Create Compound Path.jsx
+  Quality: 2
+  Reason: Too many lines (35)
+  Category: Text
+
+Numerize Text (Types Folder)"]
+  File: old/Types/Numerize....jsx
+  Quality: 2
+  Reason: Too many lines (211)
+  Category: Text
+
+Resize Glyph (Types Folder)"]
+  File: old/Types/Resize Glyph....jsx
+  Quality: 3
+  Reason: Too many lines (97)
+  Category: Text
+
+Retype (Types Folder)"]
+  File: old/Types/Retype....jsx
+  Quality: 2
+  Reason: Too many lines (37)
+  Category: Text
+
+Change Page"]
+  File: old/Links/Change Page....jsx
+  Quality: 3
+  Reason: Too many lines (119)
+  Category: Links
+
+Relink Multipage"]
+  File: old/Links/Relink Multipage....jsx
+  Quality: 3
+  Reason: Too many lines (135)
+  Category: Links
+
+Relink Same"]
+  File: old/Links/Relink Same....jsx
+  Quality: 3
+  Reason: Too many lines (87)
+  Category: Links
+
+Impose 1-Up"]
+  File: old/Impose/1-Up....jsx
+  Quality: 3
+  Reason: Too many lines (115)
+  Category: Print
+
+Impose 2-Up"]
+  File: old/Impose/2-Up....jsx
+  Quality: 3
+  Reason: Too many lines (139)
+  Category: Print
+
+Impose 4-Up"]
+  File: old/Impose/4-Up....jsx
+  Quality: 3
+  Reason: Too many lines (158)
+  Category: Print
+
+Impose 8-Up"]
+  File: old/Impose/8-Up....jsx
+  Quality: 3
+  Reason: Too many lines (191)
+  Category: Print
+
+Impose Saddle-Stitch"]
+  File: old/Impose/Saddle-Stitch....jsx
+  Quality: 4
+  Reason: Too many lines (161)
+  Category: Print
+
+Impose Section-Sewn"]
+  File: old/Impose/Section-Sewn....jsx
+  Quality: 4
+  Reason: Too many lines (313)
+  Category: Print
+
+Change Units (FR)"]
+  File: old/ChangerUnites.jsx
+  Quality: 3
+  Reason: Too many lines (153)
+  Category: Utilities
+
+Dimension Tool (FR)"]
+  File: old/Cotation.jsx
+  Quality: 4
+  Reason: Too many lines (1084)
+  Category: Measurement
+
+Photo Dimension Tool (FR)"]
+  File: old/CotationPhoto.jsx
+  Quality: 3
+  Reason: Too many lines (273)
+  Category: Measurement
+
+Layer Colors (FR)"]
+  File: old/Couleur_Calques.jsx
+  Quality: 2
+  Reason: Too many lines (34)
+  Category: Layers
+
+Margins Tool (FR)"]
+  File: old/Marges.jsx
+  Quality: 3
+  Reason: Too many lines (345)
+  Category: Layout
+
+Renumber Layers (FR)"]
+  File: old/Renum_Calques_PlansW.jsx
+  Quality: 3
+  Reason: Too many lines (182)
+  Category: Layers
+
+Vectors to Text (FR)"]
+  File: old/Vecteurs_Vers_Texte.jsx
+  Quality: 3
+  Reason: Too many lines (58)
+  Category: Text
+
+Special Characters (FR)"]
+  File: old/Caracteres_Speciaux/Caracteres_Speciaux.jsx
+  Quality: 4
+  Reason: Too many lines (72)
+  Category: Utilities
+
+Character Code Tool (FR)"]
+  File: old/CodeCharacter/CodeCharacter.jsx
+  Quality: 4
+  Reason: Too many lines (147)
+  Category: Utilities
+
+Scale Tool (FR)"]
+  File: old/Echelle/Echelle.jsx
+  Quality: 4
+  Reason: Too many lines (253)
+  Category: Measurement
+
+Text Height Tool (FR)"]
+  File: old/Hauteur_Texte/Hauteur_Texte.jsx
+  Quality: 3
+  Reason: Too many lines (124)
+  Category: Text
+
+Cleanup Tool (FR)"]
+  File: old/Nettoyage/Nettoyage.jsx
+  Quality: 4
+  Reason: Too many lines (953)
+  Category: Utilities
+
+Remove Small Objects (FR)"]
+  File: old/Suppr_Petits_Objets/supprPetitsObjets.jsx
+  Quality: 4
+  Reason: Too many lines (269)
+  Category: Utilities
+
+Export with DPI Choice (FR)"]
+  File: old/Export_Choix_dpi/ExportChoixdpi.jsx
+  Quality: 4
+  Reason: Too many lines (120)
+  Category: Export
+
+Hatching Patterns (FR)"]
+  File: old/Hachures/Hachures.jsx
+  Quality: 4
+  Reason: Too many lines (315)
+  Category: Effects
+
+Close All Open Paths (LAScripts)"]
+  File: old2/Close All Open Paths.js
+  Quality: 3
+  Reason: Contains complex keyword: while\s*\(
+  Category: Paths
+
+Remove Hidden Path (LAScripts)"]
+  File: old2/Remove Hidden Path.js
+  Quality: 2
+  Reason: Contains complex keyword: while\s*\(
+  Category: Paths
+
+
+FAILED GENERATION:

@@ -1,0 +1,368 @@
+Generated Scripts Log
+============================================================
+
+Varia/AlignCenterLascripts.jsx
+  Original: old2/Align Center.js
+  Quality: 2
+  Description: LAScripts wrapper to align selection center. Depends on LAScripts framework.
+
+Varia/AlignMiddleLascripts.jsx
+  Original: old2/Align Middle.js
+  Quality: 2
+  Description: LAScripts wrapper to align selection middle vertically. Depends on LAScripts framework.
+
+Varia/AlignTopOutlineLascripts.jsx
+  Original: old2/Align Top Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align to top with outline bounds. Depends on LAScripts framework.
+
+Varia/AlignBottomOutlineLascripts.jsx
+  Original: old2/Align Bottom Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align to bottom with outline bounds. Depends on LAScripts framework.
+
+Varia/AlignLeftOutlineLascripts.jsx
+  Original: old2/Align Left Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align to left with outline bounds. Depends on LAScripts framework.
+
+Varia/AlignRightOutlineLascripts.jsx
+  Original: old2/Align Right Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align to right with outline bounds. Depends on LAScripts framework.
+
+Varia/AlignTopBottomOutlineLascripts.jsx
+  Original: old2/Align Top Bottom Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align vertically with outline bounds. Depends on LAScripts framework.
+
+Varia/AlignRightLeftOutlineLascripts.jsx
+  Original: old2/Align Right Left Outline.js
+  Quality: 2
+  Description: LAScripts wrapper to align horizontally with outline bounds. Depends on LAScripts framework.
+
+Artboards/ArtboardSetWidthAndHeightLascripts.jsx
+  Original: old2/Artboard set Width and Height.js
+  Quality: 2
+  Description: LAScripts wrapper to set artboard dimensions. Depends on LAScripts framework.
+
+Artboards/ArtboardSizeToSelectionLascripts.jsx
+  Original: old2/Artboard Size to Selection.js
+  Quality: 2
+  Description: LAScripts wrapper to resize artboard to fit selection. Depends on LAScripts framework. Similar to existing FitArtboardsToArtwork.
+
+Artboards/CreateArtboardsFromSelectionLascripts.jsx
+  Original: old2/Create Artboards from the Selection.js
+  Quality: 1
+  Description: LAScripts wrapper to create artboards from selected objects. Depends on LAScripts framework.
+
+Artboards/CropArtboardLascripts.jsx
+  Original: old2/Crop Artboard.js
+  Quality: 2
+  Description: LAScripts wrapper to crop artboard. Depends on LAScripts framework.
+
+Colors/FillColorRandomLascripts.jsx
+  Original: old2/Fill Color Random.js
+  Quality: 1
+  Description: LAScripts wrapper to apply random fill color. Depends on LAScripts framework.
+
+Colors/StrokeColorRandomLascripts.jsx
+  Original: old2/Stroke Color Random.js
+  Quality: 2
+  Description: LAScripts wrapper to apply random stroke color. Depends on LAScripts framework.
+
+Colors/GetColorLascripts.jsx
+  Original: old2/Get Color.js
+  Quality: 1
+  Description: LAScripts demo showing color creation and manipulation. Framework demo code.
+
+Colors/SetColorLascripts.jsx
+  Original: old2/Set Color.js
+  Quality: 1
+  Description: LAScripts demo showing color setting functionality. Framework demo code.
+
+Colors/ReplaceColorLascripts.jsx
+  Original: old2/Replace Color.js
+  Quality: 2
+  Description: LAScripts wrapper to replace colors. Depends on LAScripts framework.
+
+Colors/ReplaceColorFastLascripts.jsx
+  Original: old2/Replace Color Fast.js
+  Quality: 2
+  Description: LAScripts wrapper for fast color replacement. Depends on LAScripts framework.
+
+Colors/FillLascripts.jsx
+  Original: old2/Fill.js
+  Quality: 1
+  Description: LAScripts wrapper for fill operations. Depends on LAScripts framework.
+
+Colors/StrokeLascripts.jsx
+  Original: old2/Stroke.js
+  Quality: 1
+  Description: LAScripts wrapper for stroke operations. Depends on LAScripts framework.
+
+Paths/ClippingMaskToArtboardLascripts.jsx
+  Original: old2/Clipping Mask To Artboard.js
+  Quality: 3
+  Description: LAScripts wrapper to create clipping mask at artboard bounds. Depends on LAScripts framework.
+
+Paths/CropByFrontSelectionLascripts.jsx
+  Original: old2/Crop by Front selection.js
+  Quality: 2
+  Description: LAScripts wrapper to crop using front object. Depends on LAScripts framework.
+
+Documents/AddDocumentLascripts.jsx
+  Original: old2/Add document.js
+  Quality: 1
+  Description: LAScripts wrapper to create new document. Depends on LAScripts framework.
+
+Documents/NewDocumentLascripts.jsx
+  Original: old2/New document.js
+  Quality: 1
+  Description: LAScripts wrapper to create new document. Depends on LAScripts framework.
+
+Documents/CloseDocumentsLascripts.jsx
+  Original: old2/Close documents.js
+  Quality: 1
+  Description: LAScripts wrapper to close documents. Depends on LAScripts framework.
+
+Documents/DocumentColorModeSetLascripts.jsx
+  Original: old2/Document Color Mode Set.js
+  Quality: 2
+  Description: LAScripts wrapper to set document color mode. Depends on LAScripts framework.
+
+Documents/DocumentColorModeToggleLascripts.jsx
+  Original: old2/Document Color Mode Toggle.js
+  Quality: 3
+  Description: LAScripts wrapper to toggle document color mode RGB/CMYK. Depends on LAScripts framework.
+
+Documents/AppQuitLascripts.jsx
+  Original: old2/App quit.js
+  Quality: 1
+  Description: LAScripts wrapper to quit Illustrator application. Depends on LAScripts framework.
+
+Effects/LongShadowSquareOnlyLascripts.jsx
+  Original: old2/LongShadow (only square).js
+  Quality: 1
+  Description: LAScripts wrapper to create long shadow effect for squares. Depends on LAScripts framework.
+
+Effects/LivePathLascripts.jsx
+  Original: old2/Live Path.js
+  Quality: 1
+  Description: LAScripts wrapper for live path effects. Depends on LAScripts framework.
+
+Guides/ClearGuidesLascripts.jsx
+  Original: old2/Clear guides.js
+  Quality: 2
+  Description: LAScripts wrapper to clear all guides. Depends on LAScripts framework.
+
+Guides/GuidesClearLascripts2.jsx
+  Original: old2/guides clear.js
+  Quality: 1
+  Description: LAScripts wrapper to clear guides. Duplicate of Clear guides.js. Depends on LAScripts framework.
+
+Guides/GuideHorizontalCenterLascripts.jsx
+  Original: old2/guide horizontal center.js
+  Quality: 2
+  Description: LAScripts wrapper to create horizontal center guide. Depends on LAScripts framework.
+
+Guides/GuideVerticalCenterLascripts.jsx
+  Original: old2/guide vertical center.js
+  Quality: 2
+  Description: LAScripts wrapper to create vertical center guide. Depends on LAScripts framework.
+
+Guides/GuideMarginsLascripts.jsx
+  Original: old2/guide margins.js
+  Quality: 3
+  Description: LAScripts wrapper to create margin guides. Depends on LAScripts framework.
+
+Guides/FastGuidesLascripts.jsx
+  Original: old2/Fast guides.js
+  Quality: 2
+  Description: LAScripts wrapper for quick guide creation. Depends on LAScripts framework.
+
+Guides/BootstrapGridLascripts.jsx
+  Original: old2/Bootstrap.js
+  Quality: 4
+  Description: LAScripts wrapper to create Bootstrap framework grids (xl, lg, md, sm). Depends on LAScripts framework. Event-based for different breakpoints.
+
+Guides/Susy2GridLascripts.jsx
+  Original: old2/Susy 2 Grid.js
+  Quality: 2
+  Description: LAScripts wrapper to create Susy 2 framework grids. Depends on LAScripts framework.
+
+Guides/GridderLascripts.jsx
+  Original: old2/Gridder.js
+  Quality: 1
+  Description: LAScripts wrapper for grid creation. Depends on LAScripts framework.
+
+Guides/ColumnsLascripts.jsx
+  Original: old2/Columns.js
+  Quality: 3
+  Description: LAScripts wrapper to create column guides. Depends on LAScripts framework.
+
+Layers/LayersRemoveEmptyLascripts.jsx
+  Original: old2/Layers remove empty.js
+  Quality: 1
+  Description: LAScripts wrapper to remove empty layers. Depends on LAScripts framework.
+
+Layers/SubLayersRemoveEmptyLascripts.jsx
+  Original: old2/Sub layers remove empty.js
+  Quality: 2
+  Description: LAScripts wrapper to remove empty sublayers. Depends on LAScripts framework.
+
+Layers/ToggleVisibilityLascripts.jsx
+  Original: old2/Toggle visibility.js
+  Quality: 2
+  Description: LAScripts wrapper to toggle layer visibility. Depends on LAScripts framework.
+
+Layers/UnlockAllLascripts.jsx
+  Original: old2/Unlock all.js
+  Quality: 2
+  Description: LAScripts wrapper to unlock all layers. Depends on LAScripts framework.
+
+Utilities/OpacityDemoLascripts.jsx
+  Original: old2/Opacity.js
+  Quality: 1
+  Description: LAScripts demo showing opacity manipulation. Framework demo code.
+
+Utilities/SetAttributesLascripts.jsx
+  Original: old2/Set Attributes.js
+  Quality: 1
+  Description: LAScripts wrapper for setting object attributes. Depends on LAScripts framework.
+
+Utilities/SetInfoLascripts.jsx
+  Original: old2/Set Info.js
+  Quality: 1
+  Description: LAScripts wrapper for setting object info/metadata. Depends on LAScripts framework.
+
+Paths/JoinToAreaLascripts.jsx
+  Original: old2/Join to area.js
+  Quality: 2
+  Description: LAScripts wrapper to join paths to area. Depends on LAScripts framework.
+
+Varia/ActivateSectionLascripts.jsx
+  Original: old2/Activate section.js
+  Quality: 1
+  Description: LAScripts framework-specific section activation. Depends on LAScripts framework.
+
+Varia/CreateSectionLascripts.jsx
+  Original: old2/Create section.js
+  Quality: 1
+  Description: LAScripts framework-specific section creation. Depends on LAScripts framework.
+
+Transform/HeightToArtboardLascripts.jsx
+  Original: old2/Height to Artboard.js
+  Quality: 3
+  Description: LAScripts wrapper to match object height to artboard. Depends on LAScripts framework.
+
+Transform/HeightToSelectionLascripts.jsx
+  Original: old2/Height To Selection.js
+  Quality: 3
+  Description: LAScripts wrapper to match heights in selection. Depends on LAScripts framework.
+
+Transform/WidthToArtboardLascripts.jsx
+  Original: old2/Width to Artboard.js
+  Quality: 3
+  Description: LAScripts wrapper to match object width to artboard. Depends on LAScripts framework.
+
+Transform/WidthToSelectionLascripts.jsx
+  Original: old2/Width To Selection.js
+  Quality: 3
+  Description: LAScripts wrapper to match widths in selection. Depends on LAScripts framework.
+
+Transform/SizeToArtboardLascripts.jsx
+  Original: old2/Size to Artboard.js
+  Quality: 3
+  Description: LAScripts wrapper to match object size to artboard. Depends on LAScripts framework.
+
+Transform/SizeToSelectionLascripts.jsx
+  Original: old2/Size to Selection.js
+  Quality: 3
+  Description: LAScripts wrapper to match sizes in selection. Depends on LAScripts framework.
+
+Transform/HeightDemoLascripts.jsx
+  Original: old2/Height.js
+  Quality: 1
+  Description: LAScripts demo showing height manipulation with anchors and constraints. Framework demo code.
+
+Transform/WidthDemoLascripts.jsx
+  Original: old2/Width.js
+  Quality: 1
+  Description: LAScripts demo showing width manipulation with anchors and constraints. Framework demo code.
+
+Transform/RandomScaleLascripts.jsx
+  Original: old2/Random Scale.js
+  Quality: 1
+  Description: LAScripts wrapper to apply random scaling. Depends on LAScripts framework.
+
+Transform/ScaleDownLascripts.jsx
+  Original: old2/scaleDown.js
+  Quality: 2
+  Description: LAScripts wrapper to scale down objects. Depends on LAScripts framework.
+
+Transform/ScaleUpLascripts.jsx
+  Original: old2/scaleUp.js
+  Quality: 2
+  Description: LAScripts wrapper to scale up objects. Depends on LAScripts framework.
+
+Transform/ReflectLascripts.jsx
+  Original: old2/Reflect.js
+  Quality: 2
+  Description: LAScripts wrapper for reflection operations. Depends on LAScripts framework.
+
+Text/TextAllConvertToOutlineLascripts.jsx
+  Original: old2/Text All Convert to Outline.js
+  Quality: 3
+  Description: LAScripts wrapper to convert all text to outlines. Depends on LAScripts framework.
+
+Text/TextConvertAreaToPointLascripts.jsx
+  Original: old2/Text Convert Area to Point.js
+  Quality: 3
+  Description: LAScripts wrapper to convert area text to point text. Depends on LAScripts framework.
+
+Text/TextConvertPointToAreaLascripts.jsx
+  Original: old2/Text Convert Point to Area.js
+  Quality: 3
+  Description: LAScripts wrapper to convert point text to area text. Depends on LAScripts framework.
+
+Text/TextToTextLascripts.jsx
+  Original: old2/Text To Text.js
+  Quality: 1
+  Description: LAScripts wrapper for text-to-text operations. Depends on LAScripts framework.
+
+Text/JoinTextLascripts.jsx
+  Original: old2/JoinText.js
+  Quality: 2
+  Description: LAScripts wrapper to join text frames. Depends on LAScripts framework.
+
+Text/DivideTextLascripts.jsx
+  Original: old2/DivideText.js
+  Quality: 1
+  Description: LAScripts wrapper to divide/split text. Depends on LAScripts framework.
+
+Transform/UngroupLascripts.jsx
+  Original: old2/Ungroup.js
+  Quality: 1
+  Description: LAScripts wrapper to ungroup objects. Has event modifiers for selection vs document scope. Depends on LAScripts framework.
+
+Transform/ZIndexLascripts.jsx
+  Original: old2/zIndex.js
+  Quality: 2
+  Description: LAScripts wrapper for stacking order manipulation. Depends on LAScripts framework.
+
+Varia/ActionLascripts.jsx
+  Original: old2/Action.js
+  Quality: 1
+  Description: LAScripts framework action runner. Depends on LAScripts framework.
+
+Varia/SetMakerLascripts.jsx
+  Original: old2/Set maker.js
+  Quality: 1
+  Description: LAScripts framework set maker utility. Depends on LAScripts framework.
+
+Varia/ReloadExtensionLascripts.jsx
+  Original: old2/Reload extension.js
+  Quality: 1
+  Description: LAScripts framework reload utility for development. Depends on LAScripts framework.
+
