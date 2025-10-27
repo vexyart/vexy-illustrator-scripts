@@ -1,1 +1,0 @@
-activeDocument.emptyLayers().remove();

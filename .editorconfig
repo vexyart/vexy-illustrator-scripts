@@ -1,0 +1,94 @@
+# this_file: .editorconfig
+
+# EditorConfig helps maintain consistent coding styles across editors and IDEs
+# https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Adobe Illustrator ExtendScript files (.jsx)
+[*.jsx]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+quote_type = single
+
+# IMPORTANT: ExtendScript ES3 Constraints
+# - No const declarations (use var)
+# - No let declarations (use var)
+# - No arrow functions (use function() {})
+# - No classes (use function constructors)
+# - No template literals (use string concatenation)
+# - No spread operator
+# - No destructuring
+# - No async/await
+# - No default parameters
+
+# JavaScript files (for any Node.js tooling)
+[*.js]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+trim_trailing_whitespace = false
+
+# YAML files (for future GitHub Actions workflows)
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# TOML files (scripts.toml)
+[*.toml]
+indent_style = space
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+# Git files
+[.gitignore]
+indent_style = space
+indent_size = 2
+
+# Makefiles require tabs
+[Makefile]
+indent_style = tab
+
+# Batch files (Windows scripts)
+[*.{cmd,bat}]
+end_of_line = crlf
+
+# Documentation files
+[README.md]
+max_line_length = 120
+
+[CHANGELOG.md]
+max_line_length = 120
+
+[CONTRIBUTING.md]
+max_line_length = 120
+
+# Package files
+[package.json]
+indent_style = space
+indent_size = 2

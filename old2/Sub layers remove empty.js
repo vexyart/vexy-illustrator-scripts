@@ -1,1 +1,0 @@
-LA(activeDocument.layers).emptySubLayers().remove();

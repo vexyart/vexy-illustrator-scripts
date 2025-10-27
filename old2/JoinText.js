@@ -1,3 +1,0 @@
-selection.joinText({
-    reverse: true
-});
