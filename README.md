@@ -101,6 +101,129 @@ Vexy Illustrator Scripts is a phased modernization project transforming legacy A
 - **⚡ ES3 Compliant:** 100% compatible with Adobe ExtendScript engine
 - **🎯 Zero Defects:** 10/10 quality score across all production code
 
+## AIS Library Reference
+
+All modernized scripts use the **AIS (Adobe Illustrator Scripts)** library framework for consistent functionality across the collection. Include the library in your scripts with:
+
+```javascript
+#include "../.lib/core.jsx"  // Core utilities
+#include "../.lib/ui.jsx"     // UI components (optional)
+```
+
+### Available APIs (core.jsx v1.0.3)
+
+**AIS.Core** - Version and metadata
+- `version` - Library version string
+- `getVersion()` - Get version information
+- `checkVersion()` - Check Illustrator version compatibility
+
+**AIS.Error** - Error handling
+- `format(message, err)` - Create formatted error message
+- `show(message, err)` - Show error dialog to user
+- `log(scriptName, message, err)` - Log error to file
+
+**AIS.Log** - Debug logging (disabled by default)
+- `enable()` / `disable()` - Toggle logging
+- `info(message)` - Log info message
+- `warn(message)` - Log warning message
+- `error(message)` - Log error message
+
+**AIS.String** - String manipulation
+- `isEmpty(str)` - Check if empty or whitespace
+- `trim(str)` - Remove leading/trailing whitespace
+- `padZero(num, length)` - Pad number with zeros
+- `capitalize(str)` - Capitalize first letter
+- `toTitleCase(str)` - Convert to title case
+- `format(template, ...values)` - Template string formatting
+- `toNumber(str, defaultValue)` - Safe string to number conversion
+
+**AIS.Array** - Array utilities
+- `contains(arr, value)` - Check if value exists
+- `unique(arr)` - Get unique values
+- `indexOf(arr, value)` - Find value index
+- `remove(arr, value)` - Remove value from array
+
+**AIS.Object** - Object manipulation
+- `extend(target, source)` - Extend object with properties
+- `clone(obj)` - Deep copy object
+- `keys(obj)` - Get object keys
+- `values(obj)` - Get object values
+
+**AIS.Number** - Number utilities
+- `clamp(value, min, max)` - Clamp between min/max
+- `round(value, decimals)` - Round to decimal places
+- `inRange(value, min, max)` - Check if in range
+- `lerp(start, end, t)` - Linear interpolation
+
+**AIS.Validate** - Validation helpers
+- `isNumber(value)` - Check if valid number
+- `isPositive(value)` - Check if positive number
+- `isInteger(value)` - Check if integer
+- `parseNumber(str, defaultValue)` - Parse number safely
+- `parseInt(str, defaultValue)` - Parse integer safely
+
+**AIS.Document** - Document utilities
+- `hasDocument()` - Check if document is open
+- `getActive()` - Get active document safely
+- `hasSelection()` - Check if items are selected
+- `getSelection()` - Get selected items array
+- `redraw()` - Redraw document
+
+**AIS.Units** - Unit conversion
+- `get()` - Get active document ruler units
+- `convert(value, from, to)` - Convert between units (pt, mm, in, px, etc.)
+- `isValidUnit(unit)` - Check if unit name is valid
+- `validUnits` - Array of supported units
+
+**AIS.JSON** - JSON serialization (ES3 compatible)
+- `stringify(obj)` - Serialize object to JSON string
+- `parse(str)` - Parse JSON string to object
+
+**AIS.System** - System utilities
+- `isMac()` - Check if running on macOS
+- `isWindows()` - Check if running on Windows
+- `openURL(url)` - Open URL in default browser
+
+### Available APIs (ui.jsx v1.0.1)
+
+**AIS.UI.Constants** - Standard UI dimensions
+- Dialog widths, heights, margins, spacing constants
+
+**AIS.UI.DialogBuilder** - Dialog creation helper
+- `new AIS.UI.DialogBuilder(title, size)` - Create builder
+- `addPanel(title)` - Add titled panel
+- `addGroup(parent)` - Add group container
+- `addInput(parent, label, defaultValue, options)` - Add text input
+- `addDropdown(parent, label, items, defaultIndex, options)` - Add dropdown
+- `addCheckbox(parent, label, defaultValue, options)` - Add checkbox
+- `addButtons(options)` - Add OK/Cancel buttons
+- `show()` - Display dialog and return result
+
+**AIS.UI** - Helper functions
+- `message(title, message, buttonText)` - Show alert dialog
+- `confirm(title, message)` - Show yes/no confirmation
+- `validateNumeric(input, options)` - Validate numeric input field
+
+### What's NOT in the Library
+
+These namespaces are **not implemented** - use native methods instead:
+
+- **AIS.Selection.\*** - Use `doc.selection` directly
+- **AIS.Layer.\*** - Use `doc.layers` and Layer methods
+- **AIS.Artboard.\*** - Use `doc.artboards` and Artboard methods
+- **AIS.Color.\*** - Use RGBColor, CMYKColor, etc.
+- **AIS.Math.\*** - Use native `Math` object
+
+For debugging, use `$.writeln()` instead of console methods.
+
+### Full API Reference
+
+For complete API documentation with examples and implementation details:
+- **core.jsx:** `src/.lib/core.jsx` (958 lines, v1.0.3)
+- **ui.jsx:** `src/.lib/ui.jsx` (481 lines, v1.0.1)
+
+See the template at `src/.templates/ScriptTemplate.jsx` for usage patterns.
+
 ## Quick Start
 
 ### Installation

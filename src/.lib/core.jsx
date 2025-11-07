@@ -1,11 +1,14 @@
 /**
  * Adobe Illustrator Scripts - Core Library
- * @version 1.0.2
+ * @version 1.0.5
  * @description Core utilities and foundation for all AIS scripts
  * @namespace AIS
  * @license MIT
  *
  * Changelog:
+ * - v1.0.5 (2025-10-27): Added JSDoc examples to 13 functions + enhanced AIS.JSON.stringify() validation
+ * - v1.0.4 (2025-10-27): CRITICAL FIX: AIS.String.toNumber() default value (1→0) + null checks + JSDoc examples
+ * - v1.0.3 (2025-10-27): Enhanced AIS.Units.convert() with unit validation + isValidUnit() helper
  * - v1.0.2 (2025-10-27): Security fix (HTTPS default in openURL) + JSDoc @example tags
  * - v1.0.1 (2025-10-27): Enhanced error recovery and defensive programming
  * - v1.0.0 (2025-10-26): Initial release
@@ -26,7 +29,7 @@ var AIS = AIS || {};
 // ============================================================================
 
 AIS.Core = {
-    version: '1.0.2',
+    version: '1.0.5',
     name: 'AIS Core Library',
     minIllustratorVersion: 16, // CC 2012
 
@@ -65,6 +68,14 @@ AIS.Error = {
      * @param {String} message - Error message
      * @param {Error} err - Original error object (optional)
      * @returns {String} Formatted error message
+     * @example
+     * // Format simple error
+     * var msg = AIS.Error.format('Failed to process selection');
+     * @example
+     * // Format error with exception
+     * try { /* ... */ } catch (e) {
+     *     var msg = AIS.Error.format('Operation failed', e);
+     * }
      */
     format: function(message, err) {
         var msg = 'Error: ' + message;
@@ -91,6 +102,9 @@ AIS.Error = {
      * @param {String} scriptName - Name of script
      * @param {String} message - Error message
      * @param {Error} err - Original error object (optional)
+     * @example
+     * // Log error to temp folder
+     * AIS.Error.log('MyScript', 'Failed to save file', error);
      */
     log: function(scriptName, message, err) {
         try {
@@ -192,6 +206,10 @@ AIS.String = {
      * Check if string is empty or only whitespace
      * @param {String} str - String to check
      * @returns {Boolean} True if empty
+     * @example
+     * AIS.String.isEmpty(''); // true
+     * AIS.String.isEmpty('  '); // true
+     * AIS.String.isEmpty('text'); // false
      */
     isEmpty: function(str) {
         if (str === null || str === undefined) return true;
@@ -202,6 +220,8 @@ AIS.String = {
      * Trim whitespace from string
      * @param {String} str - String to trim
      * @returns {String} Trimmed string
+     * @example
+     * AIS.String.trim('  hello  '); // 'hello'
      */
     trim: function(str) {
         if (!str) return '';
@@ -213,6 +233,9 @@ AIS.String = {
      * @param {Number} num - Number to pad
      * @param {Number} length - Total length
      * @returns {String} Padded string
+     * @example
+     * AIS.String.padZero(5, 3); // '005'
+     * AIS.String.padZero(42, 5); // '00042'
      */
     padZero: function(num, length) {
         var str = '00000000000' + Math.abs(num);
@@ -280,6 +303,9 @@ AIS.Array = {
      * @param {Array} arr - Array to search
      * @param {*} value - Value to find
      * @returns {Boolean} True if found
+     * @example
+     * AIS.Array.contains([1, 2, 3], 2); // true
+     * AIS.Array.contains(['a', 'b'], 'c'); // false
      */
     contains: function(arr, value) {
         for (var i = 0; i < arr.length; i++) {
@@ -292,6 +318,8 @@ AIS.Array = {
      * Get unique values from array
      * @param {Array} arr - Input array
      * @returns {Array} Array with unique values
+     * @example
+     * AIS.Array.unique([1, 2, 2, 3, 1]); // [1, 2, 3]
      */
     unique: function(arr) {
         var result = [];
@@ -372,6 +400,9 @@ AIS.Object = {
      * @param {Object} target - Target object
      * @param {Object} source - Source object
      * @returns {Object} Extended object
+     * @example
+     * var obj = {a: 1};
+     * AIS.Object.extend(obj, {b: 2}); // {a: 1, b: 2}
      */
     extend: function(target, source) {
         for (var key in source) {
@@ -386,6 +417,9 @@ AIS.Object = {
      * Create deep copy of object
      * @param {Object} obj - Object to clone
      * @returns {Object} Cloned object
+     * @example
+     * var original = {x: 1, y: {z: 2}};
+     * var copy = AIS.Object.clone(original);
      */
     clone: function(obj) {
         if (obj === null || typeof obj !== 'object') return obj;
@@ -444,6 +478,10 @@ AIS.Number = {
      * @param {Number} min - Minimum value
      * @param {Number} max - Maximum value
      * @returns {Number} Clamped value (returns min if value is invalid)
+     * @example
+     * AIS.Number.clamp(150, 0, 100); // 100
+     * AIS.Number.clamp(-50, 0, 100); // 0
+     * AIS.Number.clamp(75, 0, 100); // 75
      */
     clamp: function(value, min, max) {
         // Defensive: convert to numbers
@@ -471,6 +509,9 @@ AIS.Number = {
      * @param {Number} value - Input value
      * @param {Number} decimals - Decimal places
      * @returns {Number} Rounded value
+     * @example
+     * AIS.Number.round(3.14159, 2); // 3.14
+     * AIS.Number.round(2.5); // 3
      */
     round: function(value, decimals) {
         decimals = decimals || 0;
@@ -577,6 +618,10 @@ AIS.Validate = {
      * Check if value is a number
      * @param {*} value - Value to check
      * @returns {Boolean} True if number
+     * @example
+     * AIS.Validate.isNumber(42); // true
+     * AIS.Validate.isNumber('42'); // false
+     * AIS.Validate.isNumber(NaN); // false
      */
     isNumber: function(value) {
         return typeof value === 'number' && !isNaN(value) && isFinite(value);
@@ -748,6 +793,24 @@ AIS.Units = {
     },
 
     /**
+     * Valid unit abbreviations supported by ExtendScript UnitValue
+     */
+    validUnits: ['px', 'pt', 'pc', 'in', 'mm', 'cm', 'm', 'ft', 'yd'],
+
+    /**
+     * Check if unit name is valid
+     * @param {String} unit - Unit abbreviation to check
+     * @returns {Boolean} True if valid unit
+     * @example
+     * AIS.Units.isValidUnit('mm'); // Returns true
+     * AIS.Units.isValidUnit('xyz'); // Returns false
+     */
+    isValidUnit: function(unit) {
+        if (!unit || typeof unit !== 'string') return false;
+        return AIS.Array.contains(this.validUnits, unit.toLowerCase());
+    },
+
+    /**
      * Convert value from one unit to another
      * @param {Number} value - Numeric value to convert
      * @param {String} fromUnits - Current units (e.g., 'in', 'mm', 'pt')
@@ -764,6 +827,12 @@ AIS.Units = {
      * @example
      * // Use with object dimensions
      * var widthMM = AIS.Units.convert(item.width, 'pt', 'mm');
+     *
+     * @example
+     * // Handles invalid inputs gracefully
+     * AIS.Units.convert(NaN, 'pt', 'mm'); // Returns 0
+     * AIS.Units.convert(100, 'invalid', 'mm'); // Returns 100 (original value)
+     * AIS.Units.convert(Infinity, 'pt', 'mm'); // Returns 0 (clamped)
      */
     convert: function(value, fromUnits, toUnits) {
         // Defensive: check for null/undefined
@@ -774,10 +843,24 @@ AIS.Units = {
         var numValue = Number(value);
         if (isNaN(numValue)) return 0;
 
+        // Defensive: handle Infinity
+        if (!isFinite(numValue)) return 0;
+
+        // Defensive: validate unit names (warn in console if invalid)
+        if (!this.isValidUnit(fromUnits)) {
+            $.writeln('Warning: Invalid source unit "' + fromUnits + '". Returning original value.');
+            return numValue;
+        }
+        if (!this.isValidUnit(toUnits)) {
+            $.writeln('Warning: Invalid target unit "' + toUnits + '". Returning original value.');
+            return numValue;
+        }
+
         try {
             return UnitValue(numValue, fromUnits).as(toUnits);
         } catch (e) {
             // Graceful degradation: return original value on conversion error
+            $.writeln('Warning: Unit conversion failed (' + fromUnits + ' -> ' + toUnits + '). ' + e.message);
             return numValue;
         }
     }
@@ -794,27 +877,60 @@ AIS.JSON = {
     /**
      * Stringify object to JSON-like string
      * @param {Object} obj - Object to serialize
-     * @returns {String} JSON-like string
+     * @returns {String} JSON-like string (returns '{}' on error)
      * @example
      * // Save script settings
      * var config = {width: 100, height: 200, unit: 'mm'};
      * var jsonStr = AIS.JSON.stringify(config);
      * // Returns: '{"width":"100","height":"200","unit":"mm"}'
+     *
+     * @example
+     * // Handles null/undefined values gracefully
+     * AIS.JSON.stringify({a: null, b: 'text'}); // '{"a":"null","b":"text"}'
+     * AIS.JSON.stringify(null); // '{}'
+     *
+     * @note Does not handle circular references - avoid DOM objects
      */
     stringify: function(obj) {
-        var json = [];
-        for (var key in obj) {
-            if (obj.hasOwnProperty(key)) {
-                var value = obj[key].toString();
-                value = value
-                    .replace(/\t/g, "\\t")
-                    .replace(/\r/g, "\\r")
-                    .replace(/\n/g, "\\n")
-                    .replace(/"/g, '\\"');
-                json.push('"' + key + '":"' + value + '"');
+        // Defensive: check for null/undefined
+        if (obj == null || obj === undefined) return '{}';
+
+        // Defensive: check for non-object types
+        if (typeof obj !== 'object') return '{}';
+
+        try {
+            var json = [];
+            for (var key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    var value = obj[key];
+
+                    // Defensive: handle null/undefined values
+                    if (value == null || value === undefined) {
+                        value = 'null';
+                    } else {
+                        // Safe toString conversion
+                        try {
+                            value = value.toString();
+                        } catch (e) {
+                            value = 'null';
+                        }
+                    }
+
+                    // Escape special characters
+                    value = value
+                        .replace(/\t/g, "\\t")
+                        .replace(/\r/g, "\\r")
+                        .replace(/\n/g, "\\n")
+                        .replace(/"/g, '\\"');
+
+                    json.push('"' + key + '":"' + value + '"');
+                }
             }
+            return '{' + json.join(',') + '}';
+        } catch (e) {
+            // Defensive: return empty object on any error
+            return '{}';
         }
-        return "{" + json.join(",") + "}";
     },
 
     /**
@@ -926,16 +1042,47 @@ AIS.System = {
 
 /**
  * Enhanced string to number conversion (more robust than parseFloat)
- * @param {String} str - String to convert
- * @param {Number} defaultValue - Default value if invalid (default: 1)
+ * @param {String|Number} str - String or number to convert
+ * @param {Number} defaultValue - Default value if invalid (default: 0)
  * @returns {Number} Converted number
+ * @example
+ * // Basic usage
+ * AIS.String.toNumber('42'); // Returns 42
+ * AIS.String.toNumber('3.14'); // Returns 3.14
+ *
+ * @example
+ * // With default value
+ * AIS.String.toNumber('invalid', 100); // Returns 100
+ * AIS.String.toNumber('', 50); // Returns 50
+ *
+ * @example
+ * // Edge cases (defensive)
+ * AIS.String.toNumber(null); // Returns 0
+ * AIS.String.toNumber(undefined); // Returns 0
+ * AIS.String.toNumber(42); // Returns 42 (accepts numbers)
  */
 AIS.String.toNumber = function(str, defaultValue) {
-    if (arguments.length == 1 || defaultValue == undefined) defaultValue = 1;
+    // Defensive: set default to 0 (not 1!)
+    if (arguments.length == 1 || defaultValue == undefined) defaultValue = 0;
+
+    // Defensive: handle null/undefined
+    if (str == null || str === undefined) return defaultValue;
+
+    // Defensive: if already a number, return it
+    if (typeof str === 'number') {
+        return isNaN(str) || !isFinite(str) ? defaultValue : str;
+    }
+
+    // Defensive: convert to string if not already
+    str = String(str);
+
+    // Parse string to number
     str = str.replace(/,/g, '.').replace(/[^\d.-]/g, '');
     str = str.split('.');
     str = str[0] ? str[0] + '.' + str.slice(1).join('') : '';
     str = str.substr(0, 1) + str.substr(1).replace(/-/g, '');
+
+    // Return parsed value or default
     if (isNaN(str) || !str.length) return parseFloat(defaultValue);
     else return parseFloat(str);
 };

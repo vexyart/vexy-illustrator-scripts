@@ -5,14 +5,16 @@
  * @author Adobe Illustrator Scripts
  * @license MIT
  * @category Category name (Artboards, Text, Colors, etc.)
+ *
+ * Verified against AIS Library v1.0.2 (2025-10-27)
  */
 
 // ============================================================================
 // IMPORTS
 // ============================================================================
 
-#include "../lib/core.jsx"
-#include "../lib/ui.jsx"
+#include "../.lib/core.jsx"
+#include "../.lib/ui.jsx"
 
 // ============================================================================
 // METADATA
@@ -72,7 +74,7 @@ var CONFIG = {
                 // Add other preferences to save
             };
 
-            file.write(JSON.stringify(prefs, null, 2));
+            file.write(AIS.JSON.stringify(prefs));
             file.close();
         } catch (e) {
             AIS.Log.warn('Could not save preferences: ' + e.message);
