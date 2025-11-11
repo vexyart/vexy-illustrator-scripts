@@ -20,14 +20,12 @@
  *   // Analyzes all documentation and generates coverage report
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -705,4 +703,14 @@ function updateProgress(win, message, percent) {
     win.statusText.text = message;
     win.progressBar.value = percent;
     win.update();
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('AnalyzeDocumentationCoverage error', e);
 }

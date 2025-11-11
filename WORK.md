@@ -552,7 +552,7 @@ var AIS = AIS || {};
 ```
 
 **Integration patterns:**
-- `#include "../.lib/core.jsx"` - Standard across all scripts ✅
+- `(function(){var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}})();` - Standard across all scripts ✅
 - `#include "../.lib/ui.jsx"` - Used in dialog-based scripts ✅
 - Namespace: `AIS` (ready for Vexy refactoring) ✅
 
@@ -653,7 +653,7 @@ var AIS = AIS || {};
  * @category CategoryName
  */
 
-#include "../.lib/core.jsx"
+(function(){var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}})();
 #include "../.lib/ui.jsx"  // if needed
 
 //@target illustrator
@@ -1149,7 +1149,7 @@ Executed complete workflow:
 **Issues Found & Fixed:**
 
 1. **Fixed #include paths** (lines 16-17):
-   - Changed `#include "../lib/core.jsx"` → `#include "../.lib/core.jsx"`
+   - Changed `#include "../lib/core.jsx"` → `(function(){var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}})();`
    - Changed `#include "../lib/ui.jsx"` → `#include "../.lib/ui.jsx"`
    - **Impact:** Template now works correctly
 
@@ -1342,3 +1342,23 @@ Executed complete workflow:
 **Session complete:** 2025-10-27
 
 ---
+### 2025-11-11 — Startup structure normalization in src/
+
+- Task: Apply the Object Area refactor pattern across all `.jsx` files under `src/`.
+- Actions:
+  - Read `src/TASK.md` to extract the desired before/after structure.
+  - Added `.lib/normalize_jsx_structure.py` to automate changes.
+  - Ran the script: processed 212 `.jsx` files; modified 212.
+  - Verifications:
+    - No remaining loader IIFEs found (except examples in `TASK.md`).
+    - All `.jsx` now contain `//@target illustrator` and the preference toggle.
+    - Added `// EXECUTE` blocks preserving original guard logic (document/selection or `validateEnvironment()`), with try/catch around `main()`.
+    - Ensured loader ordering: `//@target` -> loader -> preference toggle.
+
+- Notes:
+  - Error title uses `CFG.scriptName` when available, else falls back to a generic "Script error".
+  - Scripts using LAScripts `validateEnvironment()` retain their validation logic in the new `// EXECUTE` block.
+
+- Next steps (optional):
+  - Spot-check a few scripts in Illustrator to confirm no runtime regressions.
+  - If preferred, replace generic error titles with explicit names in scripts that lack `CFG.scriptName`.

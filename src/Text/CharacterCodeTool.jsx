@@ -23,22 +23,18 @@
  * Modernized to use AIS library and English-only UI
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    try {
-        main();
-    } catch (err) {
-        AIS.Error.show('Character Code Tool', err);
-    }
-})();
+
 
 // ============================================================================
 // CONFIGURATION
@@ -367,4 +363,14 @@ function unicodeToDec(input) {
 
     var code = parseInt(hex, 16);
     return code.toString();
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Character Code Tool error', e);
 }

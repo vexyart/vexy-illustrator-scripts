@@ -36,9 +36,11 @@
  *   - Empty layers are skipped automatically
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
@@ -511,15 +513,16 @@ function saveSettings(config) {
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\n\nOpen a document and try again.');
-        return;
-    }
+// ============================================================================
+// EXECUTE
+// ============================================================================
 
+if (!AIS.Document.hasDocument()) {
+    alert('No document\n\nOpen a document and try again.');
+} else {
     try {
         main();
-    } catch (err) {
-        AIS.Error.show('Export with DPI failed', err);
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
-})();
+}

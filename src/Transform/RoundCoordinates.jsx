@@ -3,6 +3,7 @@
  * @version 1.0.0
  * @description Round object coordinates to grid or custom step based on reference point
  * @category Transform
+ * - this_file: Transform/RoundCoordinates.jsx
  *
  * Features:
  * - Round coordinates to grid subdivisions or custom step
@@ -19,24 +20,12 @@
  * Modernized for AIS framework
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No selection\nSelect one or more objects and try again');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -292,4 +281,20 @@ function truncate(n) {
 
 function getSign(n) {
     return n ? (n < 0 ? -1 : 1) : 0;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No selection\nSelect one or more objects and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Round Coordinates error', e);
+    }
 }

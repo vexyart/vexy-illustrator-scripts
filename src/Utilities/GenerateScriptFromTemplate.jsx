@@ -20,14 +20,12 @@
  * @requires lib/core.jsx
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -205,7 +203,7 @@ function generateHeader(info) {
  */
 function generateIncludes(info) {
     var lines = [];
-    lines.push('#include "../.lib/core.jsx"');
+    lines.push('');
     if (info.hasUI) {
         lines.push('#include "../.lib/ui.jsx"');
     }
@@ -217,29 +215,7 @@ function generateIncludes(info) {
  */
 function generateEntryPoint(info) {
     var lines = [];
-    lines.push('(function() {');
-
-    if (info.needsDocument || info.needsSelection) {
-        // Validation wrapper
-        if (info.needsDocument) {
-            lines.push('    if (!AIS.Document.hasDocument()) {');
-            lines.push('        alert(\'No document\\nOpen a document and try again\');');
-            lines.push('        return;');
-            lines.push('    }');
-            lines.push('');
-        }
-
-        if (info.needsSelection) {
-            lines.push('    if (!AIS.Document.hasSelection()) {');
-            lines.push('        alert(\'No selection\\nSelect objects and try again\');');
-            lines.push('        return;');
-            lines.push('    }');
-            lines.push('');
-        }
-    }
-
-    lines.push('    main();');
-    lines.push('})();');
+    lines.push('');
 
     return lines.join('\n');
 }
@@ -710,4 +686,30 @@ function showSuccess(filePath, catalogUpdated) {
     var okBtn = dialog.add('button', undefined, 'OK', {name: 'ok'});
 
     dialog.show();
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('GenerateScriptFromTemplate error', e);
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert(\'No document\\nOpen a document and try again\');
+} else if (!AIS.Document.hasSelection()) {
+    alert(\'No selection\\nSelect objects and try again\');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('GenerateScriptFromTemplate error', e);
+    }
 }

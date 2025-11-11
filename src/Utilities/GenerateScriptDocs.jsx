@@ -22,22 +22,18 @@
  * - Keeps documentation in sync with code
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    try {
-        main();
-    } catch (err) {
-        AIS.Error.show('Generate Script Documentation', err);
-    }
-})();
+
 
 // ============================================================================
 // CONFIGURATION
@@ -520,4 +516,14 @@ function saveREADME(projectRoot, content) {
     readmeFile.close();
 
     return readmeFile.fsName;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Generate Script Documentation error', e);
 }

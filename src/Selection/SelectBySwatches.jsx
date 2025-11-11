@@ -22,18 +22,12 @@
  *   Uses temporary actions for fast selection with multiple swatches
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No documents\nOpen a document and try again');
-        return;
-    }
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -305,4 +299,18 @@ function ascii2Hex(str) {
     return str.replace(/./g, function(a) {
         return a.charCodeAt(0).toString(16);
     });
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No documents\nOpen a document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
+    }
 }

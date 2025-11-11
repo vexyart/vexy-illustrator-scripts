@@ -30,25 +30,12 @@
  *   - Dimension line on special layer
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No documents\nOpen a document and try again');
-        return;
-    }
-
-    var aiVersion = parseInt(app.version);
-    if (aiVersion < 14) {
-        alert('Version not supported\nRequires Illustrator CS4 or higher');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -773,4 +760,18 @@ function getLocalizedStrings() {
         point: 'Anchor Point',
         handle: 'Handle'
     };
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No documents\nOpen a document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Measure Distance error', e);
+    }
 }

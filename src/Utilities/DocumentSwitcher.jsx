@@ -28,19 +28,12 @@
  * @compatibility Adobe Illustrator CC 2019-2025
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No documents\nOpen at least one document and try again');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -351,5 +344,19 @@ function switchToDocument(docName, docPath) {
             doc.activate();
             break;
         }
+    }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No documents\nOpen at least one document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
 }

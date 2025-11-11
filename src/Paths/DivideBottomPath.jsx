@@ -25,30 +25,12 @@
  * @compatibility Adobe Illustrator CC 2019-2025
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No selection\nSelect two or more paths and try again');
-        return;
-    }
-
-    // Check Illustrator version
-    if (parseFloat(app.version) < 16) {
-        alert('Wrong version\nThis script requires Illustrator CC 2019 or later');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -379,4 +361,20 @@ function generateRandomColor(isRgb) {
 function randomInt(min, max, step) {
     var rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand / step) * step;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No selection\nSelect two or more paths and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
+    }
 }

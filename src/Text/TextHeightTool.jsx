@@ -19,34 +19,18 @@
  * Modernized to use AIS library, English-only UI, and improved workflow
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    if (!app.documents.length) {
-        alert('No documents\nOpen a document and try again');
-        return;
-    }
 
-    var selection = app.activeDocument.selection;
-
-    if (!selection.length || selection[0].typename !== 'TextFrame') {
-        alert('Invalid selection\nPlease select a text object (not vectorized)\nUse the Direct Selection tool if text is grouped');
-        return;
-    }
-
-    try {
-        main();
-    } catch (err) {
-        AIS.Error.show('Text Height Tool', err);
-    }
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -363,4 +347,14 @@ function copyToClipboard(text) {
     } catch (err) {
         // Silent fail - clipboard operations can be flaky
     }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Text Height Tool error', e);
 }

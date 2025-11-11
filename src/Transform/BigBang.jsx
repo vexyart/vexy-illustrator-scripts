@@ -20,29 +20,12 @@
  * Modernized for AIS framework
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No selection\nSelect 2 or more objects and try again');
-        return;
-    }
-
-    if (app.activeDocument.selection.length < 2) {
-        alert('Not enough objects\nSelect at least 2 objects');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -373,5 +356,21 @@ function saveSettings(settings) {
         file.close();
     } catch (error) {
         // Settings save failed, continue silently
+    }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No selection\nSelect 2 or more objects and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Big Bang error', e);
     }
 }

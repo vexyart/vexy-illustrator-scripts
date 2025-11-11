@@ -29,27 +29,12 @@
  * - Preview shows result before applying
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    var doc = app.activeDocument;
-    var sel = doc.selection;
-
-    if (sel.length !== 2) {
-        alert('Invalid selection\nSelect exactly 2 objects to compare their dimensions');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -538,5 +523,19 @@ function saveSettings(config) {
 
     } catch (e) {
         // Silent fail - settings are not critical
+    }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
 }

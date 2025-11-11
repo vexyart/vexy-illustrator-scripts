@@ -91,6 +91,24 @@ AIS.String.toNumber = function(str, defaultValue) {
 
 ---
 
+## Round 5 - Small Quality Reinforcements (2025-11-11)
+
+Focused, low-risk improvements to boost consistency and verification without adding features.
+
+- [ ] Add mandatory this_file markers to key files
+  - Targets: `src/.lib/core.jsx`, `src/.lib/ui.jsx`, `src/Transform/RoundCoordinates.jsx`
+  - Acceptance: `test.sh` required-files check passes
+
+- [ ] Add test.sh static checks (ES3 + headers)
+  - ES3 check: no `const|let|=>|class` in production scripts
+  - Header check: `//@target illustrator` + ShowExternalJSXWarning present in all .jsx
+  - Acceptance: `./test.sh` prints “All checks passed.”
+
+- [ ] Document test run and results
+  - Update `WORK.md` with summary and counts (this_file coverage, ES3 compliance)
+  - Update `CHANGELOG.md` under Unreleased with improvements and test summary
+  - Acceptance: Entries present with today’s date
+
 ### Task 2: Add Missing JSDoc Examples to Core Functions
 
 **Priority:** HIGH

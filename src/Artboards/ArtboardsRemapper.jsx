@@ -16,25 +16,12 @@
  * Modernized for AIS framework
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    var doc = app.activeDocument;
-    if (!doc.artboards || doc.artboards.length === 0) {
-        alert('No artboards\nDocument must have at least one artboard');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -353,4 +340,18 @@ function showDialog(artboardCount, currentIndex) {
     var dialogResult = dialog.show();
 
     return dialogResult === 1 ? result : null;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Artboards Remapper error', e);
+    }
 }

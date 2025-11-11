@@ -18,14 +18,12 @@
  * @requires lib/core.jsx
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -406,4 +404,14 @@ function findModified(modifiedFiles, name) {
         }
     }
     return null;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('WatchLibraryChanges error', e);
 }

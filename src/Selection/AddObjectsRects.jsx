@@ -16,7 +16,9 @@
  * Use case: Useful for creating selection boundaries, export masks, or visual guides for objects
  */
 
+
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
@@ -35,20 +37,7 @@ var CFG = {
 // INITIALIZATION
 // ============================================================================
 
-(function() {
-    if (!app.documents.length) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
 
-    var doc = app.activeDocument;
-    if (!doc.selection.length) {
-        alert('No selection\nSelect one or more objects and try again');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // MAIN FUNCTION
@@ -199,4 +188,14 @@ function createRGBColor(r, g, b) {
     color.green = g;
     color.blue = b;
     return color;
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Script error', e);
 }

@@ -10,6 +10,13 @@
  * - v1.0.0 (2025-10-26): Initial release
  */
 
+// this_file: .lib/ui.jsx
+
+
+//@target illustrator
+// UI does not self-load core via ini; rely on include below
+app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
+
 #include "core.jsx"
 
 // ============================================================================

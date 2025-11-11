@@ -18,24 +18,12 @@
  * @license MIT
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No objects selected\nSelect objects with gradients and try again');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // MAIN FUNCTION
@@ -154,5 +142,21 @@ function resetRampPoints(gradient, stopCount, firstPos) {
 
     for (var i = 0; i < stopCount - 1; i++) {
         stops[i].rampPoint = firstPos + i * delta;
+    }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No objects selected\nSelect objects with gradients and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
 }

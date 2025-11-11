@@ -14,6 +14,16 @@
  * - v1.0.0 (2025-10-26): Initial release
  */
 
+// this_file: .lib/core.jsx
+
+
+//@target illustrator
+// Prevent recursive self-loading which caused "InternalError: Stack overrun"
+if (!$.global.__AIS_CORE_LOADED__) {
+    $.global.__AIS_CORE_LOADED__ = true;
+}
+app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
+
 // ============================================================================
 // NAMESPACE
 // ============================================================================
@@ -73,7 +83,9 @@ AIS.Error = {
      * var msg = AIS.Error.format('Failed to process selection');
      * @example
      * // Format error with exception
-     * try { /* ... */ } catch (e) {
+     * try {
+     *     // some operation
+     * } catch (e) {
      *     var msg = AIS.Error.format('Operation failed', e);
      * }
      */

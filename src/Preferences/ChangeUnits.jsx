@@ -17,15 +17,12 @@
  * Modernized to use AIS library while preserving all functionality
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
-#targetengine 'main'
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    main();
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -276,3 +273,13 @@ function showDialog() {
 // ============================================================================
 // ENTRY POINT (handled by IIFE at top)
 // ============================================================================
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Script error', e);
+}

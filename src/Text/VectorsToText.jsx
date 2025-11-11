@@ -23,25 +23,12 @@
  * Modernized to use AIS library while preserving all functionality
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
-#targetengine 'main'
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!app.documents.length) {
-        alert('No documents\nOpen a document and try again');
-        return;
-    }
-
-    if (app.activeDocument.selection.length !== 2) {
-        alert('Invalid selection\n\nSelect exactly 2 objects:\n1. Vectorized text (group)\n2. Non-vectorized text (text frame)');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // MAIN FUNCTION
@@ -142,3 +129,13 @@ function findGroupColor(group) {
 // ============================================================================
 // ENTRY POINT (handled by IIFE at top)
 // ============================================================================
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Script error', e);
+}

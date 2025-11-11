@@ -39,9 +39,11 @@
  * @requires scripts.toml exists in project root
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
@@ -492,10 +494,12 @@ function getProjectRoot() {
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    try {
-        main();
-    } catch (err) {
-        AIS.Error.show('Update Script Catalog Error', err);
-    }
-})();
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Script error', e);
+}

@@ -29,23 +29,12 @@
  * - this_file: Colors/ImportCSVtoSwatch.jsx
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    try {
-        main();
-    } catch (e) {
-        AIS.Error.show('Import CSV to Swatch error', e);
-    }
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -332,4 +321,18 @@ function clampValue(value, min, max) {
  */
 function isNumeric(str) {
     return !isNaN(parseFloat(str)) && isFinite(str);
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Import CSV to Swatch error', e);
+    }
 }

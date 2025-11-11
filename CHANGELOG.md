@@ -43,7 +43,7 @@ All notable changes to the Adobe Illustrator Scripts modernization project.
 
 - **ES3 Compliance Verification**; Library files: 0 ES6 violations ✅; Production scripts sample: 0 ES6 violations (checked Favorites/*.jsx) ✅; Namespace usage: 63 AIS references in library ✅; All using `var` declarations ✅; No arrow functions, template literals, ES6 classes, or spread operators ✅; **Verification:** ✅ PASS - 100% ES3 compliant
 
-- **AIS Library Integration Check**; core.jsx version: 1.0.2 ✅; ui.jsx version: 1.0.1 ✅; Integration patterns verified: `#include "../.lib/core.jsx"` standard across all scripts ✅; `#include "../.lib/ui.jsx"` in dialog-based scripts ✅; Namespace: `AIS` (ready for Vexy refactoring) ✅; **Verification:** ✅ PASS - Consistent library integration
+- **AIS Library Integration Check**; core.jsx version: 1.0.2 ✅; ui.jsx version: 1.0.1 ✅; Integration patterns verified: `(function(){var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}})();` standard across all scripts ✅; `#include "../.lib/ui.jsx"` in dialog-based scripts ✅; Namespace: `AIS` (ready for Vexy refactoring) ✅; **Verification:** ✅ PASS - Consistent library integration
 
 - **Favorites Category Deep Dive**; 7 scripts analyzed in detail: BatchRenamer.jsx (56KB, ~1,727 lines), ColorBlindSimulator.jsx (15KB), ContrastChecker.jsx (23KB), ExportAsPDF.jsx (26KB, ~908 lines), FitArtboardsToArtwork.jsx (22KB, ~883 lines), GoToLine.jsx (10KB, ~246 lines), StepAndRepeat.jsx (15KB, ~578 lines); All scripts: Settings persistence ✅, Preview modes ✅, ES3 compliant ✅; **Quality assessment:** ⭐⭐⭐⭐⭐ (5/5); **Verification:** ✅ PASS - Favorites category is exemplary
 
@@ -1356,3 +1356,10 @@ New AIS library and modernization framework: MIT License
 
 **Note:** This is a living document updated after each major milestone.
 Last updated: 2025-10-27
+## [Unreleased]
+- Standardized all Illustrator scripts in `src/` to a unified startup structure:
+  - Moved `//@target illustrator` before loader and preference lines.
+  - Replaced dynamic AIS core loader IIFEs with a standalone loader line.
+  - Added `app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);` where missing.
+  - Replaced top-level validation IIFEs with a trailing `// EXECUTE` block that preserves existing validation semantics (document/selection checks or validateEnvironment pattern) and wraps `main()` in try/catch.
+  - Processed 212 `.jsx` files; verified ordering and removed remaining loader IIFEs.

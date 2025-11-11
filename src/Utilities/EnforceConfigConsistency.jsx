@@ -8,11 +8,13 @@
  * @usage Run to detect configuration drift, normalize schemas, and repair inconsistent settings
  */
 
+
 // this_file: Utilities/EnforceConfigConsistency.jsx
 
-#include "../.lib/core.jsx"
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================

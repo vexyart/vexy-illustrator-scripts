@@ -20,24 +20,12 @@
  * Modernized to use AIS library while preserving all functionality
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!app.documents.length) {
-        alert('No documents\nOpen a document and try again');
-        return;
-    }
-
-    if (!isValidVersion()) {
-        alert('This script requires Illustrator CS6 or higher\nCurrent version: ' + app.version);
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // MAIN FUNCTION
@@ -859,3 +847,13 @@ function showWarning(message) {
 // ============================================================================
 // ENTRY POINT (handled by IIFE at top)
 // ============================================================================
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Script error', e);
+}

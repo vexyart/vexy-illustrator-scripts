@@ -22,22 +22,18 @@
  * - Helps maintain code quality across large codebase
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
 
 // ============================================================================
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    try {
-        main();
-    } catch (err) {
-        AIS.Error.show('Run All Tests', err);
-    }
-})();
+
 
 // ============================================================================
 // CONFIGURATION
@@ -504,4 +500,14 @@ function showSummary(results, reportFile) {
     if (confirm(message)) {
         reportFile.execute();
     }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+try {
+    main();
+} catch (e) {
+    AIS.Error.show('Run All Tests error', e);
 }

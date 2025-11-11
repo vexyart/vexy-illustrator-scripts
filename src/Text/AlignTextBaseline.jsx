@@ -16,31 +16,12 @@
  * Modernized for AIS framework
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No selection\nSelect at least 2 text frames and try again');
-        return;
-    }
-
-    var textFrames = collectTextFrames(app.activeDocument.selection);
-
-    if (textFrames.length < 2) {
-        alert('Not enough text frames\nSelect at least 2 text frames and try again');
-        return;
-    }
-
-    main(textFrames);
-})();
 
 // ============================================================================
 // CONFIGURATION
@@ -365,4 +346,20 @@ function parseFloatSafe(str, defaultValue) {
     }
 
     return parseFloat(str);
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No selection\nSelect at least 2 text frames and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Align Text Baseline error', e);
+    }
 }

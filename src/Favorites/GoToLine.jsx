@@ -8,7 +8,12 @@
  * @requires Illustrator CC 2018 or higher
  */
 
-#include "../.lib/core.jsx"
+
+
+//@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
+app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
+
 #include "../.lib/ui.jsx"
 
 // ============================================================================
@@ -328,18 +333,17 @@ function validateEnvironment() {
 // ENTRY POINT
 // ============================================================================
 
-(function() {
-    var validation = validateEnvironment();
+// ============================================================================
+// EXECUTE
+// ============================================================================
 
-    if (!validation.valid) {
-        alert(SCRIPT.name + '\n\n' + validation.message);
-        return;
-    }
-
+var validation = validateEnvironment();
+if (!validation.valid) {
+    alert(SCRIPT.name + '\n\n' + validation.message);
+} else {
     try {
         main();
-    } catch (err) {
-        AIS.Error.show('Unexpected error occurred', err);
-        AIS.Error.log(SCRIPT.name, 'Unexpected error', err);
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
-})();
+}

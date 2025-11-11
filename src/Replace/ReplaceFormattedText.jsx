@@ -16,24 +16,12 @@
  * Original: 190 lines | Modernized: 220 lines
  */
 
-#include "../.lib/core.jsx"
+
+
 
 //@target illustrator
+var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}
 app.preferences.setBooleanPreference('ShowExternalJSXWarning', false);
-
-(function() {
-    if (!AIS.Document.hasDocument()) {
-        alert('No document\nOpen a document and try again');
-        return;
-    }
-
-    if (!AIS.Document.hasSelection()) {
-        alert('No selection\nSelect at least one text frame and try again');
-        return;
-    }
-
-    main();
-})();
 
 // ============================================================================
 // MAIN FUNCTION
@@ -262,5 +250,21 @@ function applyCharacterAttributes(sourceAttrs, targetAttrs) {
         } catch (err) {
             // Skip properties that can't be set
         }
+    }
+}
+
+// ============================================================================
+// EXECUTE
+// ============================================================================
+
+if (!AIS.Document.hasDocument()) {
+    alert('No document\nOpen a document and try again');
+} else if (!AIS.Document.hasSelection()) {
+    alert('No selection\nSelect at least one text frame and try again');
+} else {
+    try {
+        main();
+    } catch (e) {
+        AIS.Error.show('Script error', e);
     }
 }

@@ -106,7 +106,7 @@ Vexy Illustrator Scripts is a phased modernization project transforming legacy A
 All modernized scripts use the **AIS (Adobe Illustrator Scripts)** library framework for consistent functionality across the collection. Include the library in your scripts with:
 
 ```javascript
-#include "../.lib/core.jsx"  // Core utilities
+(function(){var c=File(Folder.myDocuments+"/Adobe Scripts/vexy-ville.ini");if(c.exists){c.open('r');var p=c.read();c.close();var l=File(p+".lib/core.jsx");if(l.exists)$.evalFile(l.fsName);}})();  // Core utilities
 #include "../.lib/ui.jsx"     // UI components (optional)
 ```
 
